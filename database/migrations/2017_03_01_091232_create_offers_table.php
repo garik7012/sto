@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCustomFieldsTable extends Migration
+class CreateOffersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateCustomFieldsTable extends Migration
      */
     public function up()
     {
-        Schema::create('custom_fields', function (Blueprint $table) {
+        Schema::create('offers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title')->unique();
-            $table->string('value')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -27,6 +26,6 @@ class CreateCustomFieldsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('custom_fields');
+        Schema::dropIfExists('offers');
     }
 }

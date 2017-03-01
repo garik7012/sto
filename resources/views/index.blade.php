@@ -2,6 +2,8 @@
 @section('title', 'СТО')
 @section('content')
 
+    {{$cfs['tel1']}}
+
         <section class="top-section">
             <div class="top-section__menu-aside">
                 <nav class="menu-aside">

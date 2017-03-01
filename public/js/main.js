@@ -39,4 +39,10 @@ $(document).ready(function () {
 		loop: !0,
 		dots: !0
 	})
+	$('.open-form-btn').click(function () {
+		$('.onlineRegistration').show();
+    })
+	$('.main-content').click(function () {
+		$('.onlineRegistration').hide();
+    })
 });

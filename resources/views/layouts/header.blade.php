@@ -113,7 +113,7 @@
     <div class="header-page__bottom">
         <div class="header-page__logo">
             <a href="" class="logo">
-                <img src="img/logo.jpg" alt="logo" class="logo__pic">
+                <img src="/img/logo.jpg" alt="logo" class="logo__pic">
             </a>
         </div>
 
@@ -170,6 +170,14 @@
         <div class="header-page__open-form">
             <div class="open-form-btn">
                 Онлайн запись
+            </div>
+            <div class="onlineRegistration">
+                <div class="formWrapper">
+                    <form id="onlineRegistration" action="/oregistr" method="post">
+                        <input type="text" placeholder="имя">
+                        <input type="submit" value="записаться">
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -255,7 +263,7 @@
                     <div class="number-phone__item">
                         <div class="head-number">
                             <div class="head-number__ico">
-                                <img src="img/Vodafone.png" alt="">
+                                <img src="/img/Vodafone.png" alt="">
                             </div>
 
                             <a href="tel:0662850466" class="head-number__text">

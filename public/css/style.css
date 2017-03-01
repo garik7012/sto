@@ -1959,3 +1959,16 @@ body.fixed .soc-prog__ico {
     width: 1200px;
   }
 }
+
+
+
+.onlineRegistration {
+     display: none;
+     width: 400px;
+     max-width: 100%;
+     background-color: #cccccc;
+     position: absolute;
+     top: 20vh;
+
+}
+
