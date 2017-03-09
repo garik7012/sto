@@ -15,8 +15,9 @@ class CreateCustomFieldsTable extends Migration
     {
         Schema::create('custom_fields', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title')->unique();
+            $table->string('name')->unique();
             $table->string('value')->nullable();
+            $table->string('description')->nullable();
         });
     }
 

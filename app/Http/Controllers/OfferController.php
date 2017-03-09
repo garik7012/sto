@@ -14,7 +14,8 @@ class OfferController extends Controller
      */
     public function index()
     {
-        //
+        $offers = Offer::all();
+        return view('pages.offers', ['offers' => $offers]);
     }
 
     /**
@@ -24,7 +25,7 @@ class OfferController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create.offers');
     }
 
     /**
@@ -35,7 +36,27 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //определяем папку для сохранения картинок
+        $root=$_SERVER['DOCUMENT_ROOT']. "/images/offers/";
+
+        //>Сохраняем картинки на диск и записываем в БД
+        //генерируем свое имя на случай повторяющихся имен
+        $file = $request->file('preview');
+        if($file != '') {
+            $f_name = str_random(6) . '.' . $file->getClientOriginalExtension();
+            //сохраняем оригинал
+            $file->move($root, $f_name);
+            $url_img = "/images/offers/" . $f_name;
+        } else $url_img = '';
+        //сохраняем в нашу БД
+        $offers= new Offer;
+        $offers->title=$request->title;
+        $offers->description=$request->description;
+        $offers->preview=$url_img;
+        $offers->save();
+
+        //страницу с надписью об успешном добавлении
+        return view('actions.success')->with('offers_name', $offers->title);
     }
 
     /**

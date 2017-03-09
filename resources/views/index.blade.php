@@ -2,279 +2,19 @@
 @section('title', 'СТО')
 @section('content')
 
-    {{$cfs['tel1']}}
+    @include('layouts.maintopsection')
+   @include('layouts.services')
 
-        <section class="top-section">
-            <div class="top-section__menu-aside">
-                <nav class="menu-aside">
-                    <ul class="menu-aside__list">
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Реставрация шаровых</a>
-                        </li>
+    <section class="video-sect">
+        <div class="video-sect__title">
+            <div class="title-img">
+                <h2 class="title-img__text">
+                    Видео
+                </h2>
 
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Инжектор-Газ сервис</a>
-                        </li>
-
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Проточка тормозных дисков</a>
-                        </li>
-
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Развал схождения 3D</a>
-                        </li>
-
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Шок тестер Sachs</a>
-                        </li>
-
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">ремонт рулевых реек</a>
-                        </li>
-
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Малярный цех</a>
-                        </li>
-
-                        <li class="menu-aside__item">
-                            <a href="" class="menu-aside__link">Автокондиционеры ТО</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="top-section__banner-aside">
-                <aside class="banner-aside">
-                    <div class="banner-aside__img">
-                        <img src="img/banner.png" alt="machin" class="banner-aside__pic">
-                    </div>
-
-                    <div class="banner-aside__desc">
-                        <div class="banner-desc">
-                            <strong class="banner-desc__title">
-                                Акция
-                            </strong>
-
-                            <span class="banner-desc__text">
-								Бесплатная замена масла и фильтра в АКПП
-							</span>
-
-                            <span class="banner-desc__time">
-								До 15 марта
-							</span>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-
-            <div class="top-section__main-banner">
-                <div class="main-banner">
-                    <div class="main-banner__slider owl-carousel-1  owl-carousel">
-                        <div class="main-banner__img  item" style="background-image:url(img/main-banner.png)">
-                        </div>
-
-                        <div class="main-banner__img  item" style="background-image:url(img/main-bannerb.png)">
-                        </div>
-
-                        <div class="main-banner__img  item" style="background-image:url(img/mainbannerc.jpg)">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="top-section__logo-company">
-                <div class="logo-company">
-                    <section class="logo-companyr__slider">
-                        <div class="owl-carousel-2 owl-carousel owl-theme">
-                            <div class="logo-company__img  item">
-                                <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/787263fiat.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/772686ford1.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/426234logo-citroen.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1444213875-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1444215265-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1444230850-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1448879564-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1448880091-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1448880093-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/461358newholland-mini.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item">
-                                <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/787263fiat.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/772686ford1.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/426234logo-citroen.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1444213875-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1444215265-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1444230850-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1448879564-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1448880091-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/1448880093-md.png" alt="">
-                            </div>
-
-                            <div class="logo-company__img  item" >
-                                <img src="img/logo-company/461358newholland-mini.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="services__list">
-                <ul class="services-list">
-                    <li class="services__item">
-                        <a href="" class="services-link">
-                            <div class="services-link__title">
-                                <span>Шиномонтаж</span>
-                            </div>
-
-                            <span class="services-link__img">
-								<img class="services-link__pic" src="img/serva.png" alt="">
-							</span>
-                        </a>
-                    </li>
-
-                    <li class="services__item">
-                        <a href="" class="services-link">
-                            <div class="services-link__title">
-                                <span>Автомойка</span>
-                            </div>
-
-                            <span class="services-link__img">
-								<img class="services-link__pic" src="img/autowash.png" alt="">
-							</span>
-                        </a>
-                    </li>
-
-                    <li class="services__item">
-                        <a href="" class="services-link">
-                            <div class="services-link__title">
-                                <span>Диагностика ходовой</span>
-                            </div>
-
-                            <span class="services-link__img">
-								<img class="services-link__pic" src="img/diag.png" alt="">
-							</span>
-                        </a>
-                    </li>
-
-                    <li class="services__item">
-                        <a href="" class="services-link">
-                            <div class="services-link__title">
-                                <span>Развал схождения</span>
-                            </div>
-
-                            <span class="services-link__img">
-								<img class="services-link__pic" src="img/razval.png" alt="">
-							</span>
-                        </a>
-                    </li>
-
-                    <li class="services__item">
-                        <a href="" class="services-link">
-                            <div class="services-link__title">
-                                <span>Компьютерная диагностика</span>
-                            </div>
-
-                            <span class="services-link__img">
-								<img class="services-link__pic" src="img/komp.png" alt="">
-							</span>
-                        </a>
-                    </li>
-
-                    <li class="services__item">
-                        <a href="" class="services-link">
-                            <div class="services-link__title">
-                                <span>Купля-продажа</span>
-                            </div>
-
-                            <span class="services-link__img">
-								<img class="services-link__pic" src="img/mappp.png" alt="">
-							</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="video-sect">
-            <div class="video-sect__title">
-                <div class="title-img">
-                    <h2 class="title-img__text">
-                        Видео
-                    </h2>
-
-                    <div class="title-img__ico">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                <div class="title-img__ico">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -290,29 +30,29 @@
 							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
 							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
 						</svg>
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="video-sect__video">
-                <div class="video">
-                    <div class="video__pb">
-                        <iframe src="https://www.youtube.com/embed/An5Yh-AopXo" allowfullscreen></iframe>
-                    </div>
+        <div class="video-sect__video">
+            <div class="video">
+                <div class="video__pb">
+                    <iframe src="https://www.youtube.com/embed/An5Yh-AopXo" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="advantages">
-            <div class="advantages__title">
-                <div class="title-img">
-                    <h2 class="title-img__text">
-                        Наши преимущества
-                    </h2>
+    <section class="advantages">
+        <div class="advantages__title">
+            <div class="title-img">
+                <h2 class="title-img__text">
+                    Наши преимущества
+                </h2>
 
-                    <div class="title-img__ico">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                <div class="title-img__ico">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -328,17 +68,17 @@
 							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
 							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
 						</svg>
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="advantages__list">
-                <ul class="advantages-list">
-                    <li class="advantages-list__item">
-                        <div class="advantages-item">
-                            <div class="advantages-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <div class="advantages__list">
+            <ul class="advantages-list">
+                <li class="advantages-list__item">
+                    <div class="advantages-item">
+                        <div class="advantages-item__ico">
+                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 								<g>
                                     <g>
                                         <path d="M0,49.11v413.78h512V49.11H0z M411.167,447.216H100.833v-22.41h310.335V447.216z M411.167,409.133H100.833v-22.412h41.363
@@ -347,40 +87,40 @@
 											v-266.59H85.159v266.59H15.673V117.029h480.653V447.216z M496.327,101.355H15.673V64.784h480.653V101.355z"/>
                                     </g>
                                 </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <rect x="160.486" y="371.043" width="15.673" height="15.673"/>
-                                        </g>
+                                        <rect x="160.486" y="371.043" width="15.673" height="15.673"/>
                                     </g>
+                                </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <rect x="194.968" y="371.043" width="201.143" height="15.673"/>
-                                        </g>
+                                        <rect x="194.968" y="371.043" width="201.143" height="15.673"/>
                                     </g>
+                                </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <rect x="259.229" y="75.233" width="15.673" height="15.673"/>
-                                        </g>
+                                        <rect x="259.229" y="75.233" width="15.673" height="15.673"/>
                                     </g>
+                                </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <rect x="293.71" y="75.233" width="188.082" height="15.673"/>
-                                        </g>
+                                        <rect x="293.71" y="75.233" width="188.082" height="15.673"/>
                                     </g>
+                                </g>
 								</svg>
-                            </div>
-
-                            <div class="advantages-item__text">
-                                2000 кв2
-                            </div>
                         </div>
-                    </li>
 
-                    <li class="advantages-list__item">
-                        <div class="advantages-item">
-                            <div class="advantages-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
+                        <div class="advantages-item__text">
+                            2000 кв2
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages-list__item">
+                    <div class="advantages-item">
+                        <div class="advantages-item__ico">
+                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
 								<g>
                                     <g>
                                         <g>
@@ -421,19 +161,19 @@
                                     </g>
                                 </g>
 								</svg>
-                            </div>
-
-                            <div class="advantages-item__text">
-                                Сервис
-                            </div>
                         </div>
-                    </li>
 
-                    <li class="advantages-list__item">
-                        <div class="advantages-item">
-                            <div class="advantages-item__ico">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 181.788 181.788" style="enable-background:new 0 0 181.788 181.788;" xml:space="preserve">
+                        <div class="advantages-item__text">
+                            Сервис
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages-list__item">
+                    <div class="advantages-item">
+                        <div class="advantages-item__ico">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 181.788 181.788" style="enable-background:new 0 0 181.788 181.788;" xml:space="preserve">
 								<path d="M146.131,181.788H35.657c-8.499,0-15.413-6.914-15.413-15.412V35.857c0-8.498,6.914-15.412,15.413-15.412h7.819V7.833
 									C43.476,3.514,46.99,0,51.309,0h0.812c4.319,0,7.833,3.514,7.833,7.833v12.612h61.896V7.833c0-4.319,3.514-7.833,7.833-7.833h0.812
 									c4.319,0,7.833,3.514,7.833,7.833v12.612h7.805c8.499,0,15.413,6.914,15.413,15.412v130.519
@@ -452,19 +192,19 @@
 									c-0.921-1.029-0.832-2.61,0.196-3.53l19.398-17.351c0.736-0.657,1.79-0.82,2.688-0.419c0.9,0.402,1.479,1.296,1.479,2.282v76.88
 									C69.034,158.701,67.915,159.82,66.534,159.82z"/>
 								</svg>
-                            </div>
-
-                            <div class="advantages-item__text">
-                                Опыт
-                            </div>
                         </div>
-                    </li>
 
-                    <li class="advantages-list__item">
-                        <div class="advantages-item">
-                            <div class="advantages-item__ico">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 405.075 405.075" style="enable-background:new 0 0 405.075 405.075;" xml:space="preserve">
+                        <div class="advantages-item__text">
+                            Опыт
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages-list__item">
+                    <div class="advantages-item">
+                        <div class="advantages-item__ico">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 405.075 405.075" style="enable-background:new 0 0 405.075 405.075;" xml:space="preserve">
 								<g>
                                     <g>
                                         <g>
@@ -487,19 +227,19 @@
                                     </g>
                                 </g>
 								</svg>
-                            </div>
-
-                            <div class="advantages-item__text">
-                                Гарантия
-                            </div>
                         </div>
-                    </li>
 
-                    <li class="advantages-list__item">
-                        <div class="advantages-item">
-                            <div class="advantages-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 295.238 295.238" style="enable-background:new 0 0 295.238 295.238;" xml:space="preserve">
+                        <div class="advantages-item__text">
+                            Гарантия
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages-list__item">
+                    <div class="advantages-item">
+                        <div class="advantages-item__ico">
+                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 295.238 295.238" style="enable-background:new 0 0 295.238 295.238;" xml:space="preserve">
 								<g>
                                     <g>
                                         <g>
@@ -554,27 +294,27 @@
                                     </g>
                                 </g>
 								</svg>
-                            </div>
-
-                            <div class="advantages-item__text">
-                                Скорость
-                            </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="processes">
-            <div class="processes__title">
-                <div class="title-img">
-                    <h2 class="title-img__text">
-                        Как мы работаем
-                    </h2>
+                        <div class="advantages-item__text">
+                            Скорость
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-                    <div class="title-img__ico">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+    <section class="processes">
+        <div class="processes__title">
+            <div class="title-img">
+                <h2 class="title-img__text">
+                    Как мы работаем
+                </h2>
+
+                <div class="title-img__ico">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -590,25 +330,25 @@
 							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
 							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
 						</svg>
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="processes__content">
-                <div class="processes__list">
-                    <ul class="processes-list">
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Ваш звонок
-                                    </strong>
-                                </div>
+        <div class="processes__content">
+            <div class="processes__list">
+                <ul class="processes-list">
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Ваш звонок
+                                </strong>
+                            </div>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 612.36 612.36" style="enable-background:new 0 0 612.36 612.36;"
-                                         xml:space="preserve">
+                            <div class="processes-item__ico">
+                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 612.36 612.36" style="enable-background:new 0 0 612.36 612.36;"
+                                     xml:space="preserve">
 									<g>
                                         <g>
                                             <g>
@@ -651,37 +391,37 @@
                                         </g>
                                     </g>
 									</svg>
-                                </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Приезжаете на СТО
-                                    </strong>
-                                </div>
-
-                                <div class="processes-item__ico">
-                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 467">
-                                        <path class="cls-1" d="M474.454,186.26c12.614-5.932,17.894-15.318,19.487-23.173a22.073,22.073,0,0,0-4.228-43.732h-6.7a22.063,22.063,0,0,0-5.679,43.378c-0.114.267-.235,0.533-0.371,0.805-1.941,3.838-5.632,6.844-10.988,8.979-2.759-4.142-5-7.2-6.43-9.074-0.578-9.7-3.493-43.916-16.934-78.64C421.39,29.979,384.2,1,335.071,1h-113.5a8.005,8.005,0,0,0,0,16.011h113.5c42.463,0,73.584,24.64,92.5,73.233,10.584,27.193,14.286,54.774,15.531,68.133H68.9c1.245-13.361,4.948-40.942,15.53-68.133,18.912-48.593,50.034-73.232,92.5-73.232H189.6A8.005,8.005,0,0,0,189.6,1h-12.67C127.794,1,90.607,29.978,69.388,84.8c-13.439,34.724-16.355,68.943-16.934,78.64-1.427,1.87-3.671,4.932-6.43,9.074-5.356-2.135-9.046-5.142-10.988-8.979-0.137-.272-0.258-0.54-0.372-0.805a22.063,22.063,0,0,0-5.679-43.378h-6.7a22.074,22.074,0,0,0-4.227,43.733c1.593,7.855,6.872,17.24,19.488,23.173-3.282,5.727-6.789,12.365-10.27,19.828-0.026.051-.048,0.1-0.073,0.156-0.665,1.428-1.33,2.874-1.99,4.362C12.742,238.659-1,283.021,4.195,335.218v91.415a41.309,41.309,0,1,0,82.618,0V392.358H188.539V404.5a8,8,0,0,0,7.994,8.006H315.466a8,8,0,0,0,8-8.006V392.359H425.187v34.275a41.309,41.309,0,1,0,82.618,0V335.219c5.2-52.2-8.547-96.559-21.018-124.613A268.207,268.207,0,0,0,474.454,186.26Zm2.5-44.829a6.066,6.066,0,0,1,6.054-6.064h6.7a6.064,6.064,0,0,1,0,12.127h-6.7A6.065,6.065,0,0,1,476.958,141.431Zm-447.97,6.063h-6.7a6.064,6.064,0,0,1,0-12.127h6.7A6.064,6.064,0,0,1,28.988,147.494Zm35.263,26.9h383.5a225.121,225.121,0,0,1,19.644,32.686,125.813,125.813,0,0,1-14.09,8.337,38.234,38.234,0,0,0-54.632,13.557c-0.713.012-1.424,0.029-2.133,0.029H115.464c-0.709,0-1.421-.017-2.133-0.029A38.234,38.234,0,0,0,58.7,215.416a125.879,125.879,0,0,1-14.128-8.363A225.726,225.726,0,0,1,64.25,174.393Zm390.323,73.06a22.332,22.332,0,1,1-22.332-22.363A22.372,22.372,0,0,1,454.573,247.453Zm-352.482,0A22.332,22.332,0,1,1,79.759,225.09,22.372,22.372,0,0,1,102.091,247.453ZM19.377,300.741a2.289,2.289,0,0,1,.216.482l-0.245.1C19.357,301.129,19.366,300.935,19.377,300.741ZM70.824,426.633a25.32,25.32,0,1,1-50.639,0V371.716c0.062,0.067.128,0.131,0.19,0.2a63.255,63.255,0,0,0,35.2,19.438,85.868,85.868,0,0,0,15.246,1v34.275Zm236.648-30.141H204.528v-24.28H307.471v24.28h0Zm159.023,55.5a25.365,25.365,0,0,1-25.32-25.354V392.358c7.638,0,15.128-.472,22.474-2.747a63.872,63.872,0,0,0,18.219-9.021,61.828,61.828,0,0,0,9.755-8.672c0.063-.068.129-0.132,0.191-0.2v54.916h0A25.366,25.366,0,0,1,466.5,451.987Zm25.361-117.936a46.816,46.816,0,0,1-46.625,42.3H323.461V364.207a8,8,0,0,0-8-8H196.532a8,8,0,0,0-7.994,8v12.14H66.768a46.817,46.817,0,0,1-46.625-42.295q-0.7-6.9-.941-13.6a106.434,106.434,0,0,0,19.71,8.211A26.44,26.44,0,0,0,72.9,336.387c26.693,4.3,60.155,6.479,99.571,6.479H339.531c39.416,0,72.879-2.183,99.569-6.479a26.441,26.441,0,0,0,33.986-7.719,106.516,106.516,0,0,0,19.708-8.21C492.624,324.926,492.322,329.456,491.856,334.051ZM49.8,313.039a10.511,10.511,0,1,1,10.511,10.526A10.53,10.53,0,0,1,49.8,313.039Zm391.374,0a10.512,10.512,0,1,1,10.512,10.526A10.53,10.53,0,0,1,441.174,313.039Zm51.5-11.708-0.266-.109a2.3,2.3,0,0,1,.237-0.517C492.653,300.913,492.661,301.123,492.671,301.331Zm-14.68,8.53a26.5,26.5,0,1,0-51.24,12.157c-24.127,3.207-53.375,4.837-87.22,4.837H172.467c-33.845,0-63.092-1.63-87.22-4.837a26.5,26.5,0,1,0-51.24-12.157c-10.834-4.559-14.1-8.435-14.63-9.148a238.427,238.427,0,0,1,18.432-78.936q4.541,2.981,9.3,5.609a38.333,38.333,0,1,0,70.969,20.067c0-.82-0.035-1.632-0.085-2.439H394.005c-0.051.807-.086,1.619-0.086,2.439a38.321,38.321,0,1,0,70.969-20.066q4.728-2.61,9.249-5.576a236.749,236.749,0,0,1,18.5,78.874C492.167,301.328,488.954,305.246,477.991,309.861ZM366.924,278.7H280.213a25.487,25.487,0,0,0-48.43,0H145.074a8.006,8.006,0,0,0,0,16.011h86.71a25.487,25.487,0,0,0,48.43,0h86.711A8.006,8.006,0,0,0,366.924,278.7ZM256,296.24a9.53,9.53,0,1,1,9.517-9.53A9.534,9.534,0,0,1,256,296.24ZM423.192,132.789a222.133,222.133,0,0,0-10.4-36.411c-7.488-19.351-17.132-34.5-28.663-45.032-13.5-12.326-29.543-18.318-49.057-18.318H315.381a8.005,8.005,0,0,0,0,16.011h19.693c15.345,0,27.868,4.624,38.283,14.136,9.688,8.849,17.942,21.966,24.529,38.99a195.21,195.21,0,0,1,7.506,24.2H184.563a8.005,8.005,0,0,0,0,16.01h230.79A8,8,0,0,0,423.192,132.789ZM283.4,33.027H176.927c-19.3,0-35.193,5.853-48.594,17.9-11.468,10.305-21.1,25.162-28.619,44.155A220.49,220.49,0,0,0,88.8,132.789a8,8,0,0,0,7.838,9.581h55.944a8.005,8.005,0,0,0,0-16.01H106.6a193.977,193.977,0,0,1,7.974-25.376c6.6-16.67,14.822-29.5,24.434-38.14,10.336-9.289,22.738-13.8,37.916-13.8H283.4A8.006,8.006,0,0,0,283.4,33.027Z"/>
-                                    </svg>
-                                </div>
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Приезжаете на СТО
+                                </strong>
                             </div>
-                        </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Диагностика
-                                    </strong>
-                                </div>
+                            <div class="processes-item__ico">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 467">
+                                    <path d="M474.454,186.26c12.614-5.932,17.894-15.318,19.487-23.173a22.073,22.073,0,0,0-4.228-43.732h-6.7a22.063,22.063,0,0,0-5.679,43.378c-0.114.267-.235,0.533-0.371,0.805-1.941,3.838-5.632,6.844-10.988,8.979-2.759-4.142-5-7.2-6.43-9.074-0.578-9.7-3.493-43.916-16.934-78.64C421.39,29.979,384.2,1,335.071,1h-113.5a8.005,8.005,0,0,0,0,16.011h113.5c42.463,0,73.584,24.64,92.5,73.233,10.584,27.193,14.286,54.774,15.531,68.133H68.9c1.245-13.361,4.948-40.942,15.53-68.133,18.912-48.593,50.034-73.232,92.5-73.232H189.6A8.005,8.005,0,0,0,189.6,1h-12.67C127.794,1,90.607,29.978,69.388,84.8c-13.439,34.724-16.355,68.943-16.934,78.64-1.427,1.87-3.671,4.932-6.43,9.074-5.356-2.135-9.046-5.142-10.988-8.979-0.137-.272-0.258-0.54-0.372-0.805a22.063,22.063,0,0,0-5.679-43.378h-6.7a22.074,22.074,0,0,0-4.227,43.733c1.593,7.855,6.872,17.24,19.488,23.173-3.282,5.727-6.789,12.365-10.27,19.828-0.026.051-.048,0.1-0.073,0.156-0.665,1.428-1.33,2.874-1.99,4.362C12.742,238.659-1,283.021,4.195,335.218v91.415a41.309,41.309,0,1,0,82.618,0V392.358H188.539V404.5a8,8,0,0,0,7.994,8.006H315.466a8,8,0,0,0,8-8.006V392.359H425.187v34.275a41.309,41.309,0,1,0,82.618,0V335.219c5.2-52.2-8.547-96.559-21.018-124.613A268.207,268.207,0,0,0,474.454,186.26Zm2.5-44.829a6.066,6.066,0,0,1,6.054-6.064h6.7a6.064,6.064,0,0,1,0,12.127h-6.7A6.065,6.065,0,0,1,476.958,141.431Zm-447.97,6.063h-6.7a6.064,6.064,0,0,1,0-12.127h6.7A6.064,6.064,0,0,1,28.988,147.494Zm35.263,26.9h383.5a225.121,225.121,0,0,1,19.644,32.686,125.813,125.813,0,0,1-14.09,8.337,38.234,38.234,0,0,0-54.632,13.557c-0.713.012-1.424,0.029-2.133,0.029H115.464c-0.709,0-1.421-.017-2.133-0.029A38.234,38.234,0,0,0,58.7,215.416a125.879,125.879,0,0,1-14.128-8.363A225.726,225.726,0,0,1,64.25,174.393Zm390.323,73.06a22.332,22.332,0,1,1-22.332-22.363A22.372,22.372,0,0,1,454.573,247.453Zm-352.482,0A22.332,22.332,0,1,1,79.759,225.09,22.372,22.372,0,0,1,102.091,247.453ZM19.377,300.741a2.289,2.289,0,0,1,.216.482l-0.245.1C19.357,301.129,19.366,300.935,19.377,300.741ZM70.824,426.633a25.32,25.32,0,1,1-50.639,0V371.716c0.062,0.067.128,0.131,0.19,0.2a63.255,63.255,0,0,0,35.2,19.438,85.868,85.868,0,0,0,15.246,1v34.275Zm236.648-30.141H204.528v-24.28H307.471v24.28h0Zm159.023,55.5a25.365,25.365,0,0,1-25.32-25.354V392.358c7.638,0,15.128-.472,22.474-2.747a63.872,63.872,0,0,0,18.219-9.021,61.828,61.828,0,0,0,9.755-8.672c0.063-.068.129-0.132,0.191-0.2v54.916h0A25.366,25.366,0,0,1,466.5,451.987Zm25.361-117.936a46.816,46.816,0,0,1-46.625,42.3H323.461V364.207a8,8,0,0,0-8-8H196.532a8,8,0,0,0-7.994,8v12.14H66.768a46.817,46.817,0,0,1-46.625-42.295q-0.7-6.9-.941-13.6a106.434,106.434,0,0,0,19.71,8.211A26.44,26.44,0,0,0,72.9,336.387c26.693,4.3,60.155,6.479,99.571,6.479H339.531c39.416,0,72.879-2.183,99.569-6.479a26.441,26.441,0,0,0,33.986-7.719,106.516,106.516,0,0,0,19.708-8.21C492.624,324.926,492.322,329.456,491.856,334.051ZM49.8,313.039a10.511,10.511,0,1,1,10.511,10.526A10.53,10.53,0,0,1,49.8,313.039Zm391.374,0a10.512,10.512,0,1,1,10.512,10.526A10.53,10.53,0,0,1,441.174,313.039Zm51.5-11.708-0.266-.109a2.3,2.3,0,0,1,.237-0.517C492.653,300.913,492.661,301.123,492.671,301.331Zm-14.68,8.53a26.5,26.5,0,1,0-51.24,12.157c-24.127,3.207-53.375,4.837-87.22,4.837H172.467c-33.845,0-63.092-1.63-87.22-4.837a26.5,26.5,0,1,0-51.24-12.157c-10.834-4.559-14.1-8.435-14.63-9.148a238.427,238.427,0,0,1,18.432-78.936q4.541,2.981,9.3,5.609a38.333,38.333,0,1,0,70.969,20.067c0-.82-0.035-1.632-0.085-2.439H394.005c-0.051.807-.086,1.619-0.086,2.439a38.321,38.321,0,1,0,70.969-20.066q4.728-2.61,9.249-5.576a236.749,236.749,0,0,1,18.5,78.874C492.167,301.328,488.954,305.246,477.991,309.861ZM366.924,278.7H280.213a25.487,25.487,0,0,0-48.43,0H145.074a8.006,8.006,0,0,0,0,16.011h86.71a25.487,25.487,0,0,0,48.43,0h86.711A8.006,8.006,0,0,0,366.924,278.7ZM256,296.24a9.53,9.53,0,1,1,9.517-9.53A9.534,9.534,0,0,1,256,296.24ZM423.192,132.789a222.133,222.133,0,0,0-10.4-36.411c-7.488-19.351-17.132-34.5-28.663-45.032-13.5-12.326-29.543-18.318-49.057-18.318H315.381a8.005,8.005,0,0,0,0,16.011h19.693c15.345,0,27.868,4.624,38.283,14.136,9.688,8.849,17.942,21.966,24.529,38.99a195.21,195.21,0,0,1,7.506,24.2H184.563a8.005,8.005,0,0,0,0,16.01h230.79A8,8,0,0,0,423.192,132.789ZM283.4,33.027H176.927c-19.3,0-35.193,5.853-48.594,17.9-11.468,10.305-21.1,25.162-28.619,44.155A220.49,220.49,0,0,0,88.8,132.789a8,8,0,0,0,7.838,9.581h55.944a8.005,8.005,0,0,0,0-16.01H106.6a193.977,193.977,0,0,1,7.974-25.376c6.6-16.67,14.822-29.5,24.434-38.14,10.336-9.289,22.738-13.8,37.916-13.8H283.4A8.006,8.006,0,0,0,283.4,33.027Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Диагностика
+                                </strong>
+                            </div>
+
+                            <div class="processes-item__ico">
+                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
 									<g>
                                         <g>
                                             <g>
@@ -725,21 +465,21 @@
                                         </g>
                                     </g>
 									</svg>
-                                </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Калькуляция ремонта
-                                    </strong>
-                                </div>
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Калькуляция ремонта
+                                </strong>
+                            </div>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 442.003 442.003" style="enable-background:new 0 0 442.003 442.003;" xml:space="preserve">
+                            <div class="processes-item__ico">
+                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 442.003 442.003" style="enable-background:new 0 0 442.003 442.003;" xml:space="preserve">
 									<g>
                                         <path d="M337.897,189.476c-0.01-0.082-0.016-0.165-0.028-0.246c-0.058-0.404-0.135-0.807-0.244-1.205
 											c-0.001-0.004-0.003-0.008-0.004-0.013c-0.102-0.372-0.232-0.739-0.379-1.102c-0.042-0.104-0.088-0.204-0.133-0.306
@@ -778,21 +518,21 @@
 											l74.026-46.614c4.674-2.942,6.077-9.117,3.134-13.79C251.482,352.29,245.306,350.886,240.633,353.83z"/>
                                     </g>
 									</svg>
-                                </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Согласование цены и сроков
-                                    </strong>
-                                </div>
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Согласование цены и сроков
+                                </strong>
+                            </div>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                            <div class="processes-item__ico">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 									<g>
                                         <path d="M52.179,42.429l-5.596,8.04l-3.949-3.241c-0.426-0.351-1.057-0.287-1.407,0.138c-0.351,0.427-0.289,1.058,0.139,1.407
 											l4.786,3.929c0.18,0.148,0.404,0.228,0.634,0.228c0.045,0,0.091-0.003,0.137-0.01c0.276-0.038,0.524-0.19,0.684-0.419l6.214-8.929
@@ -831,21 +571,21 @@
 											z"/>
                                     </g>
 									</svg>
-                                </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Ремонт
-                                    </strong>
-                                </div>
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Ремонт
+                                </strong>
+                            </div>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
+                            <div class="processes-item__ico">
+                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
 									<g>
                                         <g>
                                             <g>
@@ -891,21 +631,21 @@
                                         </g>
                                     </g>
 									</svg>
-                                </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Сдача авто
-                                    </strong>
-                                </div>
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Сдача авто
+                                </strong>
+                            </div>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 512.077 512.077" style="enable-background:new 0 0 512.077 512.077;" xml:space="preserve">
+                            <div class="processes-item__ico">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 512.077 512.077" style="enable-background:new 0 0 512.077 512.077;" xml:space="preserve">
 									<g transform="translate(1 1)">
                                         <g>
                                             <g>
@@ -951,255 +691,117 @@
                                         </g>
                                     </g>
 									</svg>
-                                </div>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li class="processes-list__item">
-                            <div class="processes-item">
-                                <div class="processes-item__title">
-                                    <strong>
-                                        Оплата
-                                    </strong>
-                                </div>
+                    <li class="processes-list__item">
+                        <div class="processes-item">
+                            <div class="processes-item__title">
+                                <strong>
+                                    Оплата
+                                </strong>
+                            </div>
 
-                                <div class="processes-item__ico">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 482.085 482.085" style="enable-background:new 0 0 482.085 482.085;" xml:space="preserve">
-									<g>
-                                        <path d="M461.271,343.312c-6.339-5.654-14.297-8.26-22.403-7.329c-13.612,1.557-31.436,5.233-50.307,9.125
-											c-25.482,5.256-51.83,10.69-72.004,11.951c-17.426,1.086-49.161-3.454-58.563-8.379c-6.342-3.322-9.89-7.396-11.877-10.998h39.11
-											c16.135,0,29.261-13.126,29.261-29.26v-22.978c0-16.134-13.126-29.259-29.261-29.259H178.02c-4.555-0.14-59.253-1.17-97.131,31.14
-											c-6.704,5.718-12.036,11.121-16.288,16.031c-4.498-5.621-11.41-9.232-19.153-9.232H10.5c-5.799,0-10.5,4.701-10.5,10.5V452.96
-											c0,2.785,1.107,5.456,3.075,7.425c1.97,1.969,4.641,3.075,7.425,3.075l34.947-0.001c13.525,0,24.528-11.003,24.528-24.527v-8.07
-											c10.451,0.656,34.136,3.242,84.261,12.653c59.194,11.115,96.13,14.882,125.231,14.881c20.856,0,37.691-1.934,55.801-4.485
-											c22.387-3.151,50.544-11.116,75.386-18.143c11.5-3.253,22.362-6.325,31.974-8.749c25.901-6.533,29.769-22.865,29.769-32.02V368.25
-											C472.397,358.85,468.237,349.527,461.271,343.312z M48.976,438.932c0,1.945-1.583,3.527-3.528,3.527L21,442.46V315.125h24.447
-											c1.945,0,3.528,1.582,3.528,3.527V438.932z M451.397,395c0,2.23,0,8.15-13.903,11.656c-9.903,2.498-20.906,5.61-32.555,8.905
-											c-24.198,6.845-51.625,14.603-72.598,17.555c-41.317,5.818-75.766,8.248-174.23-10.239c-50.639-9.508-75.773-12.382-88.136-13.041
-											v-77.961c0.375-0.469,0.722-0.968,1.021-1.513c2.69-4.908,9.323-14.949,23.521-27.059c32.373-27.613,82.42-26.142,82.913-26.125
-											c0.136,0.005,0.272,0.008,0.408,0.008h107.39c4.555,0,8.261,3.705,8.261,8.259v22.978c0,4.555-3.706,8.26-8.261,8.26h-107.39
-											c-5.799,0-10.5,4.701-10.5,10.5s4.701,10.5,10.5,10.5h45.977c2.159,8.61,8.116,21.052,24.435,29.6
-											c14.925,7.819,51.944,11.846,69.616,10.736c21.654-1.352,48.742-6.939,74.938-12.343c18.396-3.795,35.772-7.379,48.451-8.829
-											c2.672-0.302,4.756,0.993,6.037,2.137c2.532,2.259,4.106,5.811,4.106,9.268V395z"/>
-                                        <path d="M455.157,18.625H86.362c-14.848,0-26.928,12.08-26.928,26.928V218.45c0,14.849,12.08,26.93,26.928,26.93h368.795
-											c14.848,0,26.928-12.081,26.928-26.93V45.552C482.085,30.705,470.005,18.625,455.157,18.625z M403.067,224.379H138.474
-											c-2.782-31.306-27.122-56.49-58.039-60.583V97.343c29.967-3.968,53.751-27.752,57.718-57.719h265.235
-											c3.967,29.961,27.74,53.741,57.697,57.717v66.457C430.179,167.9,405.849,193.081,403.067,224.379z M461.085,45.552v30.528
-											c-18.359-3.591-32.854-18.093-36.438-36.456h30.51C458.426,39.625,461.085,42.284,461.085,45.552z M86.362,39.625h30.531
-											c-3.584,18.37-18.089,32.875-36.459,36.46V45.552C80.435,42.284,83.094,39.625,86.362,39.625z M80.435,218.45v-33.395
-											c19.314,3.769,34.352,19.611,36.919,39.324H86.362C83.094,224.379,80.435,221.719,80.435,218.45z M455.157,224.379h-30.97
-											c2.566-19.706,17.593-35.545,36.897-39.32v33.391C461.085,221.719,458.426,224.379,455.157,224.379z"/>
-                                        <path d="M271.325,56.884c-41.421,0-75.119,33.697-75.119,75.117c0,41.421,33.698,75.119,75.119,75.119
-											c41.42,0,75.118-33.698,75.118-75.119C346.443,90.582,312.745,56.884,271.325,56.884z M271.325,186.121
-											c-29.842,0-54.119-24.277-54.119-54.119c0-29.84,24.277-54.117,54.119-54.117c29.841,0,54.118,24.277,54.118,54.117
-											C325.443,161.843,301.166,186.121,271.325,186.121z"/>
-                                        <path d="M150.439,99.705c-17.81,0-32.298,14.488-32.298,32.298c0,17.809,14.488,32.297,32.298,32.297
-											c17.809,0,32.297-14.488,32.297-32.297C182.736,114.193,168.248,99.705,150.439,99.705z M150.439,143.299
-											c-6.229,0-11.298-5.067-11.298-11.297c0-6.23,5.068-11.298,11.298-11.298c6.23,0,11.297,5.068,11.297,11.298
-											C161.736,138.232,156.669,143.299,150.439,143.299z"/>
-                                        <path d="M392.209,99.705c-17.809,0-32.297,14.488-32.297,32.298c0,17.809,14.488,32.297,32.297,32.297
-											c17.81,0,32.299-14.488,32.299-32.297C424.508,114.193,410.019,99.705,392.209,99.705z M392.209,143.299
-											c-6.23,0-11.297-5.067-11.297-11.297c0-6.23,5.067-11.298,11.297-11.298c6.23,0,11.299,5.068,11.299,11.298
-											C403.508,138.232,398.44,143.299,392.209,143.299z"/>
+                            <div class="processes-item__ico">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+<g>
+    <g>
+        <path d="M509.605,171.075l-99.3-99.301c-3.193-3.194-8.37-3.194-11.565,0l-49.65,49.65c-1.533,1.533-2.394,3.613-2.394,5.782
+			c0,2.169,0.861,4.249,2.394,5.782l4.953,4.953l-11.382,11.38c-7.389,7.386-18.854,9.402-28.528,5.011
+			c-9.07-4.117-19.153-6.292-29.161-6.292c-11.883,0-23.496,2.983-33.814,8.633c-4.303-1.06-8.719-1.603-13.179-1.603
+			c-6.45,0-12.785,1.113-18.829,3.31c-9.651,3.506-19.996,1.333-27.003-5.672L171.71,132.27l2.434-2.434
+			c1.533-1.533,2.394-3.613,2.394-5.782c0-2.169-0.861-4.249-2.394-5.782l-49.65-49.65c-3.195-3.194-8.371-3.194-11.565,0
+			L2.395,179.156c-3.193,3.194-3.193,8.371,0,11.564l49.649,49.65c1.534,1.534,3.613,2.395,5.783,2.395s4.248-0.861,5.783-2.395
+			l2.961-2.961l14.414,14.414c3.637,3.637,6.048,8.178,6.971,13.131c4.786,25.683,17.086,49.032,35.57,67.526l2.715,2.715
+			c-5.214,5.491-8.082,12.645-8.082,20.245c0,7.861,3.062,15.252,8.62,20.811c5.738,5.738,13.273,8.606,20.811,8.606
+			c0.491,0,0.98-0.013,1.471-0.038c-0.398,8.019,2.458,16.17,8.568,22.282c5.559,5.559,12.95,8.62,20.811,8.62
+			c0.219,0,0.437-0.011,0.656-0.016c-0.168,7.749,2.691,15.552,8.591,21.453c5.559,5.56,12.95,8.62,20.812,8.62
+			c7.861,0,15.251-3.062,20.811-8.62c0.468-0.468,0.909-0.952,1.34-1.442c2.895,1.009,5.957,1.546,9.052,1.546
+			c7.353,0,14.261-2.865,19.441-8.062c2.757-2.756,4.849-5.998,6.211-9.529l0.837,0.837c5.359,5.359,12.398,8.039,19.437,8.039
+			c7.039,0,14.078-2.68,19.437-8.039c2.848-2.848,4.988-6.211,6.344-9.878c4.797,3.489,10.476,5.236,16.158,5.236
+			c7.039,0,14.082-2.679,19.446-8.036c5.191-5.191,8.05-12.097,8.05-19.445c0-2.22-0.266-4.397-0.773-6.502
+			c5.237-1.064,10.049-3.635,13.91-7.501c5.191-5.191,8.05-12.094,8.05-19.437c0-5.785-1.782-11.292-5.073-15.91l6.56-6.56
+			c18.699-18.708,31.052-42.35,35.725-68.371c0.783-4.357,2.941-8.404,6.243-11.707l24.398-24.398l4.289,4.289
+			c1.597,1.597,3.69,2.395,5.783,2.395c2.092,0,4.186-0.798,5.783-2.395l49.65-49.65c1.533-1.533,2.394-3.613,2.394-5.782
+			S511.138,172.609,509.605,171.075z M57.827,223.025l-38.086-38.086L118.71,85.97l38.087,38.086L57.827,223.025z M156.836,364.689
+			c-5.097,5.096-13.392,5.098-18.493,0c-2.47-2.471-3.83-5.754-3.83-9.247c0-3.492,1.361-6.776,3.831-9.246
+			c2.549-2.549,5.896-3.824,9.245-3.824c3.348,0,6.698,1.275,9.246,3.824C161.933,351.294,161.933,359.59,156.836,364.689z
+			 M187.684,395.537c-2.468,2.471-5.751,3.83-9.246,3.83c-3.492,0-6.776-1.361-9.245-3.83c-5.099-5.098-5.099-13.394,0-18.493
+			c2.549-2.549,5.896-3.824,9.246-3.824c3.347,0,6.697,1.275,9.245,3.824C192.784,382.142,192.784,390.439,187.684,395.537z
+			 M217.742,425.594c-2.47,2.47-5.753,3.83-9.245,3.83c-3.493,0-6.777-1.361-9.246-3.83c-5.099-5.098-5.099-13.394,0-18.493
+			c2.549-2.549,5.896-3.824,9.246-3.824c3.347,0,6.697,1.275,9.245,3.824C222.841,412.2,222.841,420.496,217.742,425.594z
+			 M356.63,362.822c-2.102,2.104-4.897,3.263-7.869,3.263s-5.767-1.159-7.873-3.268l-79.33-79.312
+			c-3.196-3.193-8.372-3.192-11.565,0.002c-3.192,3.193-3.191,8.371,0.002,11.564l85.451,85.442c2.103,2.102,3.26,4.898,3.26,7.872
+			c0,2.98-1.158,5.779-3.257,7.878c-4.347,4.343-11.416,4.344-15.756,0.003l-14.416-14.416c-0.08-0.083-0.158-0.167-0.241-0.249
+			c-0.024-0.024-0.051-0.045-0.076-0.069l-66.267-66.267c-3.195-3.193-8.371-3.193-11.565,0c-3.194,3.193-3.194,8.371,0,11.564
+			l66.48,66.479c2.032,2.083,3.151,4.839,3.151,7.763c0,2.974-1.159,5.77-3.261,7.872c-4.338,4.341-11.401,4.341-15.743,0
+			l-72.085-72.086c-3.195-3.194-8.371-3.194-11.565,0c-3.194,3.193-3.194,8.371,0,11.564l53.434,53.435
+			c0.015,0.015,0.027,0.032,0.043,0.046c2.101,2.097,3.257,4.888,3.257,7.859c0,2.973-1.158,5.769-3.269,7.88
+			c-2.099,2.104-4.893,3.263-7.87,3.263c-0.719,0-1.422-0.074-2.11-0.204c1.323-8.913-1.436-18.32-8.282-25.167
+			c-5.559-5.558-12.95-8.62-20.811-8.62c-0.219,0-0.437,0.011-0.656,0.016c0.168-7.749-2.69-15.552-8.591-21.453
+			c-5.56-5.558-12.95-8.62-20.812-8.62c-0.492,0-0.981,0.012-1.469,0.036c0.393-8.014-2.463-16.158-8.57-22.266
+			c-7.434-7.433-17.884-10.044-27.444-7.847l-5.864-5.864c-16.14-16.147-26.878-36.535-31.057-58.96
+			c-1.531-8.213-5.502-15.717-11.483-21.699l-14.415-14.415l82.01-82.01l20.438,20.438c7.856,7.856,18.552,12.06,29.507,12.06
+			c4.906,0,9.867-0.844,14.646-2.581c2.318-0.843,4.715-1.448,7.144-1.832l-50.632,50.633c-6.195,6.194-9.607,14.43-9.607,23.191
+			c0,8.76,3.412,16.996,9.606,23.19c6.394,6.394,14.79,9.59,23.19,9.589c8.398,0,16.797-3.198,23.192-9.589l25.43-25.43l6.883,6.888
+			c0.002,0.002,0.003,0.003,0.005,0.005l0.286,0.286l0.275,0.275c0.001,0.001,0.003,0.003,0.005,0.004l0.005,0.005
+			c0.079,0.078,0.156,0.152,0.233,0.226l95.881,95.881c2.103,2.102,3.26,4.898,3.26,7.872
+			C359.893,357.921,358.736,360.717,356.63,362.822z M408.137,240.834c-5.674,5.675-9.4,12.723-10.774,20.381
+			c-4.08,22.72-14.867,43.364-31.193,59.698l-6.284,6.285l-51.731-51.731c1.124,0.083,2.253,0.138,3.39,0.138
+			c5.238,0,10.598-0.918,15.934-3.101c4.18-1.71,6.182-6.485,4.472-10.664c-1.71-4.179-6.481-6.182-10.664-4.472
+			c-21.046,8.611-46.278-15.12-49.087-17.855c-0.047-0.046-0.094-0.091-0.142-0.135l-0.29-0.29
+			c-0.001-0.001-0.002-0.001-0.003-0.002l-0.253-0.252c-0.001-0.001-0.003-0.003-0.005-0.004l-6.884-6.889l7.806-7.807
+			c3.195-3.194,3.195-8.371,0.001-11.565c-3.194-3.192-8.371-3.193-11.564,0l-13.57,13.57c-0.005,0.005-0.011,0.01-0.016,0.015
+			c-0.005,0.005-0.01,0.011-0.015,0.016l-31.2,31.2c-6.412,6.411-16.842,6.409-23.252,0c-3.105-3.105-4.815-7.234-4.815-11.626
+			c0-4.392,1.71-8.521,4.816-11.626l53.852-53.854c2.996-2.995,6.326-5.63,9.905-7.837c8.503-5.256,18.324-8.034,28.401-8.034
+			c7.693,0,15.439,1.67,22.403,4.831c15.842,7.188,34.671,3.839,46.851-8.338l11.383-11.381l66.929,66.929L408.137,240.834z
+			 M454.172,214.944l-87.736-87.736l38.087-38.086l87.736,87.736L454.172,214.944z"/>
+    </g>
+</g>
+                                    <g>
+                                        <g>
+                                            <circle cx="462.41" cy="183.11" r="8.177"/>
+                                        </g>
                                     </g>
-									</svg>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                                    <g>
+                                        <g>
+                                            <circle cx="53.567" cy="191.189" r="8.177"/>
+                                        </g>
+                                    </g>
+</svg>
 
-                <div class="processes__content-right">
-                    <img src="img/avto.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <div class="contact-form">
-            <div class="contact-form__item">
-                <form class="form">
-                    <input type="text" class="form__input" placeholder="Имя">
-
-                    <input type="text" class="form__input" placeholder="Номер телефона">
-
-                    <input type="submit" class="form-submit" value="Записаться">
-                </form>
-            </div>
-        </div>
-
-        <section class="recomendation">
-            <div class="recomendation__title">
-                <div class="title-img">
-                    <h2 class="title-img__text">
-                        Рекомендации клиентов
-                    </h2>
-
-                    <div class="title-img__ico">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
-						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
-							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
-							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
-							c-21.849,9.141-52.623,49.898-70.097,75.073c-1.239-4.802-4.594-8.752-8.709-9.693l-39.785-9.096
-							c-5.444-1.245-10.149,3.245-10.509,10.028c-0.362,6.784,3.76,13.292,9.202,14.537l35.292,8.069
-							c-12.303,9.173-20.271,23.837-20.271,40.363l5.031,86.86c0,16.574,13.436,30.009,30.01,30.009h18.047
-							c16.574,0,30.009-13.435,30.009-30.009l-0.589-6.358h236.492l-0.589,6.358c0,16.574,13.435,30.009,30.009,30.009h18.047
-							c16.574,0,30.01-13.435,30.01-30.009l5.031-86.86c0-16.526-7.968-31.189-20.271-40.363l35.292-8.069
-							C446.217,185.273,450.339,178.765,449.977,171.981z M137.419,126.198c1.735-0.564,19.909-5.877,87.581-5.877
-							c67.535,0,85.772,5.292,87.57,5.874c13.097,5.69,35.568,32.828,54.033,58.438H83.394
-							C101.881,158.991,124.376,131.822,137.419,126.198z M267.265,300.764h-84.531c-3.892,0-7.045-3.154-7.045-7.044
-							c0-3.891,3.153-7.044,7.045-7.044h84.531c3.892,0,7.045,3.154,7.045,7.044C274.31,297.61,271.157,300.764,267.265,300.764z
-							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
-							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
-						</svg>
-                    </div>
-                </div>
-            </div>
-
-            <div id="recom-slider" class="recomendations owl-carousel">
-                <div class="recomendations__item item">
-                    <img src="img/recom1.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom2.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom3.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom1.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom2.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom3.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom1.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom2.png" alt="alt" />
-                </div>
-
-                <div class="recomendations__item item">
-                    <img src="img/recom3.png" alt="alt" />
-                </div>
-            </div>
-        </section>
-
-        <section class="news-anons">
-            <div class="news-anons__title">
-                <div class="title-img">
-                    <h2 class="title-img__text">
-                        Новости
-                    </h2>
-
-                    <div class="title-img__ico">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
-						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
-							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
-							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
-							c-21.849,9.141-52.623,49.898-70.097,75.073c-1.239-4.802-4.594-8.752-8.709-9.693l-39.785-9.096
-							c-5.444-1.245-10.149,3.245-10.509,10.028c-0.362,6.784,3.76,13.292,9.202,14.537l35.292,8.069
-							c-12.303,9.173-20.271,23.837-20.271,40.363l5.031,86.86c0,16.574,13.436,30.009,30.01,30.009h18.047
-							c16.574,0,30.009-13.435,30.009-30.009l-0.589-6.358h236.492l-0.589,6.358c0,16.574,13.435,30.009,30.009,30.009h18.047
-							c16.574,0,30.01-13.435,30.01-30.009l5.031-86.86c0-16.526-7.968-31.189-20.271-40.363l35.292-8.069
-							C446.217,185.273,450.339,178.765,449.977,171.981z M137.419,126.198c1.735-0.564,19.909-5.877,87.581-5.877
-							c67.535,0,85.772,5.292,87.57,5.874c13.097,5.69,35.568,32.828,54.033,58.438H83.394
-							C101.881,158.991,124.376,131.822,137.419,126.198z M267.265,300.764h-84.531c-3.892,0-7.045-3.154-7.045-7.044
-							c0-3.891,3.153-7.044,7.045-7.044h84.531c3.892,0,7.045,3.154,7.045,7.044C274.31,297.61,271.157,300.764,267.265,300.764z
-							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
-							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
-						</svg>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-anons__list">
-                <ul class="news-anons-list">
-                    <li class="news-anons-list__item">
-                        <div class="news-anons-item">
-                            <a href="" class="news-anons-item__img">
-                                <img src="img/newitem.png" alt="">
-
-                                <div class="news-anons-item__hover-text">
-                                    <span>Подробнее</span>
-                                </div>
-                            </a>
-
-                            <div class="news-anons-item__time">
-                                29.10.2016
-                            </div>
-
-                            <div class="news-anons-item__desc">
-                                ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="news-anons-list__item">
-                        <div class="news-anons-item">
-                            <a href="" class="news-anons-item__img">
-                                <img src="img/newitem.png" alt="">
-
-                                <div class="news-anons-item__hover-text">
-                                    <span>Подробнее</span>
-                                </div>
-                            </a>
-
-                            <div class="news-anons-item__time">
-                                29.10.2016
-                            </div>
-
-                            <div class="news-anons-item__desc">
-                                ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="news-anons-list__item">
-                        <div class="news-anons-item">
-                            <a href="" class="news-anons-item__img">
-                                <img src="img/newitem.png" alt="">
-
-                                <div class="news-anons-item__hover-text">
-                                    <span>Подробнее</span>
-                                </div>
-                            </a>
-
-                            <div class="news-anons-item__time">
-                                29.10.2016
-                            </div>
-
-                            <div class="news-anons-item__desc">
-                                ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="contacts-map">
-            <div class="video-sect__title">
-                <div class="title-img">
-                    <h2 class="title-img__text">
-                        Контакты
-                    </h2>
+    <div class="contact-form">
+        <div class="contact-form__item">
+            <form class="form">
+                <input type="text" class="form__input" placeholder="Имя">
 
-                    <div class="title-img__ico">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                <input type="text" class="form__input" placeholder="Номер телефона">
+
+                <input type="submit" class="form-submit" value="Записаться">
+            </form>
+        </div>
+    </div>
+
+    <section class="recomendation">
+        <div class="recomendation__title">
+            <div class="title-img">
+                <h2 class="title-img__text">
+                    Рекомендации клиентов
+                </h2>
+
+                <div class="title-img__ico">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -1215,46 +817,281 @@
 							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
 							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
 						</svg>
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="contacts-map__map">
-                <div class="contacts-box">
-                    <div class="contact-box__item">
-                        <div class="phone-img">
-                            <img src="img/mapplaceholder.png" alt="alt">
+        <div id="recom-slider" class="recomendations owl-carousel">
+            <a href="img/recom1.png" class="recomendations__item  item  fancybox_b"  data-fancybox-group="gallery-a">
+                <img src="img/recom1.png" alt="alt" />
+            </a>
+
+            <a href="img/recom2.png" class="recomendations__item  item  fancybox_b"  data-fancybox-group="gallery-a">
+                <img src="img/recom2.png" alt="alt" />
+            </a>
+
+            <a href="img/recom3.png" class="recomendations__item  item  fancybox_b"  data-fancybox-group="gallery-a">
+                <img src="img/recom3.png" alt="alt" />
+            </a>
+        </div>
+    </section>
+
+    <div class="galery-mons">
+        <div class="galery-mons__tabs">
+            <div class="galery-tabs">
+                <ul class="galery-tabs__list">
+                    <li class="galery-tabs__all  active">Все фото</li>
+
+                    <li class="galery-tabs__item">Электрика</li>
+
+                    <li class="galery-tabs__item">Ходовая</li>
+
+                    <li class="galery-tabs__item">Двигатель</li>
+
+                    <li class="galery-tabs__item">Покраска</li>
+
+                    <li class="galery-tabs__item">Мойка</li>
+                </ul>
+
+                <ul class="galery-tabs__img">
+                    <li class="galery-tabs__pic  big  open">
+                        <div class="image-galery">
+                            <img src="img/galery/el.jpg" alt="">
+
+                            <div class="image-galery__hover">
+                                <div class="image-galery__hover-list">
+                                    <a href="img/galery/el.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a href="" class="image-galery__link-page">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </li>
 
-                        <span>ул. Москаленко 20, Бровары</span>
-                    </div>
+                    <li class="galery-tabs__pic  small  open">
+                        <div class="image-galery">
+                            <img src="img/galery/hodovaya.jpg" alt="">
 
-                    <div class="contact-box__item">
-                        <div class="phone-img">
-                            <img src="img/emailcont.png" alt="alt">
+                            <div class="image-galery__hover">
+                                <div class="image-galery__hover-list">
+                                    <a href="img/galery/hodovaya.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a href="" class="image-galery__link-page">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </li>
 
-                        <span>msinfo@ukr.net</span>
-                    </div>
+                    <li class="galery-tabs__pic   small  open">
+                        <div class="image-galery">
+                            <img src="img/galery/alfa-romeo-engine.jpg" alt="">
 
-                    <div class="contact-box__item">
-                        <div class="phone-img">
-                            <img src="img/Vodafone.png" alt="alt">
+                            <div class="image-galery__hover">
+                                <div class="image-galery__hover-list">
+                                    <a href="img/galery/alfa-romeo-engine.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a href="" class="image-galery__link-page">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </li>
 
-                        <span>(066)285-04-66</span>
-                    </div>
+                    <li class="galery-tabs__pic  big color open">
+                        <div class="image-galery">
+                            <img src="img/galery/48ms.jpg" alt="">
 
-                    <div class="contact-box__item">
-                        <div class="phone-img">
-                            <img src="img/kievstar.png" alt="alt">
+                            <div class="image-galery__hover">
+                                <div class="image-galery__hover-list">
+                                    <a href="img/galery/48ms.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a href="" class="image-galery__link-page">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </li>
 
-                        <span>(067)219-51-57</span>
-                    </div>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10159.894646267529!2d30.64045991359825!3d50.46021514716783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1487932448530" allowfullscreen></iframe>
+                    <li class="galery-tabs__pic  big  open">
+                        <div class="image-galery">
+                            <img src="img/galery/86955070.jpg" alt="">
+
+                            <div class="image-galery__hover">
+                                <div class="image-galery__hover-list">
+                                    <a href="img/galery/86955070.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a href="" class="image-galery__link-page">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="galery-tabs__pic  small  open">
+                        <div class="image-galery">
+                            <img src="img/galery/paint_bg.jpg" alt="">
+
+                            <div class="image-galery__hover">
+                                <div class="image-galery__hover-list">
+                                    <a href="img/galery/paint_bg.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a href="" class="image-galery__link-page">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </div>
+
+    <section class="news-anons">
+        <div class="news-anons__title">
+            <div class="title-img">
+                <h2 class="title-img__text">
+                    Новости
+                </h2>
+
+                <div class="title-img__ico">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
+							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
+							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
+							c-21.849,9.141-52.623,49.898-70.097,75.073c-1.239-4.802-4.594-8.752-8.709-9.693l-39.785-9.096
+							c-5.444-1.245-10.149,3.245-10.509,10.028c-0.362,6.784,3.76,13.292,9.202,14.537l35.292,8.069
+							c-12.303,9.173-20.271,23.837-20.271,40.363l5.031,86.86c0,16.574,13.436,30.009,30.01,30.009h18.047
+							c16.574,0,30.009-13.435,30.009-30.009l-0.589-6.358h236.492l-0.589,6.358c0,16.574,13.435,30.009,30.009,30.009h18.047
+							c16.574,0,30.01-13.435,30.01-30.009l5.031-86.86c0-16.526-7.968-31.189-20.271-40.363l35.292-8.069
+							C446.217,185.273,450.339,178.765,449.977,171.981z M137.419,126.198c1.735-0.564,19.909-5.877,87.581-5.877
+							c67.535,0,85.772,5.292,87.57,5.874c13.097,5.69,35.568,32.828,54.033,58.438H83.394
+							C101.881,158.991,124.376,131.822,137.419,126.198z M267.265,300.764h-84.531c-3.892,0-7.045-3.154-7.045-7.044
+							c0-3.891,3.153-7.044,7.045-7.044h84.531c3.892,0,7.045,3.154,7.045,7.044C274.31,297.61,271.157,300.764,267.265,300.764z
+							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
+							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
+						</svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-anons__list">
+            <ul class="news-anons-list">
+                <li class="news-anons-list__item">
+                    <div class="news-anons-item">
+                        <a href="" class="news-anons-item__img">
+                            <img src="img/newitem.png" alt="">
+
+                            <div class="news-anons-item__hover-text">
+                                <span>Подробнее</span>
+                            </div>
+                        </a>
+
+                        <div class="news-anons-item__time">
+                            29.10.2016
+                        </div>
+
+                        <div class="news-anons-item__desc">
+                            ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
+                        </div>
+                    </div>
+                </li>
+
+                <li class="news-anons-list__item">
+                    <div class="news-anons-item">
+                        <a href="" class="news-anons-item__img">
+                            <img src="img/newitem.png" alt="">
+
+                            <div class="news-anons-item__hover-text">
+                                <span>Подробнее</span>
+                            </div>
+                        </a>
+
+                        <div class="news-anons-item__time">
+                            29.10.2016
+                        </div>
+
+                        <div class="news-anons-item__desc">
+                            ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
+                        </div>
+                    </div>
+                </li>
+
+                <li class="news-anons-list__item">
+                    <div class="news-anons-item">
+                        <a href="" class="news-anons-item__img">
+                            <img src="img/newitem.png" alt="">
+
+                            <div class="news-anons-item__hover-text">
+                                <span>Подробнее</span>
+                            </div>
+                        </a>
+
+                        <div class="news-anons-item__time">
+                            29.10.2016
+                        </div>
+
+                        <div class="news-anons-item__desc">
+                            ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contacts-map">
+        <div class="video-sect__title">
+            <div class="title-img">
+                <h2 class="title-img__text">
+                    Контакты
+                </h2>
+
+                <div class="title-img__ico">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
+							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
+							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
+							c-21.849,9.141-52.623,49.898-70.097,75.073c-1.239-4.802-4.594-8.752-8.709-9.693l-39.785-9.096
+							c-5.444-1.245-10.149,3.245-10.509,10.028c-0.362,6.784,3.76,13.292,9.202,14.537l35.292,8.069
+							c-12.303,9.173-20.271,23.837-20.271,40.363l5.031,86.86c0,16.574,13.436,30.009,30.01,30.009h18.047
+							c16.574,0,30.009-13.435,30.009-30.009l-0.589-6.358h236.492l-0.589,6.358c0,16.574,13.435,30.009,30.009,30.009h18.047
+							c16.574,0,30.01-13.435,30.01-30.009l5.031-86.86c0-16.526-7.968-31.189-20.271-40.363l35.292-8.069
+							C446.217,185.273,450.339,178.765,449.977,171.981z M137.419,126.198c1.735-0.564,19.909-5.877,87.581-5.877
+							c67.535,0,85.772,5.292,87.57,5.874c13.097,5.69,35.568,32.828,54.033,58.438H83.394
+							C101.881,158.991,124.376,131.822,137.419,126.198z M267.265,300.764h-84.531c-3.892,0-7.045-3.154-7.045-7.044
+							c0-3.891,3.153-7.044,7.045-7.044h84.531c3.892,0,7.045,3.154,7.045,7.044C274.31,297.61,271.157,300.764,267.265,300.764z
+							 M336.099,263.194c0,0-14.089-8.116-31.196-10.096H136.442c-17.107,1.98-31.196,10.096-31.196,10.096
+							c-39.247,10.064-49.914-22.139-49.914-22.139h330.682C386.013,241.055,375.346,273.257,336.099,263.194z"/>
+						</svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts-map__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10159.894646267529!2d30.64045991359825!3d50.46021514716783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1487932448530" allowfullscreen></iframe>
+        </div>
+    </section>
 
 @endsection

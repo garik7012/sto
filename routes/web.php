@@ -12,6 +12,13 @@
 */
 
 Route::get('/', 'IndexController@index');
+Route::get('/about', 'IndexController@about');
+Route::get('/contacts', 'IndexController@contacts');
+Route::get('/vacancies', 'IndexController@vacancies');
+Route::get('/services/tire', 'ServiceController@showTirePage');
+Route::get('/services', 'IndexController@services');
+Route::get('/online', 'IndexController@online');
+
 
 Auth::routes();
 
@@ -28,3 +35,4 @@ PUT     /photos/{photo}	    update	photos.update
 DELETE	/photos/{photo}	    destroy	photos.destroy
 */
 Route::resource('news', 'NewsController');
+Route::resource('offers', 'OfferController');
