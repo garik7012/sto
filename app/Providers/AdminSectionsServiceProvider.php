@@ -12,7 +12,10 @@ class AdminSectionsServiceProvider extends ServiceProvider
      */
     protected $sections = [
         \App\News::class => 'App\Http\Admin\News',
-        \App\CustomField::class => 'App\Http\Admin\CustomFields'
+        \App\Offer::class => 'App\Http\Admin\Offers',
+        \App\CustomField::class => 'App\Http\Admin\CustomFields',
+        \App\Page::class => 'App\Http\Admin\Pages',
+        \App\Order::class => 'App\Http\Admin\Orders'
     ];
 
     /**

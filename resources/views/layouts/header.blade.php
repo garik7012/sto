@@ -75,7 +75,7 @@
 
                         </div>
 
-                        <a href="malto:msinfo@ukr.net" class="header-mail__link">msinfo@ukr.net</a>
+                        <a href="malto:{{$cfs['e-mail']}}" class="header-mail__link">{{$cfs['e-mail']}}</a>
                     </div>
                 </div>
 
@@ -83,15 +83,15 @@
                 <div class="soc-wrap__item">
                     <ul class="social-button">
                         <li class="social-button__item">
-                            <a href="" class="link-tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="{{$cfs['twiter']}}" class="link-tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </li>
 
                         <li class="social-button__item">
-                            <a href="" class="link-vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                            <a href="{{$cfs['vk']}}" class="link-vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
                         </li>
 
                         <li class="social-button__item">
-                            <a href="" class="link-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="{{$cfs['fb']}}" class="link-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
 
                         <li class="social-button__item">
@@ -155,7 +155,7 @@
 									Киев. Бровары
 								</span>
 
-                            <span>ул. Москаленко 20</span>
+                            <span>{{$cfs['adress']}}</span>
                         </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
 
                         <span>Пн. - сб.</span>
 
-                        <span>09:00 - 19:00</span>
+                        <span>{{$cfs['work_time']}}</span>
                     </div>
                 </div>
             </div>
@@ -265,25 +265,25 @@
             <div class="number-phone">
                 <div class="number-phone__left-wrap">
                     <div class="number-phone__item">
-                        <a href="tel:0662850466" class="head-number">
+                        <a href="tel:{{$cfs['tel1']}}" class="head-number">
                             <div class="head-number__ico">
                                 <img src="/img/vodafone.png" alt="">
                             </div>
 
                             <span class="head-number__text">
-									(066)285-04-66
+									{{$cfs['tel1']}}
 								</span>
                         </a>
                     </div>
 
                     <div class="number-phone__item">
-                        <a href="tel:0672195157" class="head-number">
+                        <a href="tel:{{$cfs['tel2']}}" class="head-number">
                             <div class="head-number__ico">
                                 <img src="/img/lwczkilstbmpdprp.png" alt="">
                             </div>
 
                             <span class="head-number__text">
-									(067)219-51-57
+									{{$cfs['tel2']}}
 								</span>
                         </a>
                     </div>
@@ -291,7 +291,7 @@
 
                 <div class="number-phone__item">
                     <div class="soc-prog">
-                        <a href="" class="soc-prog__ico">
+                        <a href="{{$cfs['viber']}}" class="soc-prog__ico">
 								<span class="soc-prog__svg">
 									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -382,7 +382,7 @@
 								</span>
                         </a>
 
-                        <a href="" class="soc-prog__ico">
+                        <a href="{{$cfs['telegram']}}" class="soc-prog__ico">
 								<span class="soc-prog__svg">
 									<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">

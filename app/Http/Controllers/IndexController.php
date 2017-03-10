@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Page;
 
 class IndexController extends Controller
 {
@@ -13,13 +14,15 @@ class IndexController extends Controller
         return view('pages.contacts');
     }
     public function vacancies(){
-        return view('pages.vacancies');
+        $content = Page::where('link', 'vacancies')->get();
+        return view('pages.vacancies', ['content' => $content]);
     }
     public function services(){
         return view('pages.services');
     }
     public function about(){
-        return view('pages.about');
+        $content = Page::all()->where('link', '==', 'about');
+        return view('pages.about', ['content' => $content]);
     }
     public function online(){
         return view('pages.online');

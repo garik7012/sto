@@ -5546,3 +5546,61 @@ a.ui-button:active,
   padding: 0;
   padding-bottom: 15px;
 }
+
+
+.clearcss{
+  padding: 30px 0;
+}
+.clearcss h1{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+
+}
+
+.clearcss h2{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+
+}
+.clearcss ul li{
+  list-style-type: disc;
+}
+.clearcss li{
+  margin-bottom: 10px;
+}
+.clearcss li:last-child{
+  margin: 0;
+}
+.clearcss ul, .clearcss ol{
+  padding-left: 20px;
+}
+.clearcss ol{
+  list-style: decimal;
+  list-style-position: inside;
+}
+.clearcss h3{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+
+}
+.clearcss ul{
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+.clearcss strong{
+  font-weight: 600;
+}
+
+.clearcss em{
+  font-style: italic;
+}
+
+.clearcss p{
+  margin: 16px 0;
+}

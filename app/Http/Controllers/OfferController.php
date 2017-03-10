@@ -67,7 +67,7 @@ class OfferController extends Controller
      */
     public function show(Offer $offer)
     {
-        //
+        return view('single.offer', ['offer' => $offer]);
     }
 
     /**

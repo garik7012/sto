@@ -6,7 +6,6 @@ use SleepingOwl\Admin\Contracts\Display\DisplayInterface;
 use SleepingOwl\Admin\Contracts\Form\FormInterface;
 use SleepingOwl\Admin\Section;
 
-
 use AdminColumn;
 use AdminDisplay;
 use AdminForm;
@@ -14,13 +13,13 @@ use AdminFormElement;
 use SleepingOwl\Admin\Contracts\Initializable;
 
 /**
- * Class News
+ * Class Pages
  *
- * @property \App\News $model
+ * @property \App\Page $model
  *
  * @see http://sleepingowladmin.ru/docs/model_configuration_section
  */
-class News extends Section
+class Pages extends Section
 {
     /**
      * @see http://sleepingowladmin.ru/docs/model_configuration#ограничение-прав-доступа
@@ -44,11 +43,12 @@ class News extends Section
      */
     public function onDisplay()
     {
-        return AdminDisplay::datatables()
+        return AdminDisplay::table()
             ->setHtmlAttribute('class', 'table-primary')
             ->setColumns(
                 AdminColumn::text('id', '#')->setWidth('30px'),
-                AdminColumn::link('title', 'заголовок')
+                AdminColumn::link('link', 'Ссылка на страницу')->setWidth('300px'),
+                AdminColumn::text('title', 'title')
             )->paginate(20);
     }
 
@@ -60,11 +60,10 @@ class News extends Section
     public function onEdit($id)
     {
         return AdminForm::panel()->addBody([
-            AdminFormElement::text('title', 'Название новости')->required(),
-            AdminFormElement::wysiwyg('description', 'Текст новости'),
-            AdminFormElement::image('preview', 'preview')->required(),
-            AdminFormElement::text('id', 'ID')->setReadonly(1),
-            AdminFormElement::text('created_at')->setLabel('Создано')->setReadonly(1),
+            AdminFormElement::text('link', 'Cсылка')->setReadonly(1),
+            AdminFormElement::text('title', 'Заглавие')->required(),
+            AdminFormElement::wysiwyg('text', 'Контент', 'ckeditor'),
+
 
         ]);
     }

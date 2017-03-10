@@ -18,7 +18,7 @@ Route::get('/vacancies', 'IndexController@vacancies');
 Route::get('/services/tire', 'ServiceController@showTirePage');
 Route::get('/services', 'IndexController@services');
 Route::get('/online', 'IndexController@online');
-
+Route::post('/online/add', 'OrderController@add');
 
 Auth::routes();
 

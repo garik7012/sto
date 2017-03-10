@@ -17,7 +17,7 @@ class LayoutServiceProvider extends ServiceProvider
         $data1 = CustomField::all();
         $data2 = [];
         for ($i = 0; $i<count($data1); $i++){
-            $title = $data1[$i]["title"];
+            $title = $data1[$i]["name"];
             $value = $data1[$i]['value'];
             $data2[$title] = $value;
         }

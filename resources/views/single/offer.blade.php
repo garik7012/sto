@@ -1,21 +1,21 @@
 @extends('layouts.master')
-@section('title', "{$news->title}")
+@section('title', "{$offer->title}")
 @section('content')
     @include('layouts.topsection')
     <article class="news-page">
         <div class="news-page__banner">
             <div class="news-banner">
-                <img src="/{{$news->preview}}" alt="">
+                <img src="/{{$offer->preview}}" alt="">
             </div>
         </div>
 
         <div class="news-page__desc">
             <div class="news-desc">
                 <div class="news-desc__title">
-                    <h2>{{$news->title}}</h2>
+                    <h2>{{$offer->title}}</h2>
                 </div>
                 <div class="clearcss news-page__desc">
-                {!! $news->description !!}
+                    {!! $offer->description !!}
                 </div>
             </div>
         </div>

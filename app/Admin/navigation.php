@@ -34,15 +34,31 @@ return [
 //        'url'   => route('admin.information'),
 //    ],
     [
-        'title'    => 'Новости',
-        'priority' => 200,
-        'model'    => \App\News::class,
+        'title' => 'Акции',
+        'priority' => 204,
+        'model' => \App\Offer::class,
     ],
     [
-        'title'    => 'Главные поля',
-        'priority' => 201,
-        'model'    => \App\CustomField::class,
+        'title' => 'Новости',
+        'priority' => 203,
+        'model' => \App\News::class,
     ],
+    [
+        'title' => 'Главные поля',
+        'priority' => 200,
+        'model' => \App\CustomField::class,
+    ],
+    [
+        'title' => 'Страницы',
+        'priority' => 201,
+        'model' => \App\Page::class,
+    ],
+    [
+        'title' => 'Онлайн заказы',
+        'priority' => 210,
+        'model' => \App\Order::class,
+    ],
+
 
     // Examples
     // [
@@ -75,9 +91,9 @@ return [
     //                'title'    => 'Blog',
     //                'priority' => 100,
     //                'model'    => \App\Blog::class
-	//		      ));
+    //		      ));
     //
-	//		      $page->addPage(\App\Blog::class);
+    //		      $page->addPage(\App\Blog::class);
     //	      }),
     //
     //        // or

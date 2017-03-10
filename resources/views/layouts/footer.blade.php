@@ -37,7 +37,7 @@
                     <div class="text">
                         <span>График работы:</span>
                         <span>Пн.-Сб.</span>
-                        <span>09.00-19:00</span>
+                        <span>{{$cfs['work_time']}}</span>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@
                     </div>
                     <div class="text">
                         <span>Адрес:</span>
-                        <span>ул.Москаленко 20,</span>
+                        <span>{{$cfs['adress']}},</span>
                         <span>Бровары</span>
                     </div>
                 </div>
@@ -71,12 +71,12 @@
                 <div class="footer-phone">
                     <a href="tel:0662850466" class="footer-phone__link-one">
                         <span class="phone-img"><img src="/img/Vodafone.png" alt="alt"></span>
-                        <span>(066)285-04-66</span>
+                        <span>{{$cfs['tel1']}}</span>
                     </a>
 
                     <a href="tel:0672195157" class="footer-phone__link-two">
                         <span class="phone-img"><img src="/img/kievstar.png" alt="alt"></span>
-                        <span>(067)219-51-57</span>
+                        <span>{{$cfs['tel2']}}</span>
                     </a>
                 </div>
             </div>
