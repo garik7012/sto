@@ -4725,12 +4725,12 @@ a.ui-button:active,
   }
 
   .main-content {
-    padding: 0 270px;
+    padding: 0 210px;
   }
 
   .top-section__menu-aside,
   .top-section__banner-aside {
-    width: 260px;
+    width: 200px;
     top: 126px;
     height: -webkit-calc(100vh - 126px);
     height: -moz-calc(100vh - 126px);

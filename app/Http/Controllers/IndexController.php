@@ -17,14 +17,14 @@ class IndexController extends Controller
         $content = Page::where('link', 'vacancies')->get();
         return view('pages.vacancies', ['content' => $content]);
     }
-    public function services(){
-        return view('pages.services');
-    }
     public function about(){
         $content = Page::all()->where('link', '==', 'about');
         return view('pages.about', ['content' => $content]);
     }
     public function online(){
         return view('pages.online');
+    }
+    public function test(){
+        return view('test');
     }
 }

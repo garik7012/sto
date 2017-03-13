@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\CustomField;
+use App\Service;
 
 class LayoutServiceProvider extends ServiceProvider
 {
@@ -22,6 +23,10 @@ class LayoutServiceProvider extends ServiceProvider
             $data2[$title] = $value;
         }
         view()->share('cfs', $data2);
+        $services = Service::all()->where('position', 'left');
+        view()->share('leftServices', $services);
+        $mservices = Service::orderBy('id', 'desc')->limit(9)->get();
+        view()->share('mainServices', $mservices);
     }
 
     /**

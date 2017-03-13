@@ -2,59 +2,36 @@
     <div class="top-section__menu-aside">
         <nav class="menu-aside">
             <ul class="menu-aside__list">
+                {{--<li class="menu-aside__item">--}}
+                    {{--<a href="" class="menu-aside__link">Реставрация шаровых</a>--}}
+
+                    {{--<span class="submenu__open"></span>--}}
+
+                    {{--<ul class="aside-submenu">--}}
+                        {{--<li class="aside-submenu__item">--}}
+                            {{--<a href="" class="aside-submenu__link">--}}
+                                {{--Подменю реставрации--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+
+                        {{--<li class="aside-submenu__item">--}}
+                            {{--<a href="" class="aside-submenu__link">--}}
+                                {{--Подменю реставрации--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+
+                        {{--<li class="aside-submenu__item">--}}
+                            {{--<a href="" class="aside-submenu__link">--}}
+                                {{--Подменю реставрации--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+                @foreach($leftServices as $service)
                 <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Реставрация шаровых</a>
-
-                    <span class="submenu__open"></span>
-
-                    <ul class="aside-submenu">
-                        <li class="aside-submenu__item">
-                            <a href="" class="aside-submenu__link">
-                                Подменю реставрации
-                            </a>
-                        </li>
-
-                        <li class="aside-submenu__item">
-                            <a href="" class="aside-submenu__link">
-                                Подменю реставрации
-                            </a>
-                        </li>
-
-                        <li class="aside-submenu__item">
-                            <a href="" class="aside-submenu__link">
-                                Подменю реставрации
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="/service/{{$service->link}}" class="menu-aside__link">{{$service->title}}</a>
                 </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Инжектор-Газ сервис</a>
-                </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Проточка тормозных дисков</a>
-                </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Развал схождения 3D</a>
-                </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Шок тестер Sachs</a>
-                </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">ремонт рулевых реек</a>
-                </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Малярный цех</a>
-                </li>
-
-                <li class="menu-aside__item">
-                    <a href="" class="menu-aside__link">Автокондиционеры ТО</a>
-                </li>
+                    @endforeach
             </ul>
         </nav>
     </div>

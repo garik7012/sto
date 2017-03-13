@@ -15,10 +15,14 @@ Route::get('/', 'IndexController@index');
 Route::get('/about', 'IndexController@about');
 Route::get('/contacts', 'IndexController@contacts');
 Route::get('/vacancies', 'IndexController@vacancies');
-Route::get('/services/tire', 'ServiceController@showTirePage');
-Route::get('/services', 'IndexController@services');
+
+Route::get('/services', 'ServiceController@index');
+Route::get('/service/{link}', 'ServiceController@showPage');
+
 Route::get('/online', 'IndexController@online');
 Route::post('/online/add', 'OrderController@add');
+
+Route::get('/test', 'IndexController@test');
 
 Auth::routes();
 
