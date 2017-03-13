@@ -1,8 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Контакты')
 @section('content')
-@include('layouts.topsection')
-
 <div class="contact-sect">
     <div class="contact-sect__top">
         <div class="contact-desc">

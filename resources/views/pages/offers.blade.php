@@ -1,8 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Акции и предложения')
 @section('content')
-    @include('layouts.topsection')
-    <section class="news-anons  news-anons--page">
+     <section class="news-anons  news-anons--page">
         <div class="news-anons__list">
             <ul class="news-anons-list">
                 @foreach($offers as $offer)

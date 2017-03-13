@@ -2,7 +2,128 @@
 @section('title', 'СТО')
 @section('content')
 
-    @include('layouts.maintopsection')
+<section class="main-banner">
+    <div class="top-section__main-banner">
+        <div class="main-banner">
+            <div class="main-banner__slider owl-carousel-1  owl-carousel">
+                <div class="main-banner__img  item" style="background-image:url(img/main-banner.png)">
+                </div>
+
+                <div class="main-banner__img  item" style="background-image:url(img/main-bannerb.png)">
+                </div>
+
+                <div class="main-banner__img  item" style="background-image:url(img/mainbannerc.jpg)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-section__logo-company">
+        <div class="logo-company">
+            <div class="logo-companyr__slider">
+                <div class="owl-carousel-2 owl-carousel owl-theme">
+                    <div class="logo-company__img  item">
+                        <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/787263fiat.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/772686ford1.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/426234logo-citroen.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1444213875-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1444215265-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1444230850-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1448879564-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1448880091-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1448880093-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/461358newholland-mini.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item">
+                        <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/787263fiat.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/772686ford1.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/426234logo-citroen.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1444213875-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1444215265-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1444230850-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1448879564-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1448880091-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/1448880093-md.png" alt="">
+                    </div>
+
+                    <div class="logo-company__img  item" >
+                        <img src="img/logo-company/461358newholland-mini.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
    @include('layouts.services')
 
     <section class="video-sect">

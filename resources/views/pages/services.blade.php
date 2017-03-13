@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('title', 'услуги')
 @section('content')
-    @include('layouts.topsection')
     <section class="services">
         <div class="services__list">
             <ul class="services-list">

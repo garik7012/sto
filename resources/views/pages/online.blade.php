@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Онлайн запись')
 @section('content')
-    @include('layouts.topsection')
     <section class="application-page">
         <div class="application-page__form">
             <form action="/online/add" method="post" class="application-form">

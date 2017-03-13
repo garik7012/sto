@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', "{$news->title}")
 @section('content')
-    @include('layouts.topsection')
+
     <article class="news-page">
         <div class="news-page__banner">
             <div class="news-banner">

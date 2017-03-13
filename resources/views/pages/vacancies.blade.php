@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('title', "{$content[0]->title}")
 @section('content')
-    @include('layouts.topsection')
     <section class="vacancies">
         <div class="vacancies__banner">
             <div class="vacancies__banner__img">

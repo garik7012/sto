@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Шиномонтаж')
 @section('content')
-    @include('layouts.topsection')
+
 
     <div class="services-description">
         <div class="services-description__left">
