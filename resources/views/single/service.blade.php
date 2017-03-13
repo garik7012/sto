@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title', $service->title)
+@section('keywords', $service->keywords)
+@section('description', $service->description)
 @section('content')
     <div class="services-description">
         <div class="services-description__left">

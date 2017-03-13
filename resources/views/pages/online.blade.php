@@ -30,11 +30,11 @@
                         </div>
 
                         <select class="type-select__select" name="service_id">
-                            <option value="1">Выберите услугу-1</option>
 
-                            <option value="2">Выберите услугу-2</option>
-
-                            <option value="3">Выберите услугу-3</option>
+                            <option value="0" selected disabled>Выберите услугу</option>
+                            @foreach($listServices as $service)
+                            <option value="{{$service->id}}">{{$service->title}}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>

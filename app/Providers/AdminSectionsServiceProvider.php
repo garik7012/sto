@@ -15,7 +15,8 @@ class AdminSectionsServiceProvider extends ServiceProvider
         \App\Offer::class => 'App\Http\Admin\Offers',
         \App\CustomField::class => 'App\Http\Admin\CustomFields',
         \App\Page::class => 'App\Http\Admin\Pages',
-        \App\Order::class => 'App\Http\Admin\Orders'
+        \App\Order::class => 'App\Http\Admin\Orders',
+        \App\Service::class => 'App\Http\Admin\Services',
     ];
 
     /**

@@ -58,6 +58,11 @@ return [
         'priority' => 210,
         'model' => \App\Order::class,
     ],
+    [
+        'title' => 'Услуги',
+        'priority' => 209,
+        'model' => \App\Service::class,
+    ],
 
 
     // Examples

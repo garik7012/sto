@@ -1,1 +1,1 @@
-{{dd($service)}}
+{{dd($listServices)}}

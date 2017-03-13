@@ -23,7 +23,7 @@ class OrderController extends Controller
         $order->remind = $request->remind;
         $order->comments = $request->comments;
         $order->save();
-        return view('test', ['test' => $request]);
+        return view('actions.success');
     }
 
 }

@@ -82,7 +82,7 @@ class ServiceSeeder extends Seeder
         $photo1 = ['','','','','','','','','img/col1.png','','','','','',];
         $photo2 = ['','','','','','','','','img/col2.png','','','','','',];
         $photo3 = ['','','','','','','','','img/col3.png','','','','','',];
-
+        $position = [1,1,1,1,1,1,0,0,0,0,0,0,0,0,0];
 
         for($i = 0; $i < 14; $i++) {
             Service::create([
@@ -93,6 +93,7 @@ class ServiceSeeder extends Seeder
                 'photo1' => $photo1[$i],
                 'photo2' => $photo2[$i],
                 'photo3' => $photo3[$i],
+                'position' => $position[$i],
             ]);
         }
     }

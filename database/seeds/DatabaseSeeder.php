@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
       //  $this->call(CustomFields::class);
-       // $this->call(Services::class);
        // $this->call(Pages::class);
        // $this->call(NewsSeeder::class);
         $this->call(ServiceSeeder::class);
@@ -62,14 +61,6 @@ class CustomFields extends Seeder{
     }
 }
 
-class Services extends Seeder{
-    public function run(){
-        Service::create([
-            'title' => 'Шиномонтаж',
-            'description' => 'Описание и цена на шиномонтаж'
-        ]);
-    }
-}
 class Pages extends Seeder{
     public function run(){
         Page::create([
