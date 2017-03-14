@@ -22,6 +22,7 @@ Route::get('/service/{link}', 'ServiceController@showPage');
 
 Route::get('/online', 'IndexController@online');
 Route::post('/online/add', 'OrderController@add');
+Route::post('/online/callback', 'OrderController@callback');
 
 Route::get('/test', 'IndexController@test');
 

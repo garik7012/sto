@@ -17,6 +17,7 @@ class AdminSectionsServiceProvider extends ServiceProvider
         \App\Page::class => 'App\Http\Admin\Pages',
         \App\Order::class => 'App\Http\Admin\Orders',
         \App\Service::class => 'App\Http\Admin\Services',
+        \App\CallBack::class => 'App\Http\Admin\CallBack',
     ];
 
     /**

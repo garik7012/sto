@@ -163,7 +163,7 @@ body.fixed {
 }
 
 .logo {
-  width: 125px;
+  width: 67px;
   overflow: hidden;
   position: relative;
   -webkit-transition: .3s;
@@ -189,7 +189,7 @@ body.fixed .logo__pic {
   width: 275px;
 }
 body.fixed .logo {
-  width: 102px;
+  width: 55px;
 }
 
 .logo__pic {
@@ -3523,6 +3523,7 @@ body.fixed .top-section__banner-aside {
 
 .footer-page__blocks svg {
   fill: #e67819;
+  width: inherit;
 }
 
 .footer-page__phones {
@@ -4559,6 +4560,24 @@ a.ui-button:active,
   -o-transform: rotate(-134deg);
   transform: rotate(-134deg);
 }
+.header-page__logo{
+  -webkit-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+.header-page__logo svg{
+  position: relative;
+  left: -143px;
+}
+.header-page__logo span{
+  -webkit-transform: skewX(-15deg);-moz-transform: skewX(-15deg);-ms-transform: skewX(-15deg);-o-transform: skewX(-15deg);transform: skewX(11deg);
+}
+body.fixed .header-page__logo svg{
+  left: -116px;
+}
+
 
 @media (max-width: 1600px) {
   .header-search__input {
@@ -4671,13 +4690,16 @@ a.ui-button:active,
   }
 
   .logo {
-    width: 99px;
+    width: 52px;
     overflow: hidden;
     position: relative;
     -webkit-transition: .3s;
     -moz-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+  }
+  .header-page__logo svg{
+    left: -113px;
   }
 
   .search-btn {
@@ -5369,7 +5391,9 @@ a.ui-button:active,
   .top-section {
     margin-bottom: 15px;
   }
-
+  .header-page__logo svg{
+    position: static;
+  }
   body {
     padding-bottom: 100px;
   }
@@ -5378,7 +5402,6 @@ a.ui-button:active,
   .top-section__main-banner {
     display: none;
   }
-
   .contact-page-form__top {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;

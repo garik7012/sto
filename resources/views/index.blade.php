@@ -903,11 +903,13 @@
 
     <div class="contact-form">
         <div class="contact-form__item">
-            <form class="form">
-                <input type="text" class="form__input" placeholder="Имя">
+            <form class="form" action="/online/callback" method="post">
+                <input name="fio" type="text" class="form__input" placeholder="Имя">
 
-                <input type="text" class="form__input" placeholder="Номер телефона">
+                <input name="phone" type="text" class="form__input" placeholder="Номер телефона">
 
+                <input type="hidden" name="message" value="">
+                {{csrf_field()}}
                 <input type="submit" class="form-submit" value="Записаться">
             </form>
         </div>

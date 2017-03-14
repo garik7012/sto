@@ -131,5 +131,112 @@
         </div>
     </div>
 
+    <section class="main-banner">
+
+
+        <div class="top-section__logo-company">
+            <div class="logo-company">
+                <div class="logo-companyr__slider">
+                    <div class="owl-carousel-2 owl-carousel owl-theme">
+                        <div class="logo-company__img  item">
+                            <img src="/img/logo-company/79440track-iveco-logo.jpg" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/787263fiat.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/490091land-rover-logo-png.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/772686ford1.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/426234logo-citroen.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1444213875-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1444215265-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1444230850-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1448879564-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1448880091-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1448880093-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/461358newholland-mini.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="/img/logo-company/79440track-iveco-logo.jpg" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/787263fiat.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/490091land-rover-logo-png.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/772686ford1.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/426234logo-citroen.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1444213875-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1444215265-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1444230850-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1448879564-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1448880091-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/1448880093-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item" >
+                            <img src="/img/logo-company/461358newholland-mini.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     @include('layouts.services')
 @endsection

@@ -43,16 +43,16 @@
             </div>
 
             <div class="contact-desc__right">
-                <form class="contact-page-form">
+                <form class="contact-page-form" action="/online/callback" method="post">
                     <div class="contact-page-form__top">
                         <div class="contact-page-form__inputs">
-                            <input type="text" class="contact-page-form__input" placeholder="Имя">
+                            <input name="fio" type="text" class="contact-page-form__input" placeholder="Имя">
 
-                            <input type="text" class="contact-page-form__input" placeholder="номер телефона">
+                            <input name="phone" type="phone" class="contact-page-form__input" placeholder="номер телефона">
                         </div>
 
                         <div class="contact-page-form__area">
-                            <textarea  cols="30" rows="10" class="contact-page-form__textarea" placeholder="сообщение"></textarea>
+                            <textarea name="message" cols="30" rows="10" class="contact-page-form__textarea" placeholder="сообщение"></textarea>
                         </div>
                     </div>
 
@@ -60,7 +60,7 @@
                         <strong class="contact-page-form__text">
                             Мы свяжемся с Вами в течение одного рабочего дня
                         </strong>
-
+                        {{csrf_field()}}
                         <input class="cont-form-message" type="submit" value="отправить">
                     </div>
                 </form>

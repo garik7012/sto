@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use App\CallBack;
 
 class OrderController extends Controller
 {
@@ -37,6 +38,15 @@ class OrderController extends Controller
             $order->save();
             return view('actions.success');
         }
+    }
+
+    public function callback(Request $request){
+        $order = new CallBack;
+        $order->fio = $request->fio;
+        $order->phone = $request->phone;
+        $order->message = $request->email;
+        $order->save();
+        return view('actions.success');
     }
 
 }

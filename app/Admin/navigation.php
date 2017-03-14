@@ -59,10 +59,16 @@ return [
         'model' => \App\Order::class,
     ],
     [
+        'title' => 'Заявки на обратный звонок',
+        'priority' => 211,
+        'model' => \App\CallBack::class,
+    ],
+    [
         'title' => 'Услуги',
         'priority' => 209,
         'model' => \App\Service::class,
     ],
+
 
 
     // Examples
