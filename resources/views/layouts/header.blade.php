@@ -18,13 +18,10 @@
     <link rel="stylesheet" href="/css/lib.min.css">
     <link rel="stylesheet" href="/css/style.css">
 
+
+    <script src="/js/jquery.js"></script>
+
     <script src="/js/lib.js"></script>
-    <!--
-        <script src="js/jquery.min.js"></script>
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <script src="js/masonry-docs.min.js"></script>
-    -->
     <script src="/js/main.js"></script>
 </head>
 <body>
@@ -122,16 +119,29 @@
 
         <div class="header-page__search">
             <div class="header-search">
-                <form class="header-search__form">
+                <form action="/service/search" method="get" class="header-search__form">
                     <div class="header-search__ico">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
-
-                    <input class="header-search__input" type="text" placeholder="Услуга">
-
+                    <input id="search" class="header-search__input" type="text" name='searchword' placeholder="Услуга">
+                    {{csrf_field()}}
                     <input class="search-btn" type="submit" value="Найти">
                 </form>
             </div>
+            <script src="/js/jquery-ui.js"></script>
+            <script>
+                $(function() {
+
+                    var flowers = [@foreach($listServices as $service)
+                    '{{$service->title}}',
+                        @endforeach
+                    ];
+
+                    $('#search').autocomplete({
+                        source: flowers
+                    })
+                });
+            </script>
         </div>
 
         <div class="header-page__info-head-ico">

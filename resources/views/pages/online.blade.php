@@ -279,9 +279,8 @@
 
         </div>
     </section>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.ui.datepicker-ru.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <script src="/js/jquery.ui.datepicker-ru.js"></script>
+    <script src="/js/jquery-ui_old.js"></script>
     <script>
         $(document).ready(function () {
             var currentDate = "{{date('d.'.'m.'.'Y')}}";

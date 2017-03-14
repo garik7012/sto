@@ -15,4 +15,11 @@ class ServiceController extends Controller
         $service = Service::where('link', $link)->firstOrFail();
         return view('single.service', ['service' => $service]);
     }
+
+    public function search(Request $request){
+        $service = Service::where('title', $request['searchword'])->get();
+        if(sizeof($service)){
+           return redirect("service/{$service[0]['link']}");
+        } else return view('actions.notfound');
+    }
 }

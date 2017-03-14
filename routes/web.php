@@ -17,6 +17,7 @@ Route::get('/contacts', 'IndexController@contacts');
 Route::get('/vacancies', 'IndexController@vacancies');
 
 Route::get('/services', 'ServiceController@index');
+Route::get('/service/search', 'ServiceController@search');
 Route::get('/service/{link}', 'ServiceController@showPage');
 
 Route::get('/online', 'IndexController@online');

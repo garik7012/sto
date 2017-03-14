@@ -46,38 +46,88 @@
 						</span>
                 </div>
 
-                <form class="services-form__form">
-                    <input type="text" class="services-form__input" placeholder="Имя">
+                <form action="/online/add" method="post" class="services-form__form">
+                    <input type="text" name="fio" class="services-form__input" placeholder="Имя">
 
-                    <input type="text" class="services-form__input" placeholder="Телефон">
+                    <input type="tel" name="phone" class="services-form__input" placeholder="Телефон">
 
-                    <input type="text" class="services-form__input" placeholder="Email">
+                    <input type="email" name="email" class="services-form__input" placeholder="Email">
                     <!--НУЖНО В ВЕЛЪЮ ВСТАВИТЬ ДАТУ-->
-                    <input type="text" class="services-form__input" placeholder="Дата">
+                    <input id="datepicker2" type="text" name="order_date" class="services-form__input" placeholder="Дата">
 
-                    <select  class="services-form__select">
+                    <select name="order_time" class="services-form__select">
                         <option>Время</option>
-
-                        <option>Время</option>
-
-                        <option>Время</option>
-
-                        <option>Время</option>
+                        <option value="09.00">09.00</option>
+                        @for($i = 10; $i<18; $i++)
+                            @for($j = 0; $j<4; $j+= 3)
+                             <option value="{{$i}}.{{$j}}0">{{$i}}.{{$j}}0</option>
+                            @endfor
+                        @endfor
+                        <option value="18.00">18.00</option>
                     </select>
 
-                    <select class="services-form__select">
+                    <select class="services-form__select" name="service">
                         <option>Услуга</option>
-
-                        <option>Услуга</option>
-
-                        <option>Услуга</option>
-
-                        <option>Услуга</option>
+                        @foreach($listServices as $service)
+                            <option value="{{$service->id}}">{{$service->title}}</option>
+                        @endforeach
                     </select>
-
-                    <input class="services-btn  services-form__btn" type="submit" value="записаться">
+                    {{csrf_field()}}
+                    <input name="from_service" class="services-btn services-form__btn" type="submit" value="записаться">
                 </form>
             </div>
+            <script src="/js/jquery.ui.datepicker-ru.js"></script>
+            <script src="/js/jquery-ui_old.js"></script>
+            <script>
+                $(document).ready(function () {
+                    var currentDate = "{{date('d.'.'m.'.'Y')}}";
+                    //делаем неактивные воскресенья
+                    function disableWeekend() {
+                        $('td:nth-child(7)').addClass('ui-datepicker-unselectable ui-state-disabled ')
+                    }
+                    setInterval(disableWeekend, 500);
+                    $( "#datepicker2" ).datepicker({
+                        altField: "#alternate",
+                        altFormat: "DD, d MM, yy",
+                        minDate: 0,
+                        maxDate: "+3M",
+                        regional: 'ru',
+                        onSelect: function (selectedDate) {
+                            $('#choosenDate').text(selectedDate);
+                            checkTime(selectedDate);
+                        }
+                    });
+                    $('.morning__item').click(function () {
+                        var choosenTime = $('input[name=oreder_time]:checked').val();
+                        $('#choosenTime').text(choosenTime);
+                    });
+                    //делаем неактивное сегодняшнее время +
+                    function disableTime() {
+                        var time = new Date();
+                        var hour = time.getHours();
+                        var minute = time.getMinutes();
+                        var shifft = (hour - 8)*2;
+                        if(minute > 30) shifft++;
+                        if(shifft>0) {
+                            for (var i = 1; i <= shifft+1; i++) {
+                                $('#time-' + i).prop('disabled', true);
+                            }
+                        }
+                    }
+                    disableTime();
+                    function enableTime() {
+                        for (var i = 1; i <= 19; i++) {
+                            $('#time-' + i).prop('disabled', false);
+                        }
+                    }
+                    function checkTime(selectedDate) {
+                        if(selectedDate == currentDate){
+                            disableTime();
+                        } else enableTime();
+                    }
+
+                });
+            </script>
         </div>
     </div>
 
