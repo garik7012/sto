@@ -47,7 +47,7 @@ class CustomFields extends Seeder{
             'name'=> 'fb',
         ]);CustomField::create([
             'name'=> 'e-mail',
-            'value' => 'msinfo@ukr.net',
+            'value' => 'ms20auto@gmail.com',
             'description' => 'e-mail компании'
         ]);CustomField::create([
             'name'=> 'work_time',

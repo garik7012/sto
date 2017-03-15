@@ -26,13 +26,13 @@
             </li>
 
             <li class="mobile-contact__item">
-                <a href="tel:{{$cfs['tel1']}}" class="mobile-cont-item">
+                <a href="tel:{{preg_replace('/[^0-9]/', '', $cfs['tel1'])}}" class="mobile-cont-item">
                     <img src="/img/mob-vodafone.png" alt="">
                 </a>
             </li>
 
             <li class="mobile-contact__item">
-                <a href="tel:{{$cfs['tel2']}}" class="mobile-cont-item">
+                <a href="tel:{{preg_replace('/[^0-9]/', '', $cfs['tel2'])}}" class="mobile-cont-item">
                     <img src="/img/kievmobil.png" alt="">
                 </a>
             </li>

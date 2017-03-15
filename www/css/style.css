@@ -163,7 +163,7 @@ body.fixed {
 }
 
 .logo {
-  width: 67px;
+  width: 71px;
   overflow: hidden;
   position: relative;
   -webkit-transition: .3s;
@@ -189,7 +189,7 @@ body.fixed .logo__pic {
   width: 275px;
 }
 body.fixed .logo {
-  width: 55px;
+  width: 58px;
 }
 
 .logo__pic {
@@ -724,7 +724,7 @@ svg {
 
 .menu-aside__link {
   font-size: 15px;
-  padding: 20px 10px;
+  padding: 15px 10px;
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -733,6 +733,7 @@ svg {
   -moz-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  line-height: 21px;
 }
 .menu-aside__link:hover {
   color: #e67819;
@@ -4695,7 +4696,7 @@ body.fixed .header-page__logo svg{
   }
 
   .logo {
-    width: 52px;
+    width: 56px;
     overflow: hidden;
     position: relative;
     -webkit-transition: .3s;
@@ -5324,7 +5325,7 @@ body.fixed .header-page__logo svg{
   }
 
   .logo {
-    width: 80%;
+    width: 100%;
   }
 
   .page-title {

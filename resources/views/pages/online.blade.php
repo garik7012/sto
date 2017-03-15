@@ -53,7 +53,7 @@
 
                                 <div class="application-item__desc">
                                     <div class="application-form-inputs">
-                                        <input id="alternate" type="text" name="datee">
+                                        <input id="alternate" type="text" name="order_date">
                                         <div id="datepicker"></div>
                                     </div>
                                 </div>
@@ -80,37 +80,37 @@
 
                                                 <ul class="morning">
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-1" name="oreder_time" value="09:00">
+                                                        <input type="radio" id="time-1" name="order_time" value="09:00">
 
                                                         <label for="time-1">09:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-2" name="oreder_time" value="09:30">
+                                                        <input type="radio" id="time-2" name="order_time" value="09:30">
 
                                                         <label for="time-2">09:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-3" name="oreder_time" value="10:00">
+                                                        <input type="radio" id="time-3" name="order_time" value="10:00">
 
                                                         <label for="time-3">10:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-4" name="oreder_time" value="10:30">
+                                                        <input type="radio" id="time-4" name="order_time" value="10:30">
 
                                                         <label for="time-4">10:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-5" name="oreder_time" value="11:00">
+                                                        <input type="radio" id="time-5" name="order_time" value="11:00">
 
                                                         <label for="time-5">11:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-6" name="oreder_time" value="11:30">
+                                                        <input type="radio" id="time-6" name="order_time" value="11:30">
 
                                                         <label for="time-6">11:30</label>
                                                     </li>
@@ -124,73 +124,73 @@
 
                                                 <ul class="morning">
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-7" name="oreder_time" value="12:00">
+                                                        <input type="radio" id="time-7" name="order_time" value="12:00">
 
                                                         <label for="time-7">12:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-8" name="oreder_time" value="12:30">
+                                                        <input type="radio" id="time-8" name="order_time" value="12:30">
 
                                                         <label for="time-8">12:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-9" name="oreder_time" value="13:00">
+                                                        <input type="radio" id="time-9" name="order_time" value="13:00">
 
                                                         <label for="time-9">13:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-10" name="oreder_time" value="13:30">
+                                                        <input type="radio" id="time-10" name="order_time" value="13:30">
 
                                                         <label for="time-10">13:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-11" name="oreder_time" value="14:00" >
+                                                        <input type="radio" id="time-11" name="order_time" value="14:00" >
 
                                                         <label for="time-11">14:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-12" name="oreder_time" value="14:30">
+                                                        <input type="radio" id="time-12" name="order_time" value="14:30">
 
                                                         <label for="time-12">14:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-13" name="oreder_time" value="15:00">
+                                                        <input type="radio" id="time-13" name="order_time" value="15:00">
 
                                                         <label for="time-13">15:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-14" name="oreder_time" value="15:30">
+                                                        <input type="radio" id="time-14" name="order_time" value="15:30">
 
                                                         <label for="time-14">15:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-15" name="oreder_time" value="16:00">
+                                                        <input type="radio" id="time-15" name="order_time" value="16:00">
 
                                                         <label for="time-15">16:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-16" name="oreder_time" value="16:30">
+                                                        <input type="radio" id="time-16" name="order_time" value="16:30">
 
                                                         <label for="time-16">16:30</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-17" name="oreder_time" value="17:00">
+                                                        <input type="radio" id="time-17" name="order_time" value="17:00">
 
                                                         <label for="time-17">17:00</label>
                                                     </li>
 
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-18" name="oreder_time" value="17:30">
+                                                        <input type="radio" id="time-18" name="order_time" value="17:30">
 
                                                         <label for="time-18">17:30</label>
                                                     </li>
@@ -204,7 +204,7 @@
 
                                                 <ul class="morning">
                                                     <li class="morning__item">
-                                                        <input type="radio" id="time-19" name="oreder_time" value="18:00">
+                                                        <input type="radio" id="time-19" name="order_time" value="18:00">
 
                                                         <label for="time-19">18:00</label>
                                                     </li>
@@ -302,7 +302,7 @@
                 }
             });
             $('.morning__item').click(function () {
-                var choosenTime = $('input[name=oreder_time]:checked').val();
+                var choosenTime = $('input[name=order_time]:checked').val();
                 $('#choosenTime').text(choosenTime);
             });
             //делаем неактивное сегодняшнее время +

@@ -70,7 +70,7 @@
 
     <div class="contact-sect__map">
         <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10159.894646267529!2d30.64045991359825!3d50.46021514716783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1487932448530" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2537.693249064786!2d30.83134849101007!3d50.50266663171171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sru!4v1489590841858" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
