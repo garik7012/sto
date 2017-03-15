@@ -3,37 +3,38 @@
 @section('keywords', $service->keywords)
 @section('description', $service->description)
 @section('content')
-    <div class="services-description">
-        <div class="services-description__left">
+    <div class="services-description-main">
+        <div class="services-description__top">
             <div class="services-description__image">
-                <div class="services-desc-img">
-                    <div class="services-desc-img__img">
-                        <div class="services-desc-img__wrap">
-                            <img src="/{{$service->photo1}}" alt="">
-                        </div>
+            <div class="services-desc-img">
+                <div class="services-desc-img__img">
+                    <div class="services-desc-img__wrap">
+                        <img src="/{{$service->photo1}}" alt="">
                     </div>
+                </div>
 
-                    <div class="services-desc-img__img">
-                        <div class="services-desc-img__wrap">
-                            <img src="/{{$service->photo2}}" alt="">
-                        </div>
+                <div class="services-desc-img__img">
+                    <div class="services-desc-img__wrap">
+                        <img src="/{{$service->photo2}}" alt="">
                     </div>
+                </div>
 
-                    <div class="services-desc-img__img">
-                        <div class="services-desc-img__wrap">
-                            <img src="/{{$service->photo3}}" alt="">
-                        </div>
+                <div class="services-desc-img__img">
+                    <div class="services-desc-img__wrap">
+                        <img src="/{{$service->photo3}}" alt="">
                     </div>
                 </div>
             </div>
-
+        </div>
+        </div>
+        <div class="services-description">
+        <div class="services-description__left">
             <div class="services-description__text">
                 <div class="services-text">
                     {!! $service->text !!}
                 </div>
             </div>
         </div>
-
         <div class="services-description__right">
             <div class="services-form">
                 <div class="services-form__title">
@@ -128,6 +129,7 @@
 
                 });
             </script>
+        </div>
         </div>
     </div>
 

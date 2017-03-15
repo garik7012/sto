@@ -697,13 +697,13 @@ svg {
 }
 
 .main-content {
-  padding: 0 330px;
+  padding: 0 280px;
   min-height: -webkit-calc(100vh - 146px);
   min-height: -moz-calc(100vh - 146px);
   min-height: calc(100vh - 146px);
 }
 
-.top-section__menu-aside {
+.top-section__menu-aside{
   left: 0;
   top: 146px;
   position: fixed;
@@ -711,7 +711,7 @@ svg {
   height: -moz-calc(100vh - 146px);
   height: calc(100vh - 146px);
   overflow: auto;
-  width: 320px;
+  width: 270px;
 }
 
 .menu-aside {
@@ -724,7 +724,7 @@ svg {
 
 .menu-aside__link {
   font-size: 15px;
-  padding: 20px;
+  padding: 20px 10px;
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -754,7 +754,7 @@ svg {
   position: fixed;
   right: 0;
   top: 146px;
-  width: 320px;
+  width: 270px;
   height: -webkit-calc(100vh - 146px);
   height: -moz-calc(100vh - 146px);
   height: calc(100vh - 146px);
@@ -2146,12 +2146,12 @@ body.fixed .top-section__banner-aside {
 }
 
 .services-desc-img__wrap {
-  padding-bottom: 100%;
+  padding-bottom: 60%;
   position: relative;
 }
 .services-desc-img__wrap img {
   width: 100%;
-  height: 100%;
+  max-height: 93%;
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
@@ -2190,9 +2190,11 @@ body.fixed .top-section__banner-aside {
 
 .services-description__image {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .services-description {
+  margin-top: -15px;
   padding-bottom: 30px;
 }
 
@@ -2254,6 +2256,7 @@ body.fixed .top-section__banner-aside {
   text-transform: uppercase;
   color: #5d5d5d;
 }
+
 .services-form__input:hover,
 .services-form__select:hover,
 .services-form__select:hover {
@@ -4747,12 +4750,12 @@ body.fixed .header-page__logo svg{
   }
 
   .main-content {
-    padding: 0 250px;
+    padding: 0 220px;
   }
 
   .top-section__menu-aside,
   .top-section__banner-aside {
-    width: 240px;
+    width: 210px;
     top: 126px;
     height: -webkit-calc(100vh - 126px);
     height: -moz-calc(100vh - 126px);
@@ -5066,7 +5069,7 @@ body.fixed .header-page__logo svg{
 
   .menu-aside__link {
     font-size: 12px;
-    padding: 10px 20px;
+    padding: 10px;
   }
 
   .submenu__open {
@@ -5226,6 +5229,12 @@ body.fixed .header-page__logo svg{
     vertical-align: top;
   }
 
+  h1.info-head-ico__margin{
+    text-align: center;
+  }
+  .info-head-ico__adress > * {
+    display: inline;
+  }
   .top-section__mobile-contact {
     position: fixed;
     width: 100%;

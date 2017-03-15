@@ -2,31 +2,6 @@
     <div class="top-section__menu-aside">
         <nav class="menu-aside">
             <ul class="menu-aside__list">
-                {{--<li class="menu-aside__item">--}}
-                    {{--<a href="" class="menu-aside__link">Реставрация шаровых</a>--}}
-
-                    {{--<span class="submenu__open"></span>--}}
-
-                    {{--<ul class="aside-submenu">--}}
-                        {{--<li class="aside-submenu__item">--}}
-                            {{--<a href="" class="aside-submenu__link">--}}
-                                {{--Подменю реставрации--}}
-                            {{--</a>--}}
-                        {{--</li>--}}
-
-                        {{--<li class="aside-submenu__item">--}}
-                            {{--<a href="" class="aside-submenu__link">--}}
-                                {{--Подменю реставрации--}}
-                            {{--</a>--}}
-                        {{--</li>--}}
-
-                        {{--<li class="aside-submenu__item">--}}
-                            {{--<a href="" class="aside-submenu__link">--}}
-                                {{--Подменю реставрации--}}
-                            {{--</a>--}}
-                        {{--</li>--}}
-                    {{--</ul>--}}
-                {{--</li>--}}
                 @foreach($leftServices as $service)
                 <li class="menu-aside__item">
                     <a href="/service/{{$service->link}}" class="menu-aside__link">{{$service->title}}</a>
@@ -39,25 +14,25 @@
     <div class="top-section__mobile-contact">
         <ul class="mobile-contact">
             <li class="mobile-contact__item">
-                <a href="" class="mobile-cont-item">
+                <a href="https://telegram.me/Stotestchat" class="mobile-cont-item">
                     <img src="/img/mob-tel.png" alt="">
                 </a>
             </li>
 
             <li class="mobile-contact__item">
-                <a href="" class="mobile-cont-item">
+                <a href="viber://add?number=380662850466" class="mobile-cont-item">
                     <img src="/img/tel.png" alt="">
                 </a>
             </li>
 
             <li class="mobile-contact__item">
-                <a href="" class="mobile-cont-item">
+                <a href="tel:{{$cfs['tel1']}}" class="mobile-cont-item">
                     <img src="/img/mob-vodafone.png" alt="">
                 </a>
             </li>
 
             <li class="mobile-contact__item">
-                <a href="" class="mobile-cont-item">
+                <a href="tel:{{$cfs['tel2']}}" class="mobile-cont-item">
                     <img src="/img/kievmobil.png" alt="">
                 </a>
             </li>
