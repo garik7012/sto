@@ -132,10 +132,18 @@
         </div>
         </div>
     </div>
+    <script>
 
+        $(document).ready(function () {
+            if(window.innerWidth < 650) {
+                $('html, body').animate({
+                    scrollTop: $('.services-description-main').offset().top
+                }, 1000);
+            }
+        });
+
+    </script>
     <section class="main-banner">
-
-
         <div class="top-section__logo-company">
             <div class="logo-company">
                 <div class="logo-companyr__slider">

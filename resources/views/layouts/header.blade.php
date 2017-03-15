@@ -56,8 +56,6 @@
                 </ul>
             </nav>
         </div>
-
-
         <div class="header-page__soc">
             <div class="soc-wrap">
                 <div class="soc-wrap__item">
@@ -83,8 +81,6 @@
                         <a href="malto:{{$cfs['e-mail']}}" class="header-mail__link">{{$cfs['e-mail']}}</a>
                     </div>
                 </div>
-
-
                 <div class="soc-wrap__item">
                     <ul class="social-button">
                         <li class="social-button__item">
@@ -107,7 +103,6 @@
             </div>
         </div>
     </div>
-
     <div class="header-page__bottom">
         <div class="header-page__logo">
             <a href="/" class="logo">
@@ -174,6 +169,10 @@
 								</span>
 
                             <span>{{$cfs['adress']}}</span>
+                        </div>
+                        <div class="show-tel__mobile">
+                            <span><a href="tel:{{$cfs['tel2']}}">{{$cfs['tel2']}}</a></span>
+                            <span><a href="tel:{{$cfs['tel1']}}">{{$cfs['tel1']}}</a></span>
                         </div>
                     </div>
                 </div>
@@ -474,5 +473,4 @@
         </div>
     </div>
 </header>
-
 <main class="main-content">

@@ -2210,7 +2210,7 @@ body.fixed .top-section__banner-aside {
 }
 
 .services-form {
-  padding: 20px 40px;
+  padding: 20px;
   -webkit-box-shadow: 0px 7px 6.51px 0.49px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 7px 6.51px 0.49px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 7px 6.51px 0.49px rgba(0, 0, 0, 0.4);
@@ -2553,7 +2553,9 @@ body.fixed .top-section__banner-aside {
   -ms-flex-item-align: center;
   align-self: center;
 }
-
+.show-tel__mobile{
+  display: none;
+}
 .application-item__title-number {
   display: -webkit-flex;
   display: -moz-flex;
@@ -4663,7 +4665,7 @@ body.fixed .header-page__logo svg{
   }
 
   .services-form {
-    padding: 20px 30px;
+    padding: 20px;
   }
 
   .contact-page-form__textarea,
@@ -5229,6 +5231,9 @@ body.fixed .header-page__logo svg{
     vertical-align: top;
   }
 
+  .show-tel__mobile>span{
+    font-size: 15px;
+  }
   h1.info-head-ico__margin{
     text-align: center;
   }
@@ -5254,7 +5259,7 @@ body.fixed .header-page__logo svg{
     display: none;
   }
 
-  .footer-page .footer-page__blocks {
+  .footer-page .footer-page__blocks, .show-tel__mobile {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -5333,6 +5338,7 @@ body.fixed .header-page__logo svg{
   .info-head-ico__adress {
     text-align: center;
     font-size: 16px;
+    margin-bottom: 8px;
   }
 
   .header-page__bottom {

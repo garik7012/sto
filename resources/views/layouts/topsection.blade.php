@@ -14,7 +14,7 @@
     <div class="top-section__mobile-contact">
         <ul class="mobile-contact">
             <li class="mobile-contact__item">
-                <a href="https://telegram.me/Stotestchat" class="mobile-cont-item">
+                <a href="https://t.me/joinchat/AAAAAAxoQ80hNCnYzRJTUw" class="mobile-cont-item">
                     <img src="/img/mob-tel.png" alt="">
                 </a>
             </li>
