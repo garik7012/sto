@@ -70,7 +70,7 @@
             <div class="footer-page__phones">
                 <div class="footer-phone">
                     <a href="tel:0662850466" class="footer-phone__link-one">
-                        <span class="phone-img"><img src="/img/Vodafone.png" alt="alt"></span>
+                        <span class="phone-img"><img src="/img/vodafone.png" alt="alt"></span>
                         <span>{{$cfs['tel1']}}</span>
                     </a>
 
