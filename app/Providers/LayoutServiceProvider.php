@@ -23,7 +23,7 @@ class LayoutServiceProvider extends ServiceProvider
             $data2[$title] = $value;
         }
         view()->share('cfs', $data2);
-        $services = Service::all()->where('position', '1');
+        $services = Service::orderBy('position')->where('is_left', '1')->get();
         view()->share('leftServices', $services);
         $mservices = Service::orderBy('id', 'desc')->limit(9)->get();
         view()->share('mainServices', $mservices);

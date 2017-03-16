@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 use App\CallBack;
+use App\Service;
 
 class OrderController extends Controller
 {
@@ -24,21 +25,21 @@ class OrderController extends Controller
          isset($request->remind) ?  $remind = $request->remind : $remind = '';
          isset($request->comments) ?  $comments = $request->comments : $comments = '';
 
+         //получаем категорию по id, список категорий у нас формируется в провайдере
+         $service = Service::select('title')->where('id', $service_id)->get();
+         $service = $service[0]->title;
+
          //сообщение в телеграмм
-        $text = " *Заявка на Мегасервис от* ```text
-pre-formatted $fio ``` телефон: ```text
-pre-formatted  $phone ``` * $order_date $order_time * ```text
- авто: $auto_brand $auto_type ";
+        $text = " *Заявка на $service * от ```text $fio ``` телефон: ```text $phone ``` * $order_date $order_time * ```text авто: $auto_brand $auto_type ";
   if($auto_year != '') $text .=  " $auto_year г.";
   if($auto_mod != '') {
-      $text .=  "модификация $auto_mod ```";
+      $text .=  " модификация $auto_mod ```";
   } else $text .= " ```";
         if($email != '') $text .= " e-mail: $email ";
-
-
         if($comments != ''){
-            $text = $text . "также он оставил сообщение: ```text $comments ```";
+            $text = $text . " также он оставил сообщение: ```text $comments ```";
         }
+        $text = urlencode($text);
         $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id=306526429&parse_mode=Markdown&text=$text";
         $fp = fopen($sendlink, 'r');
         fclose($fp);
@@ -73,6 +74,7 @@ pre-formatted  $phone ```";
         if($message != ''){
             $text = $text . "также он оставил сообщение: ```text $message ```";
         }
+
         $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id=306526429&parse_mode=Markdown&text=$text";
 
         $fp = fopen($sendlink, 'r');

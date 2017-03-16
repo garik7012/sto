@@ -68,7 +68,8 @@ class Services extends Section
             AdminFormElement::image('photo3', 'фото 3'),
             AdminFormElement::textarea('keywords', 'keywords'),
             AdminFormElement::textarea('description', 'description'),
-            AdminFormElement::checkbox('position', 'левое меню'),
+            AdminFormElement::checkbox('is_left', 'левое меню'),
+            AdminFormElement::number('position', 'позиция. чем меньше, тем выше')
         ]);
     }
 

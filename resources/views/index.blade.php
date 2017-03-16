@@ -904,9 +904,9 @@
     <div class="contact-form">
         <div class="contact-form__item">
             <form class="form" action="/online/callback" method="post">
-                <input name="fio" type="text" class="form__input" placeholder="Имя">
+                <input name="fio" type="text" class="form__input" placeholder="Имя" required>
 
-                <input name="phone" type="text" class="form__input" placeholder="Номер телефона">
+                <input name="phone" type="text" class="form__input" placeholder="Номер телефона" required>
 
                 <input type="hidden" name="message" value="">
                 {{csrf_field()}}
@@ -1120,10 +1120,11 @@
 
         <div class="news-anons__list">
             <ul class="news-anons-list">
-                <li class="news-anons-list__item">
+                @foreach($news as $news_item)
+                    <li class="news-anons-list__item">
                     <div class="news-anons-item">
-                        <a href="" class="news-anons-item__img">
-                            <img src="img/newitem.png" alt="">
+                        <a href="/news/{{$news_item->id}}" class="news-anons-item__img">
+                            <img src="{{$news_item->preview}}" alt="{{$news_item->title}}">
 
                             <div class="news-anons-item__hover-text">
                                 <span>Подробнее</span>
@@ -1131,54 +1132,15 @@
                         </a>
 
                         <div class="news-anons-item__time">
-                            29.10.2016
+                            {{$news_item->created_at}}
                         </div>
 
                         <div class="news-anons-item__desc">
-                            ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
+                           {{$news_item->title}}
                         </div>
                     </div>
                 </li>
-
-                <li class="news-anons-list__item">
-                    <div class="news-anons-item">
-                        <a href="" class="news-anons-item__img">
-                            <img src="img/newitem.png" alt="">
-
-                            <div class="news-anons-item__hover-text">
-                                <span>Подробнее</span>
-                            </div>
-                        </a>
-
-                        <div class="news-anons-item__time">
-                            29.10.2016
-                        </div>
-
-                        <div class="news-anons-item__desc">
-                            ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
-                        </div>
-                    </div>
-                </li>
-
-                <li class="news-anons-list__item">
-                    <div class="news-anons-item">
-                        <a href="" class="news-anons-item__img">
-                            <img src="img/newitem.png" alt="">
-
-                            <div class="news-anons-item__hover-text">
-                                <span>Подробнее</span>
-                            </div>
-                        </a>
-
-                        <div class="news-anons-item__time">
-                            29.10.2016
-                        </div>
-
-                        <div class="news-anons-item__desc">
-                            ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ
-                        </div>
-                    </div>
-                </li>
+                @endforeach
             </ul>
         </div>
     </section>
@@ -1213,7 +1175,7 @@
         </div>
 
         <div class="contacts-map__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10159.894646267529!2d30.64045991359825!3d50.46021514716783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1487932448530" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2537.693249064786!2d30.83134849101007!3d50.50266663171171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sru!4v1489590841858" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
 

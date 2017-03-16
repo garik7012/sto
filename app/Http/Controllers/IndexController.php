@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Page;
+use App\News;
 
 class IndexController extends Controller
 {
     public function index(){
-        return view('index');
+        $news = News::latest()->take(3)->get();
+        return view('index', ['news' => $news]);
     }
     public function contacts(){
         return view('pages.contacts');

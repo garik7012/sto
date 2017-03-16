@@ -46,9 +46,9 @@
                 <form class="contact-page-form" action="/online/callback" method="post">
                     <div class="contact-page-form__top">
                         <div class="contact-page-form__inputs">
-                            <input name="fio" type="text" class="contact-page-form__input" placeholder="Имя">
+                            <input name="fio" type="text" class="contact-page-form__input" placeholder="Имя" required>
 
-                            <input name="phone" type="phone" class="contact-page-form__input" placeholder="номер телефона">
+                            <input name="phone" type="phone" class="contact-page-form__input" placeholder="номер телефона" required>
                         </div>
 
                         <div class="contact-page-form__area">
