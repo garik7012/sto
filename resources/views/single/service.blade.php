@@ -136,7 +136,10 @@
 
         $(document).ready(function () {
             $('.services-description').click(function () {
-                $('input[name=fio]').focus();
+                var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+                if(iOS) {
+                    $('input[name=fio]').focus();
+                }
             });
 
             if(window.innerWidth < 650) {

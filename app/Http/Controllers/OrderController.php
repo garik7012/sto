@@ -73,9 +73,7 @@ class OrderController extends Controller
         $fio = $request->fio;
         $phone = $request->phone;
         $message = $request->message;
-        $text = " *Обратный звонок от* ```text
-pre-formatted $fio ``` телефон: ```text
-pre-formatted  $phone ```";
+        $text = " *Обратный звонок от* ```text $fio ``` телефон: ```text $phone ```";
         if ($message != '') {
             $text = $text . "также он оставил сообщение: ```text $message ```";
         }
