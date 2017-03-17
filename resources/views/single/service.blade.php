@@ -48,9 +48,9 @@
                 </div>
 
                 <form action="/online/add" method="post" class="services-form__form">
-                    <input type="text" name="fio" class="services-form__input" placeholder="Имя">
+                    <input type="text" name="fio" class="services-form__input" placeholder="Имя" required>
 
-                    <input type="tel" name="phone" class="services-form__input" placeholder="Телефон">
+                    <input type="tel" name="phone" class="services-form__input" placeholder="Телефон" required>
 
                     <input type="email" name="email" class="services-form__input" placeholder="Email">
                     <!--НУЖНО В ВЕЛЪЮ ВСТАВИТЬ ДАТУ-->

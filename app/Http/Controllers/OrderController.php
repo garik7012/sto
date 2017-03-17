@@ -40,9 +40,13 @@ class OrderController extends Controller
             $text = $text . " также он оставил сообщение: ```text $comments ```";
         }
         $text = urlencode($text);
-        $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id=306526429&parse_mode=Markdown&text=$text";
-        $fp = fopen($sendlink, 'r');
-        fclose($fp);
+        $id_chats = [306526429, '-11494395'];
+        foreach ($id_chats as $id_chat) {
+            $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id={$id_chat}&parse_mode=Markdown&text=$text";
+            $fp = fopen($sendlink, 'r');
+            fclose($fp);
+        }
+
 
         //сохраняем заявку в базу данных
         $order = new Order;
@@ -64,22 +68,25 @@ class OrderController extends Controller
 
     }
 
-    public function callback(Request $request){
+    public function callback(Request $request)
+    {
         $fio = $request->fio;
         $phone = $request->phone;
         $message = $request->message;
         $text = " *Обратный звонок от* ```text
 pre-formatted $fio ``` телефон: ```text
 pre-formatted  $phone ```";
-        if($message != ''){
+        if ($message != '') {
             $text = $text . "также он оставил сообщение: ```text $message ```";
         }
-
-        $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id=306526429&parse_mode=Markdown&text=$text";
-
+        $text = urlencode($text);
+        // $id_chats = [306526429, '-181524082', '-11494395'];
+        $id_chats = [306526429, '-11494395'];
+        foreach ($id_chats as $id_chat) {
+        $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id={$id_chat}&parse_mode=Markdown&text=$text";
         $fp = fopen($sendlink, 'r');
         fclose($fp);
-
+        }
         $order = new CallBack;
         $order->fio = $fio;
         $order->phone = $phone;
