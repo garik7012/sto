@@ -22,7 +22,7 @@ class OrderController extends Controller
          isset($request->phone) ?  $phone = $request->phone : $phone = '';
          isset($request->avto_nomer) ?  $avto_nomer = $request->avto_nomer : $avto_nomer = '';
          isset($request->email) ?  $email = $request->email : $email = '';
-         isset($request->remind) ?  $remind = $request->remind : $remind = '';
+         isset($request->remind) ?  $remind = +$request->remind : $remind = 1;
          isset($request->comments) ?  $comments = $request->comments : $comments = '';
 
          //получаем категорию по id, список категорий у нас формируется в провайдере

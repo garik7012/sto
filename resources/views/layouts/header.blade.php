@@ -82,7 +82,7 @@
 
                         </div>
 
-                        <a href="malto:{{$cfs['e-mail']}}" class="header-mail__link">{{$cfs['e-mail']}}</a>
+                        <a href="mailto:{{$cfs['e-mail']}}" class="header-mail__link">{{$cfs['e-mail']}}</a>
                     </div>
                 </div>
                 <div class="soc-wrap__item">
@@ -157,7 +157,7 @@
 									c0-40.436-32.779-73.216-73.216-73.216s-73.216,32.78-73.216,73.216c0,40.437,32.779,73.216,73.216,73.216
 									S379.114,245.665,379.114,205.228z"/>
                             </g>
-							</svg>
+						</svg>
                     </a>
                 </div>
             </div>
