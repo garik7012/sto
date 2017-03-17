@@ -61,8 +61,8 @@
                     </div>
                     <div class="text">
                         <span>Адрес:</span>
-                        <span>{{$cfs['adress']}},</span>
-                        <span>Бровары</span>
+                        <span>Киев. Бровары,</span>
+                        <span>{{$cfs['adress']}}</span>
                     </div>
                 </div>
             </div>

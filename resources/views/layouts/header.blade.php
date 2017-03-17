@@ -134,9 +134,7 @@
                     <h1 class="page-title info-head-ico__margin"><a href="/">СТО Мега-сервис</a></h1>
 
                     <div class="info-head-ico__adress">
-								<span>
-									Киев. Бровары, Москаленко 20
-								</span>
+                       <span> <a href="https://www.google.com/maps/place/вул.+Сергія+Москаленка,+20,+Бровари,+Київська+область,+Украина/" target="_blank">Киев. Бровары, Москаленко 20</a></span>
                     </div>
                     <div class="show-tel__mobile">
                         <span><a href="tel:{{$cfs['tel2']}}">{{$cfs['tel2']}}</a></span>

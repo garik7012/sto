@@ -1175,7 +1175,7 @@
         </div>
 
         <div class="contacts-map__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2537.693249064786!2d30.83134849101007!3d50.50266663171171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sru!4v1489590841858" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28712.181060875715!2d30.815897372484116!3d50.500266041493965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d94d046ca71d%3A0x4fff487208b0251e!2z0LLRg9C70LjRhtGPINCh0LXRgNCz0ZbRjyDQnNC-0YHQutCw0LvQtdC90LrQsCwgMjAsINCR0YDQvtCy0LDRgNC4LCDQmtC40ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2s!4v1489743957073" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
 
