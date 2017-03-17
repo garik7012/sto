@@ -135,6 +135,10 @@
     <script>
 
         $(document).ready(function () {
+            $('.services-description').click(function () {
+                $('input[name=fio]').focus();
+            });
+
             if(window.innerWidth < 650) {
                 $('html, body').animate({
                     scrollTop: $('.services-description-main').offset().top
