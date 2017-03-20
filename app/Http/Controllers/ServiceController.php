@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Service;
+use App\Page;
 
 class ServiceController extends Controller
 {
     public function index(){
         $services = Service::all();
-        return view('pages.services', ['allServices' => $services]);
+        $content = Page::where('link', 'services')->get();
+        return view('pages.services', ['allServices' => $services, 'content' => $content]);
     }
     public function showPage($link){
         $service = Service::where('link', $link)->firstOrFail();

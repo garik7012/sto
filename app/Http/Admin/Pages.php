@@ -48,7 +48,7 @@ class Pages extends Section
             ->setColumns(
                 AdminColumn::text('id', '#')->setWidth('30px'),
                 AdminColumn::link('link', 'Ссылка на страницу')->setWidth('300px'),
-                AdminColumn::text('title', 'title')
+                AdminColumn::text('title', 'Заголовок')
             )->paginate(20);
     }
 
@@ -61,10 +61,10 @@ class Pages extends Section
     {
         return AdminForm::panel()->addBody([
             AdminFormElement::text('link', 'Cсылка')->setReadonly(1),
-            AdminFormElement::text('title', 'Заглавие')->required(),
+            AdminFormElement::text('title', 'Заголовок')->required(),
             AdminFormElement::wysiwyg('text', 'Контент', 'ckeditor'),
-
-
+            AdminFormElement::textarea('keywords', 'keywords'),
+            AdminFormElement::textarea('description', 'description'),
         ]);
     }
 

@@ -10,10 +10,12 @@ class IndexController extends Controller
 {
     public function index(){
         $news = News::latest()->take(3)->get();
-        return view('index', ['news' => $news]);
+        $content = Page::where('link', 'news')->get();
+        return view('index', ['news' => $news, 'content' => $content]);
     }
     public function contacts(){
-        return view('pages.contacts');
+        $content = Page::where('link', 'contacts')->get();
+        return view('pages.contacts', ['content' => $content]);
     }
     public function vacancies(){
         $content = Page::where('link', 'vacancies')->get();
@@ -24,7 +26,8 @@ class IndexController extends Controller
         return view('pages.about', ['content' => $content]);
     }
     public function online(){
-        return view('pages.online');
+        $content = Page::where('link', 'online')->get();
+        return view('pages.online', ['content' => $content]);
     }
     public function test(){
         return view('test');

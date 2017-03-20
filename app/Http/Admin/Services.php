@@ -62,10 +62,50 @@ class Services extends Section
             AdminFormElement::text('link', 'Cсылка'),
             AdminFormElement::text('title', 'заголовок')->required(),
             AdminFormElement::wysiwyg('text', 'контент'),
-            AdminFormElement::image('photo', 'превью'),
-            AdminFormElement::image('photo1', 'фото 1'),
-            AdminFormElement::image('photo2', 'фото 2'),
-            AdminFormElement::image('photo3', 'фото 3'),
+            AdminFormElement::image('photo', 'превью')->required()
+                ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
+                    return 'images/service/preview'; // путь сохранения файла относительно public. public -> appServiceProvider
+                })
+                ->setUploadSettings([
+                    'orientate' => [],
+                    'resize' => [300, null, function ($constraint) {
+                        $constraint->upsize();
+                        $constraint->aspectRatio();
+                    }]
+                ]),
+            AdminFormElement::image('photo1', 'фото 1')->required()
+                ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
+                    return 'images/service/photo1';
+                })
+                ->setUploadSettings([
+                    'orientate' => [],
+                    'resize' => [400, null, function ($constraint) {
+                        $constraint->upsize();
+                        $constraint->aspectRatio();
+                    }]
+                ]),
+            AdminFormElement::image('photo2', 'фото 2')->required()
+                ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
+                    return 'images/service/photo2';
+                })
+                ->setUploadSettings([
+                    'orientate' => [],
+                    'resize' => [400, null, function ($constraint) {
+                        $constraint->upsize();
+                        $constraint->aspectRatio();
+                    }]
+                ]),
+            AdminFormElement::image('photo3', 'фото 3')->required()
+                ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
+                    return 'images/service/photo3';
+                })
+                ->setUploadSettings([
+                    'orientate' => [],
+                    'resize' => [400, null, function ($constraint) {
+                        $constraint->upsize();
+                        $constraint->aspectRatio();
+                    }]
+                ]),
             AdminFormElement::textarea('keywords', 'keywords'),
             AdminFormElement::textarea('description', 'description'),
             AdminFormElement::checkbox('is_left', 'левое меню'),

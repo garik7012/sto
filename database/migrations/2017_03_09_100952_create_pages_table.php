@@ -17,7 +17,9 @@ class CreatePagesTable extends Migration
             $table->increments('id');
             $table->string('link');
             $table->string('title');
-            $table->text('text');
+            $table->string('keywords')->nullable();
+            $table->string('description')->nullable();
+            $table->text('text')->nullable();
         });
     }
 

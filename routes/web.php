@@ -28,7 +28,7 @@ Route::get('/test', 'IndexController@test');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+
 /*
 Actions Handled By Resource Controller
 Verb    	URI         	Action	Route Name

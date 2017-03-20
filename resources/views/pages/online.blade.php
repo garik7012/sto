@@ -1,5 +1,11 @@
 @extends('layouts.master')
-@section('title', 'Онлайн запись')
+@section('title', "{$content[0]->title}")
+@if($content[0]->keywords != '')
+    @section('keywords', $content[0]->keywords)
+@endif
+@if($content[0]->description != '')
+    @section('description', $content[0]->description)
+@endif
 @section('content')
     <section class="application-page">
         <div class="application-page__form">
@@ -15,10 +21,15 @@
                                 Ваше авто
                             </div>
 
-                            <input type="text" name="auto_year" class="form-top__select-year" placeholder="Год">
+                            <select type="text" name="auto_year" class="form-top__select-year" placeholder="Год">
+                                @for($year = 2017; $year > 1950; $year--)
+                                    <option value="{{$year}}">{{$year}}</option>
+                                @endfor
+                            </select>
                             <input type="text" name="auto_brand" class="form-top__select-brend" placeholder="Марка">
                             <input type="text" name="auto_type" class="form-top__select-type" placeholder="Модель">
-                            <input type="text" name="auto_mod" class="form-top__select-mod" placeholder="Модификация">
+                            <input type="text" name="auto_mod" class="form-top__select-mod" placeholder="Объём двигателя">
+                            <input type="text" name="auto_vin" class="form-top__select-mod" placeholder="VIN-код">
                         </div>
                     </div>
                 </div>

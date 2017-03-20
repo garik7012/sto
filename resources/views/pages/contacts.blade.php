@@ -1,5 +1,11 @@
 @extends('layouts.master')
-@section('title', 'Контакты')
+@section('title', "{$content[0]->title}")
+@if($content[0]->keywords != '')
+    @section('keywords', $content[0]->keywords)
+@endif
+@if($content[0]->description != '')
+    @section('description', $content[0]->description)
+@endif
 @section('content')
 <div class="contact-sect">
     <div class="contact-sect__top">
@@ -12,7 +18,7 @@
                                 <img src="img/mapplaceholder.png" alt="alt">
                             </div>
 
-                            <span>ул. Москаленко 20, Бровары</span>
+                            <span>{{$cfs['adress']}}, Киев. Бровары</span>
                         </div>
 
                         <div class="contact-box__item">
@@ -20,7 +26,7 @@
                                 <img src="img/emailcont.png" alt="alt">
                             </div>
 
-                            <span>msinfo@ukr.net</span>
+                            <span>{{$cfs['e-mail']}}</span>
                         </div>
 
                         <div class="contact-box__item">

@@ -15,6 +15,7 @@ class OrderController extends Controller
          isset($request->auto_brand) ?  $auto_brand = $request->auto_brand : $auto_brand = '';
          isset($request->auto_type) ?  $auto_type = $request->auto_type : $auto_type = '';
          isset($request->auto_mod) ?  $auto_mod = $request->auto_mod : $auto_mod = '';
+        isset($request->auto_vin) ?  $auto_vin = $request->auto_vin : $auto_vin = '';
          isset($request->service_id) ?  $service_id = $request->service_id : $service_id = 1;
          isset($request->order_date) ?  $order_date = $request->order_date : $order_date = '';
          isset($request->order_time) ?  $order_time = $request->order_time : $order_time = '';
@@ -25,15 +26,16 @@ class OrderController extends Controller
          isset($request->remind) ?  $remind = +$request->remind : $remind = 1;
          isset($request->comments) ?  $comments = $request->comments : $comments = '';
 
-         //получаем категорию по id, список категорий у нас формируется в провайдере
+         //получаем категорию по id
          $service = Service::select('title')->where('id', $service_id)->get();
          $service = $service[0]->title;
 
          //сообщение в телеграмм
         $text = " *Заявка на $service * от ```text $fio ``` телефон: ```text $phone ``` * $order_date $order_time * ```text авто: $auto_brand $auto_type ";
   if($auto_year != '') $text .=  " $auto_year г.";
-  if($auto_mod != '') {
-      $text .=  " модификация $auto_mod ```";
+  if($auto_mod != '') $text .=  " модификация $auto_mod ";
+  if($auto_vin != '') {
+      $text .=  " vin-код: $auto_vin ```";
   } else $text .= " ```";
         if($email != '') $text .= " e-mail: $email ";
         if($comments != ''){
@@ -41,6 +43,7 @@ class OrderController extends Controller
         }
         $text = urlencode($text);
         $id_chats = [306526429, '-11494395'];
+
         foreach ($id_chats as $id_chat) {
             $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id={$id_chat}&parse_mode=Markdown&text=$text";
             $fp = fopen($sendlink, 'r');
@@ -54,6 +57,7 @@ class OrderController extends Controller
          $order->auto_brand = $auto_brand;
          $order->auto_type = $auto_type;
          $order->auto_mod = $auto_mod;
+         $order->auto_vin = $auto_vin;
          $order->service_id = $service_id;
          $order->order_date = $order_date;
          $order->order_time = $order_time;
@@ -80,6 +84,7 @@ class OrderController extends Controller
         $text = urlencode($text);
         // $id_chats = [306526429, '-181524082', '-11494395'];
         $id_chats = [306526429, '-11494395'];
+
         foreach ($id_chats as $id_chat) {
         $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id={$id_chat}&parse_mode=Markdown&text=$text";
         $fp = fopen($sendlink, 'r');

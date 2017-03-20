@@ -19,6 +19,7 @@ class CreateOrdersTable extends Migration
             $table->string("auto_brand")->nullable();
             $table->string("auto_type")->nullable();
             $table->string("auto_mod")->nullable();
+            $table->string("auto_vin")->nullable();
             $table->integer("service_id")->nullable();
             $table->string("order_date")->nullable();
             $table->string("order_time")->nullable();

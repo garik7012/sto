@@ -1,25 +1,32 @@
 @extends('layouts.master')
 @section('title', $service->title)
+@if($service->keywords != '')
 @section('keywords', $service->keywords)
+@endif
+@if($service->description != '')
 @section('description', $service->description)
+@endif
 @section('content')
+    <script>
+        document.addEventListener("touchstart", function() {},false);
+    </script>
     <div class="services-description-main">
         <div class="services-description__top">
             <div class="services-description__image">
-            <div class="services-desc-img">
-                <div class="services-desc-img__img">
+            <div class="services-desc-img" >
+                <div class="services-desc-img__img" onclick="">
                     <div class="services-desc-img__wrap">
                         <img src="/{{$service->photo1}}" alt="">
                     </div>
                 </div>
 
-                <div class="services-desc-img__img">
+                <div class="services-desc-img__img" onclick="">
                     <div class="services-desc-img__wrap">
                         <img src="/{{$service->photo2}}" alt="">
                     </div>
                 </div>
 
-                <div class="services-desc-img__img">
+                <div class="services-desc-img__img" onclick="">
                     <div class="services-desc-img__wrap">
                         <img src="/{{$service->photo3}}" alt="">
                     </div>

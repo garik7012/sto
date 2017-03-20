@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Offer;
+use App\Page;
 use Illuminate\Http\Request;
 
 class OfferController extends Controller
@@ -15,7 +16,8 @@ class OfferController extends Controller
     public function index()
     {
         $offers = Offer::all();
-        return view('pages.offers', ['offers' => $offers]);
+        $content = Page::where('link', 'offers')->get();
+        return view('pages.offers', ['offers' => $offers, 'content' => $content]);
     }
 
     /**

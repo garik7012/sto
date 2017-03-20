@@ -1017,7 +1017,7 @@ svg {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     content: '';
     z-index: 1;
     -webkit-transition: .3s;
@@ -1596,6 +1596,9 @@ body.fixed .soc-prog__ico {
 
 .news-anons {
     padding: 60px 0;
+}
+.news-anons--page {
+    padding: 7px 0 15px;
 }
 
 .aside-submenu {
@@ -2430,7 +2433,7 @@ body.fixed .soc-prog__ico {
 }
 
 .news-page {
-    padding-bottom: 30px;
+    padding: 0.6% 0 30px;
 }
 
 .news-banner {
@@ -2550,7 +2553,7 @@ body.fixed .soc-prog__ico {
 .form-top__select-brend,
 .form-top__select-type,
 .form-top__select-mod {
-    width: 146px;
+    width: 17%;
     height: 45px;
     font-size: 16px;
     color: grey;
@@ -3564,7 +3567,7 @@ body.fixed .soc-prog__ico {
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.25);
     padding: 18px 15px;
     font-size: 15px;
-    width: 300px;
+    width: 350px;
 }
 
 .contact-box__item {
@@ -4665,8 +4668,14 @@ body.fixed .main-logo {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+@media (max-width: 1800px) {
+    .news-page {
+        padding: 0 0 30px;
+    }
+}
 
 @media (max-width: 1600px) {
+
     .header-search__input {
         width: 200px;
         height: 40px;
@@ -4710,9 +4719,13 @@ body.fixed .main-logo {
     .main-logo{
         margin-top: 3px;
     }
+    .news-anons--page{
+        padding: 0 0 15px 0;
+    }
 }
 
 @media (max-width: 1400px) {
+
     .main-logo{
         margin-top: 2px;
     }
@@ -4896,7 +4909,7 @@ body.fixed .main-logo {
     }
 
     .form-top__select-year {
-        width: 60px;
+        width: 70px;
         height: 40px;
         font-size: 16px;
         color: grey;
@@ -4913,6 +4926,9 @@ body.fixed .main-logo {
         color: grey;
         padding: 0 5px;
         margin-right: 5px;
+    }
+    .form-top__select-mod{
+        width: 18%;
     }
 
     .type-select__select {
@@ -5337,7 +5353,8 @@ body.fixed .main-logo {
         vertical-align: middle;
     }
 
-    .services-desc-img__img:hover .services-desc-img__wrap
+    .services-desc-img__img:hover .services-desc-img__wrap,
+    .services-desc-img__img:active .services-desc-img__wrap
      {
         position: fixed;
         width: 92vw;
@@ -5520,11 +5537,6 @@ body.fixed .main-logo {
         width: 15%;
     }
 
-    .services__item {
-        padding: 0 3px;
-        padding-bottom: 6px;
-    }
-
     .services-list {
         margin-right: -3px;
         margin-left: -3px;
@@ -5556,7 +5568,9 @@ body.fixed .main-logo {
     .top-section__main-banner {
         display: none;
     }
-
+    .services__item {
+        width: 100%;
+    }
     .contact-page-form__top {
         -webkit-flex-direction: column;
         -moz-flex-direction: column;
@@ -5721,7 +5735,7 @@ body.fixed .main-logo {
     }
 
     .services-link__title {
-        font-size: 11px;
+        font-size: 14px;
         padding: 0 5px;
     }
 
@@ -5748,11 +5762,6 @@ body.fixed .main-logo {
         width: 122px;
     }
 
-}
-
-.news-anons--page {
-    padding: 0;
-    padding-bottom: 15px;
 }
 
 .clearcss {

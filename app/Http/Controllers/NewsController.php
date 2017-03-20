@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\News;
+use App\Page;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
@@ -15,7 +16,8 @@ class NewsController extends Controller
     public function index()
     {
         $news = News::all();
-        return view('pages.news', ['news' => $news]);
+        $content = Page::where('link', 'news')->get();
+        return view('pages.news', ['news' => $news, 'content' => $content]);
     }
 
     /**

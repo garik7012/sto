@@ -107,5 +107,29 @@ class Pages extends Seeder{
 <p>СОБЕСЕДОВАНИЕ <a href=\"tel:+380674406611\">+380674406611</a> - Валентин Владимирович.</p>
 "
         ]);
+        Page::create([
+            'link' => '/',
+            'title' => 'Главная',
+        ]);
+        Page::create([
+            'link' => 'offers',
+            'title' => 'Акции',
+        ]);
+        Page::create([
+            'link' => 'news',
+            'title' => 'Новости',
+        ]);
+        Page::create([
+            'link' => 'services',
+            'title' => 'Услуги',
+        ]);
+        Page::create([
+            'link' => 'contacts',
+            'title' => 'Контакты',
+        ]);
+        Page::create([
+            'link' => 'online',
+            'title' => 'Онлайн запись',
+        ]);
     }
 }

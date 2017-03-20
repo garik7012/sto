@@ -62,7 +62,17 @@ class News extends Section
         return AdminForm::panel()->addBody([
             AdminFormElement::text('title', 'Название новости')->required(),
             AdminFormElement::wysiwyg('description', 'Текст новости'),
-            AdminFormElement::image('preview', 'preview')->required(),
+            AdminFormElement::image('preview', 'фото')->required()
+                ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
+                    return 'images/news'; // путь сохранения файла относительно public. public -> appServiceProvider
+                })
+                ->setUploadSettings([
+                    'orientate' => [],
+                    'resize' => [300, null, function ($constraint) {
+                        $constraint->upsize();
+                        $constraint->aspectRatio();
+                    }]
+                ]),
             AdminFormElement::text('id', 'ID')->setReadonly(1),
             AdminFormElement::text('created_at')->setLabel('Создано')->setReadonly(1),
 
