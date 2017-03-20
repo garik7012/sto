@@ -5562,6 +5562,9 @@ body.fixed .main-logo {
     .mobile-none {
         display: none;
     }
+    .chatbro_container .chatbro_movable_chat {
+        top: 88vh!important;
+    }
 }
 
 @media (max-width: 450px) {
