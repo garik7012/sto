@@ -12,6 +12,7 @@
     </div>
     <!--			ЭТО ТЕЛЕФОНЫ ДЛЯ ДЛЯ МОБ ВЕРСИИ надо добавить ссылки-->
     <div class="top-section__mobile-contact">
+        <a class="start-jivo menu-aside__item" href="#" onclick="jivo_api.open();">Начать чат</a>
         <ul class="mobile-contact">
             <li class="mobile-contact__item">
                 <a href="{{$cfs['telegram']}}" class="mobile-cont-item">

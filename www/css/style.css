@@ -5854,3 +5854,11 @@ body.fixed .main-logo {
 #ui-id-1 > li {
     margin-top: 10px;
 }
+.start-jivo{
+    color: white;
+    width: 20%;
+    position: absolute;
+    padding: 10px;
+    top: -20px;
+    left: 63%;
+}
