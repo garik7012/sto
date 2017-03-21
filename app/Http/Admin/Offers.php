@@ -60,7 +60,7 @@ class Offers extends Section
     {
         return AdminForm::panel()->addBody([
             AdminFormElement::text('title', 'Название акции')->required(),
-            AdminFormElement::wysiwyg('description', 'Описание'),
+            AdminFormElement::wysiwyg('article', 'Описание'),
             AdminFormElement::image('preview', 'фото')->required()
                 ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
                     return 'images/offers'; // путь сохранения файла относительно public. public -> appServiceProvider
@@ -72,6 +72,8 @@ class Offers extends Section
                         $constraint->aspectRatio();
                     }]
                 ]),
+            AdminFormElement::textarea('keywords', 'keywords'),
+            AdminFormElement::textarea('description', 'description'),
             AdminFormElement::text('id', 'ID')->setReadonly(1),
             AdminFormElement::text('created_at')->setLabel('Создано')->setReadonly(1),
 

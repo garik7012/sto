@@ -1,5 +1,11 @@
 @extends('layouts.master')
-@section('title', "{$news->title}")
+@section('title', $news->title)
+@if($news->keywords != '')
+    @section('keywords', $news->keywords)
+@endif
+@if($news->description != '')
+    @section('description', $news->description)
+@endif
 @section('content')
 
     <article class="news-page">
@@ -15,7 +21,7 @@
                     <h2>{{$news->title}}</h2>
                 </div>
                 <div class="clearcss news-page__desc">
-                {!! $news->description !!}
+                {!! $news->article !!}
                 </div>
             </div>
         </div>

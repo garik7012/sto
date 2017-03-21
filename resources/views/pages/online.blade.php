@@ -20,16 +20,31 @@
                             <div class="form-top__inputs-text">
                                 Ваше авто
                             </div>
-
-                            <select type="text" name="auto_year" class="form-top__select-year" placeholder="Год">
+                            <div class="form-top__select-year">
+                            <select type="text" name="auto_year" placeholder="Год">
+                                <option value="">Год</option>
                                 @for($year = 2017; $year > 1950; $year--)
                                     <option value="{{$year}}">{{$year}}</option>
                                 @endfor
                             </select>
-                            <input type="text" name="auto_brand" class="form-top__select-brend" placeholder="Марка">
-                            <input type="text" name="auto_type" class="form-top__select-type" placeholder="Модель">
-                            <input type="text" name="auto_mod" class="form-top__select-mod" placeholder="Объём двигателя">
-                            <input type="text" name="auto_vin" class="form-top__select-mod" placeholder="VIN-код">
+                                <span></span>
+                            </div>
+                            <div class="form-top__select-brend">
+                                <input type="text" name="auto_brand" placeholder="Марка">
+                                <span></span>
+                            </div>
+                            <div class="form-top__select-type">
+                                <input type="text" name="auto_type" placeholder="Модель">
+                                <span></span>
+                            </div>
+                            <div class="form-top__select-mod">
+                                <input type="text" name="auto_mod"  placeholder="Объём двигателя">
+                                <span></span>
+                            </div>
+                            <div class="form-top__select-mod">
+                                <input type="text" name="auto_vin"  placeholder="VIN-код">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -239,15 +254,29 @@
 
                                 <div class="application-item__desc">
                                     <div class="application-form-inputs">
-                                        <input class="application-form-inputs__input" type="text" name="fio" placeholder="ФИО" required>
-                                        <input class="application-form-inputs__input" type="tel" name="phone" placeholder="Номер телефона" required>
-                                        <input class="application-form-inputs__input" type="text" name="avto_nomer" placeholder="Номер автомобиля">
-                                        <input class="application-form-inputs__input" type="email" name='email' placeholder="Email">
-                                        <select class="application-form-inputs__input" name="remind">
+                                        <div class="application-form-inputs__input">
+                                        <input type="text" name="fio" placeholder="ФИО" required>
+                                            <span></span>
+                                        </div>
+                                        <div class="application-form-inputs__input">
+                                        <input type="tel" name="phone" placeholder="Номер телефона" required>
+                                            <span></span>
+                                        </div>
+                                        <div class="application-form-inputs__input">
+                                        <input type="text" name="avto_nomer" placeholder="Номер автомобиля">
+                                            <span></span>
+                                        </div>
+                                        <div class="application-form-inputs__input">
+                                        <input type="email" name='email' placeholder="Email">
+                                            <span></span>
+                                        </div>
+                                        <div class="application-form-inputs__input">
+                                        <select name="remind">
                                             <option value="1">Напомнить за 1 час</option>
                                             <option value="2">Напомнить за 2 часа</option>
                                             <option value="3">Напомнить за 3 часа</option>
                                         </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -343,4 +372,5 @@
 
         });
     </script>
+    <script src="/js/check.js"></script>
 @endsection
