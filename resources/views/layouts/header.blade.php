@@ -27,14 +27,16 @@
     </script>
     <script>
         //fix iOS
-        var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-        if(iOS) {
-            $('a').on('click touchend', function (e) {
-                var el = $(this);
-                var link = el.attr('href');
-                window.location = link;
-            });
-        }
+        $(document).ready(function(){
+            var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            if(iOS) {
+                $('a').on('click touchend', function (e) {
+                    var el = $(this);
+                    var link = el.attr('href');
+                    window.location = link;
+                });
+            }
+        })
     </script>
     <script src="/js/lib.js"></script>
     <script src="/js/main.js"></script>

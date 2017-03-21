@@ -142,13 +142,6 @@
     <script>
 
         $(document).ready(function () {
-            $('.services-description').click(function () {
-                var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-                if(iOS) {
-                    $('input[name=fio]').focus();
-                }
-            });
-
             if(window.innerWidth < 650) {
                 $('html, body').animate({
                     scrollTop: $('.services-description-main').offset().top
