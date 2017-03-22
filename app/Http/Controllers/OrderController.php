@@ -44,7 +44,7 @@ class OrderController extends Controller
         $text = urlencode($text);
         $id_chats = [306526429, '-11494395'];
         $id_chats = [306526429, '-169618651'];
-        $id_chats = [306526429];
+
         foreach ($id_chats as $id_chat) {
             $sendlink = "https://api.telegram.org/bot372613073:AAE4nx6m1XVLKpBCNOK0skkj_MioeoD5D88/sendMessage?chat_id={$id_chat}&parse_mode=Markdown&text=$text";
             $fp = fopen($sendlink, 'r');
