@@ -904,10 +904,12 @@
     <div class="contact-form">
         <div class="contact-form__item">
             <form class="form" action="/online/callback" method="post">
+                <div class="main-page__input">
                 <input name="fio" type="text" class="form__input" placeholder="Имя" required>
-
+                </div>
+                <div class="main-page__input">
                 <input name="phone" type="text" class="form__input" placeholder="Номер телефона" required>
-
+                </div>
                 <input type="hidden" name="message" value="">
                 {{csrf_field()}}
                 <input type="submit" class="form-submit" value="Записаться">

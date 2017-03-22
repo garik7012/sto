@@ -22,7 +22,7 @@
                             </div>
                             <div class="form-top__select-year">
                             <select type="text" name="auto_year" placeholder="Год">
-                                <option value="">Год</option>
+                                <option value="0" selected>Год</option>
                                 @for($year = 2017; $year > 1950; $year--)
                                     <option value="{{$year}}">{{$year}}</option>
                                 @endfor
@@ -30,19 +30,29 @@
                                 <span></span>
                             </div>
                             <div class="form-top__select-brend">
-                                <input type="text" name="auto_brand" placeholder="Марка">
+                                <input type="text" name="auto_brand" maxlength="20" placeholder="Марка" required>
+                                <script>
+                                    $(function() {
+                                        var brands = [
+                                            'ALFA ROMEO','ASTON MARTIN','AUDI','BENTLEY','BMW','BOGDAN','BRABUS','BRILLIANCE','BUGATTI','BUICK','BYD','CADILLAC','CHERY','CHEVROLET','CHRYSLER','CITROEN','DACIA','DADI','DAF','DAIHATSU','DATSUN','DE TOMASO','DODGE','DS','DUCATI MOTORCYCLES','EMGRAND (GEELY)','FAW','FERRARI','FIAT','FORD','FORD USA','GAZ','GEELY','GMC','GREAT WALL','HAVAL','HONDA','HUMMER','HYUNDAI','INFINITI','ISUZU','IVECO','JAC','JAGUAR','JEEP','JMC','KIA','KTM','LADA','LAMBORGHINI','LANCIA','LAND ROVER','LEXUS','LIFAN','LINCOLN','LOTUS','MAN','MASERATI','MAYBACH','MAZDA','MCLAREN','MERCEDES-BENZ','MERCURY','MG','MINI','MITSUBISHI','MORGAN','MOSKVICH','NISSAN','OLDSMOBILE','OPEL','PLYMOUTH','PONTIAC','PORSCHE','PROTON','RAM','RENAULT','RENAULT TRUCKS','ROLLS-ROYCE','ROVER','SAAB','SAIPA','SAMSUNG','SCANIA','SCION','SEAT','SHELBY','SKODA','SMART','SOUEAST','SUBARU','SUZUKI','TATA (TELCO)','TESLA','TOYOTA','TVR','UAZ','VOLKSWAGEN','VOLVO','YAMAHA MOTORCYCLES','ZAZ','ZOTYE'
+                                        ];
+                                        $('input[name=auto_brand]').autocomplete({
+                                            source: brands
+                                        });
+                                    });
+                                </script>
                                 <span></span>
                             </div>
                             <div class="form-top__select-type">
-                                <input type="text" name="auto_type" placeholder="Модель">
+                                <input type="text" name="auto_type" maxlength="20" placeholder="Модель">
                                 <span></span>
                             </div>
                             <div class="form-top__select-mod">
-                                <input type="text" name="auto_mod"  placeholder="Объём двигателя">
+                                <input type="text" name="auto_mod" maxlength="20" placeholder="Объём двигателя">
                                 <span></span>
                             </div>
                             <div class="form-top__select-mod">
-                                <input type="text" name="auto_vin"  placeholder="VIN-код">
+                                <input type="text" name="auto_vin" maxlength="20" placeholder="VIN-код">
                                 <span></span>
                             </div>
                         </div>
@@ -55,9 +65,8 @@
                             Выберите тип услуги
                         </div>
 
-                        <select class="type-select__select" name="service_id">
-
-                            <option value="0" selected disabled>Выберите услугу</option>
+                        <select class="type-select__select" name="service_id" >
+                            <option value="0" selected>Выберите услугу</option>
                             @foreach($listServices as $service)
                             <option value="{{$service->id}}">{{$service->title}}</option>
                             @endforeach
@@ -79,7 +88,7 @@
 
                                 <div class="application-item__desc">
                                     <div class="application-form-inputs">
-                                        <input id="alternate" type="text" name="order_date">
+                                        <input id="alternate" type="text" maxlength="40" name="order_date">
                                         <div id="datepicker"></div>
                                     </div>
                                 </div>
@@ -88,7 +97,7 @@
 
                         <li class="application-form-list__item">
                             <div class="application-item">
-                                <div class="application-item__title">
+                                <div class="application-item__title g-order_time">
                                     <div class="application-item__title-number">2</div>
 
                                     <div class="application-item__title-text">
@@ -255,15 +264,15 @@
                                 <div class="application-item__desc">
                                     <div class="application-form-inputs">
                                         <div class="application-form-inputs__input">
-                                        <input type="text" name="fio" placeholder="ФИО" required>
+                                        <input type="text" name="fio" placeholder="ФИО" maxlength="55" required>
                                             <span></span>
                                         </div>
                                         <div class="application-form-inputs__input">
-                                        <input type="tel" name="phone" placeholder="Номер телефона" required>
+                                        <input type="tel" name="phone" placeholder="Номер телефона" maxlength="25" required>
                                             <span></span>
                                         </div>
                                         <div class="application-form-inputs__input">
-                                        <input type="text" name="avto_nomer" placeholder="Номер автомобиля">
+                                        <input type="text" name="avto_nomer" maxlength="20" placeholder="Номер автомобиля">
                                             <span></span>
                                         </div>
                                         <div class="application-form-inputs__input">
@@ -295,11 +304,10 @@
                                 <span class="comment-area__text">Добавить комментарий к заявке</span>
                             </label>
 
-                            <textarea class="comment-area__area" cols="30" rows="10" name="comments" placeholder="Напишите ваш комментарий"></textarea>
+                            <textarea class="comment-area__area" cols="30" rows="10" maxlength="255" name="comments" placeholder="Напишите ваш комментарий"></textarea>
                         </div>
                     </div>
                 </div>
-
                 <div class="application-form__btn">
                     <div class="btn-end">
                         <div class="btn-end__desc">
@@ -372,5 +380,4 @@
 
         });
     </script>
-    <script src="/js/check.js"></script>
 @endsection

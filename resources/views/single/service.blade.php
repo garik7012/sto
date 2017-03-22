@@ -63,7 +63,7 @@
                     <!--НУЖНО В ВЕЛЪЮ ВСТАВИТЬ ДАТУ-->
                     <input id="datepicker2" type="text" name="order_date" class="services-form__input" placeholder="Дата">
 
-                    <select name="order_time" class="services-form__select">
+                    <select name="order_time" class="services-form__select g-order_time">
                         <option>Время</option>
                         <option value="09.00">09.00</option>
                         @for($i = 10; $i<18; $i++)
@@ -74,8 +74,8 @@
                         <option value="18.00">18.00</option>
                     </select>
 
-                    <select class="services-form__select" name="service">
-                        <option>Услуга</option>
+                    <select class="services-form__select " name="service_id">
+                        <option value="0">Услуга</option>
                         @foreach($listServices as $service)
                             <option value="{{$service->id}}">{{$service->title}}</option>
                         @endforeach

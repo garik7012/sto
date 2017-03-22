@@ -39,7 +39,7 @@ class CustomFields extends Seeder{
             'name'=> 'viber',
         ]);CustomField::create([
             'name'=> 'telegram',
-            'value' => 'https://t.me/joinchat/AAAAAACvY_ubPIP9gwoLTA',
+            'value' => 'https://t.me/joinchat/AAAAAAt_G1ewXNL1zd4Osw',
             'description'=>'Ссылка на груповой чат телеграмм',
         ]);CustomField::create([
             'name'=> 'twiter',

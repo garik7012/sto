@@ -798,7 +798,7 @@ svg {
 
 .banner-aside__desc {
     position: absolute;
-    top: 50%;
+    top: 12%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -5843,22 +5843,50 @@ body.fixed .main-logo {
     margin: 16px 0;
 }
 
-#ui-id-1 {
+#ui-id-1, #ui-id-2 {
     z-index: 100;
     width: 300px!important;
     color: grey;
     font-size: 15px;
     padding: 5px;
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #ui-id-1 > li {
     margin-top: 10px;
 }
 .start-jivo {
-       color: white;
-       width: 20%;
-       position: absolute;
-       padding: 10px;
-       top: -20px;
-       left: 63%;
-    }
+    color: white;
+    width: 20%;
+    position: absolute;
+    padding: 10px;
+    top: -20px;
+    left: 63%;
+    background-color: #383345;
+    margin-bottom: 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+.info-head-ico__margin a,
+.info-head-ico__adress a {
+    color: #232037;
+}
+.has-error {
+    border: 1px solid #bc0f02;
+}
+
+.main-page__input {
+    width: 33%;
+}
+.main-page__input input{
+    width: 90%;
+    margin-bottom: 5px;
+}
+.main-page__input span{
+    color: #ffd6d4;
+    background-color: rgba(8, 8, 8, 0.35);
+}
