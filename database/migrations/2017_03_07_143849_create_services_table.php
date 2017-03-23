@@ -26,6 +26,7 @@ class CreateServicesTable extends Migration
             $table->string('photo3')->nullable();
             $table->integer('is_left')->nullable();
             $table->integer('position')->default(50);
+            $table->integer('is_public')->nullable();
         });
     }
 

@@ -59,6 +59,7 @@ class Offers extends Section
     public function onEdit($id)
     {
         return AdminForm::panel()->addBody([
+            AdminFormElement::checkbox('is_public', 'опубликовать на сайт'),
             AdminFormElement::text('title', 'Название акции')->required(),
             AdminFormElement::wysiwyg('article', 'Описание'),
             AdminFormElement::image('preview', 'фото')->required()
@@ -76,7 +77,6 @@ class Offers extends Section
             AdminFormElement::textarea('description', 'description'),
             AdminFormElement::text('id', 'ID')->setReadonly(1),
             AdminFormElement::text('created_at')->setLabel('Создано')->setReadonly(1),
-
         ]);
     }
 

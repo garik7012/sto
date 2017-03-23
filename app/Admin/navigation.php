@@ -49,6 +49,11 @@ return [
         'model' => \App\CustomField::class,
     ],
     [
+        'title' => 'Баннер',
+        'priority' => 201,
+        'model' => \App\Banner::class,
+    ],
+    [
         'title' => 'Страницы',
         'priority' => 201,
         'model' => \App\Page::class,

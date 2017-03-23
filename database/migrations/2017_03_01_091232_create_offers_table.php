@@ -20,6 +20,7 @@ class CreateOffersTable extends Migration
             $table->string('preview');
             $table->string('keywords')->nullable();
             $table->string('description')->nullable();
+            $table->integer('is_public')->nullable();
             $table->timestamps();
         });
     }

@@ -107,6 +107,7 @@ class ServiceSeeder extends Seeder
                 'photo2' => $photo2[$i],
                 'photo3' => $photo3[$i],
                 'is_left' => $is_left[$i],
+                'is_public' => 1,
             ]);
         }
     }

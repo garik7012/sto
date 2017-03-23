@@ -6,7 +6,6 @@ use SleepingOwl\Admin\Contracts\Display\DisplayInterface;
 use SleepingOwl\Admin\Contracts\Form\FormInterface;
 use SleepingOwl\Admin\Section;
 
-
 use AdminColumn;
 use AdminDisplay;
 use AdminForm;
@@ -14,13 +13,13 @@ use AdminFormElement;
 use SleepingOwl\Admin\Contracts\Initializable;
 
 /**
- * Class News
+ * Class Banner
  *
- * @property \App\News $model
+ * @property \App\Banner $model
  *
  * @see http://sleepingowladmin.ru/docs/model_configuration_section
  */
-class News extends Section
+class Banner extends Section
 {
     /**
      * @see http://sleepingowladmin.ru/docs/model_configuration#ограничение-прав-доступа
@@ -44,12 +43,12 @@ class News extends Section
      */
     public function onDisplay()
     {
-        return AdminDisplay::datatables()
+        return AdminDisplay::table()
             ->setHtmlAttribute('class', 'table-primary')
             ->setColumns(
                 AdminColumn::text('id', '#')->setWidth('30px'),
-                AdminColumn::link('title', 'заголовок')
-            )->paginate(20);
+                AdminColumn::link('offer_end', 'дата окончания акции')
+            );
     }
 
     /**
@@ -60,12 +59,11 @@ class News extends Section
     public function onEdit($id)
     {
         return AdminForm::panel()->addBody([
-            AdminFormElement::checkbox('is_public', 'опубликовать на сайт'),
-            AdminFormElement::text('title', 'Название новости')->required(),
-            AdminFormElement::wysiwyg('article', 'Текст новости'),
-            AdminFormElement::image('preview', 'фото')->required()
+            AdminFormElement::text('offer_end', 'Время окончания акции на баннере справа')->required(),
+            AdminFormElement::text('offer_text', 'Текст акции на банере справа')->required(),
+            AdminFormElement::image('mobile_image', 'мобильная версия банера')->required()
                 ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
-                    return 'images/news'; // путь сохранения файла относительно public. public -> appServiceProvider
+                    return 'images/offers'; // путь сохранения файла относительно public. public -> appServiceProvider
                 })
                 ->setUploadSettings([
                     'orientate' => [],
@@ -74,21 +72,26 @@ class News extends Section
                         $constraint->aspectRatio();
                     }]
                 ]),
-            AdminFormElement::textarea('keywords', 'keywords'),
-            AdminFormElement::textarea('description', 'description'),
-            AdminFormElement::text('id', 'ID')->setReadonly(1),
-            AdminFormElement::text('created_at')->setLabel('Создано')->setReadonly(1),
+            AdminFormElement::image('image', 'первый слайд баннера')->required()
+                ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
+                    return 'images/offers'; // путь сохранения файла относительно public. public -> appServiceProvider
+                })
+                ->setUploadSettings([
+                    'orientate' => [],
+                    'resize' => [1054, null, function ($constraint) {
+                        $constraint->upsize();
+                        $constraint->aspectRatio();
+                    }]
+                ]),
 
         ]);
+
     }
 
     /**
      * @return FormInterface
      */
-    public function onCreate()
-    {
-        return $this->onEdit(null);
-    }
+
 
     /**
      * @return void

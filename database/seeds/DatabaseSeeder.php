@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use App\CustomField;
 use App\Service;
 use App\Page;
+use App\Banner;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(Pages::class);
         $this->call(NewsSeeder::class);
         $this->call(ServiceSeeder::class);
+        $this->call(BannerSeeder::class);
     }
 }
 
@@ -130,6 +132,18 @@ class Pages extends Seeder{
         Page::create([
             'link' => 'online',
             'title' => 'Онлайн запись',
+        ]);
+    }
+}
+
+class BannerSeeder extends Seeder{
+    public function run(){
+        DB::table('banners')->delete();
+        Banner::create([
+            'image' => '/img/main-bannerb.png',
+            'mobile_image' => '/images/offers/mbanner.jpg',
+            'offer_end' => 'до 15 апреля',
+            'offer_text' => 'Бесплатная замена масла и фильтра в АКПП',
         ]);
     }
 }

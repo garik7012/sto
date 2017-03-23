@@ -16,6 +16,7 @@ class NewsSeeder extends Seeder
             News::create([
                 'title' => 'ПОДГОТОВКА К ЗИМЕ - ОСНОВНЫЕ МОМЕНТЫ',
                 'preview' => 'images/news/newitem.png',
+                'is_public' => 1,
                 'article' => '<div class="news-page__desc">
 				<div class="news-desc">
 					<div class="news-desc__title">

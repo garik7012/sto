@@ -6,6 +6,9 @@
     <div class="top-section__main-banner">
         <div class="main-banner">
             <div class="main-banner__slider owl-carousel-1  owl-carousel">
+                <div class="main-banner__img  item" style="background-image:url({{$banner->image}})">
+                </div>
+
                 <div class="main-banner__img  item" style="background-image:url(img/main-banner.png)">
                 </div>
 
@@ -124,9 +127,25 @@
 </section>
 
 
+<section class="offer-anons">
+    <div class="news-anons__list">
+        <ul class="news-anons-list">
+                <li class="news-anons-list__item">
+                    <div class="news-anons-item">
+                        <a href="#" class="news-anons-item__img">
+                            <img src="{{$banner->mobile_image}}" alt="акция">
+                            <div class="news-anons-item__hover-text">
+                                <span>Подробнее</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+        </ul>
+    </div>
+</section>
    @include('layouts.services')
 
-    <section class="video-sect">
+    <section class="video-sect ">
         <div class="video-sect__title">
             <div class="title-img">
                 <h2 class="title-img__text">

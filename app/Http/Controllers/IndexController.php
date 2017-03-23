@@ -9,7 +9,7 @@ use App\News;
 class IndexController extends Controller
 {
     public function index(){
-        $news = News::latest()->take(3)->get();
+        $news = News::latest()->take(3)->where('is_public', '1')->get();
         $content = Page::where('link', 'news')->get();
         return view('index', ['news' => $news, 'content' => $content]);
     }

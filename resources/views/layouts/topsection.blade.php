@@ -12,14 +12,6 @@
     </div>
     <!--			ЭТО ТЕЛЕФОНЫ ДЛЯ ДЛЯ МОБ ВЕРСИИ надо добавить ссылки-->
     <div class="top-section__mobile-contact">
-        <a class="start-jivo" href="#" onclick="jivo_api.open();">Начать чат</a>
-        <script>
-            $(document).ready(function () {
-                $('.start-jivo').click(function () {
-                    $(this).hide();
-                })
-            })
-        </script>
         <ul class="mobile-contact">
             <li class="mobile-contact__item">
                 <a href="{{$cfs['telegram']}}" class="mobile-cont-item">
@@ -60,12 +52,12 @@
                     </strong>
 
                     <span class="banner-desc__text">
-								Бесплатная замена масла и фильтра в АКПП
-							</span>
+						{{$banner->offer_text}}
+					</span>
 
                     <span class="banner-desc__time">
-								До 15 марта
-							</span>
+						{{$banner->offer_end}}
+					</span>
                 </div>
             </div>
         </aside>

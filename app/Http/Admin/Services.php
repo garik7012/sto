@@ -60,6 +60,7 @@ class Services extends Section
     {
         return AdminForm::panel()->addBody([
             AdminFormElement::text('link', 'Cсылка'),
+            AdminFormElement::checkbox('is_public', 'опубликовать на сайт'),
             AdminFormElement::text('title', 'заголовок')->required(),
             AdminFormElement::wysiwyg('text', 'контент'),
             AdminFormElement::image('photo', 'превью')->required()

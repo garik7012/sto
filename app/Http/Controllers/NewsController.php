@@ -15,7 +15,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = News::all();
+        $news = News::all()->where('is_public', '1');
         $content = Page::where('link', 'news')->get();
         return view('pages.news', ['news' => $news, 'content' => $content]);
     }

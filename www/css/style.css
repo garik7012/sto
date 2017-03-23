@@ -2810,6 +2810,7 @@ body.fixed .soc-prog__ico {
 .application-form-inputs__input input,
 .application-form-inputs__input select {
     padding: 0 10px;
+    width: 100%;
     height: 33px;
 }
 
@@ -4681,6 +4682,9 @@ body.fixed .main-logo {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+.offer-anons{
+    display: none;
+}
 @media (max-width: 1800px) {
     .news-page {
         padding: 0 0 30px;
@@ -5774,7 +5778,9 @@ body.fixed .main-logo {
     .footer-page__block:first-child span:first-child {
         width: 122px;
     }
-
+    .offer-anons{
+        display: block;
+    }
 }
 
 .clearcss {
@@ -5857,20 +5863,7 @@ body.fixed .main-logo {
 #ui-id-1 > li {
     margin-top: 10px;
 }
-.start-jivo {
-    color: white;
-    width: 20%;
-    position: absolute;
-    padding: 10px;
-    top: -20px;
-    left: 63%;
-    background-color: #383345;
-    margin-bottom: 5px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    text-align: center;
-}
+
 .info-head-ico__margin a,
 .info-head-ico__adress a {
     color: #232037;
