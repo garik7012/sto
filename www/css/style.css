@@ -5858,6 +5858,7 @@ body.fixed .main-logo {
 
 .clearcss p {
     margin: 16px 0;
+    line-height: 1.4;
 }
 
 #ui-id-1, #ui-id-2 {
@@ -5881,6 +5882,9 @@ body.fixed .main-logo {
 }
 .has-error {
     border: 1px solid #bc0f02;
+}
+.marker {
+    color: red;
 }
 
 
