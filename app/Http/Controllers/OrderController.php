@@ -42,7 +42,6 @@ class OrderController extends Controller
             $text = $text . " также он оставил сообщение: ```text $comments ```";
         }
         $text = urlencode($text);
-        $id_chats = [306526429, '-11494395'];
         $id_chats = [306526429, '-169618651'];
 
         foreach ($id_chats as $id_chat) {

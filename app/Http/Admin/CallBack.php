@@ -60,16 +60,18 @@ class CallBack extends Section
      */
     public function onEdit($id)
     {
-        // todo: remove if unused
+        return AdminForm::panel()->addBody([
+            AdminFormElement::text('fio', 'ФИО')->setReadonly(1),
+            AdminFormElement::text('phone', 'телефон')->setReadonly(1),
+            AdminFormElement::text('message', 'сообщение')->setReadonly(1),
+            AdminFormElement::text('created_at', 'когда создана')->setReadonly(1),
+        ]);
     }
 
     /**
      * @return FormInterface
      */
-    public function onCreate()
-    {
-        return $this->onEdit(null);
-    }
+
 
     /**
      * @return void
