@@ -27,7 +27,7 @@ class LayoutServiceProvider extends ServiceProvider
         view()->share('banner', Banner::findOrFail(1));
         $services = Service::orderBy('position')->where('is_left', '1')->where('is_public', '1')->get();
         view()->share('leftServices', $services);
-        $mservices = Service::orderBy('id', 'desc')->limit(9)->where('is_public', '1')->get();
+        $mservices = Service::orderBy('position', 'desc')->limit(9)->where('is_public', '1')->get();
         view()->share('mainServices', $mservices);
         $listServices = Service::select('id', 'title')->where('is_public', '1')->get();
         view()->share('listServices', $listServices);
