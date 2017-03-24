@@ -16,6 +16,9 @@ Route::get('/about', 'IndexController@about');
 Route::get('/contacts', 'IndexController@contacts');
 Route::get('/vacancies', 'IndexController@vacancies');
 
+Route::get('/avto/o-kompanii', 'IndexController@rservice');
+Route::get('/avto', 'IndexController@rmain');
+
 Route::get('/services', 'ServiceController@index');
 Route::get('/service/search', 'ServiceController@search');
 Route::get('/service/{link}', 'ServiceController@showPage');
@@ -25,6 +28,7 @@ Route::post('/online/add', 'OrderController@add');
 Route::post('/online/callback', 'OrderController@callback');
 
 Route::get('/test', 'IndexController@test');
+
 
 Auth::routes();
 

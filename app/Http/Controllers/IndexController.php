@@ -32,4 +32,10 @@ class IndexController extends Controller
     public function test(){
         return view('test');
     }
+    public function rservice(){
+        return redirect('/services');
+    }
+    public function rmain(){
+        return redirect('');
+    }
 }
