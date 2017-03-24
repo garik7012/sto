@@ -31,7 +31,7 @@
 
                         <div class="contact-box__item">
                             <div class="phone-img">
-                                <img src="img/Vodafone.png" alt="alt">
+                                <img src="img/vodafone.png" alt="alt">
                             </div>
 
                             <span>(066)285-04-66</span>
@@ -43,6 +43,12 @@
                             </div>
 
                             <span>(067)219-51-57</span>
+                        </div>
+
+                        <div class="contact-box__item">
+
+
+                            <a href="https://www.youtube.com/watch?v=J-EINZK5RYw">Маршрут к СТО Мега Сервис через Бровары</a>
                         </div>
                     </div>
                 </div>
