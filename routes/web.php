@@ -17,6 +17,7 @@ Route::get('/contacts', 'IndexController@contacts');
 Route::get('/vacancies', 'IndexController@vacancies');
 
 Route::get('/avto/o-kompanii', 'IndexController@rservice');
+Route::get('/avto/servis', 'IndexController@rmain');
 Route::get('/avto', 'IndexController@rmain');
 
 Route::get('/services', 'ServiceController@index');
