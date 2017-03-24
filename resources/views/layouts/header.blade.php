@@ -123,10 +123,6 @@
                         <li class="social-button__item">
                             <a href="{{$cfs['fb']}}" class="link-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
-
-                        <li class="social-button__item">
-                            <a href="" class="link-xz">?</a>
-                        </li>
                     </ul>
                 </div>
             </div>
