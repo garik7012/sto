@@ -2,134 +2,134 @@
 @section('title', 'СТО')
 @section('content')
 
-<section class="main-banner">
-    <div class="top-section__main-banner">
-        <div class="main-banner">
-            <div class="main-banner__slider owl-carousel-1  owl-carousel">
-                <div class="main-banner__img  item" style="background-image:url({{$banner->image}})">
-                </div>
-
-                <div class="main-banner__img  item" style="background-image:url(img/main-banner.png)">
-                </div>
-
-                <div class="main-banner__img  item" style="background-image:url(img/main-bannerb.png)">
-                </div>
-
-                <div class="main-banner__img  item" style="background-image:url(img/mainbannerc.jpg)">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="top-section__logo-company">
-        <div class="logo-company">
-            <div class="logo-companyr__slider">
-                <div class="owl-carousel-2 owl-carousel owl-theme">
-                    <div class="logo-company__img  item">
-                        <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
+    <section class="main-banner">
+        <div class="top-section__main-banner">
+            <div class="main-banner">
+                <div class="main-banner__slider owl-carousel-1  owl-carousel">
+                    <div class="main-banner__img  item" style="background-image:url({{$banner->image}})">
                     </div>
 
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/787263fiat.png" alt="">
+                    <div class="main-banner__img  item" style="background-image:url(img/main-banner.png)">
                     </div>
 
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
+                    <div class="main-banner__img  item" style="background-image:url(img/main-bannerb.png)">
                     </div>
 
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/772686ford1.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/426234logo-citroen.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1444213875-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1444215265-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1444230850-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1448879564-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1448880091-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1448880093-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/461358newholland-mini.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item">
-                        <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/787263fiat.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/772686ford1.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/426234logo-citroen.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1444213875-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1444215265-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1444230850-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1448879564-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1448880091-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/1448880093-md.png" alt="">
-                    </div>
-
-                    <div class="logo-company__img  item" >
-                        <img src="img/logo-company/461358newholland-mini.png" alt="">
+                    <div class="main-banner__img  item" style="background-image:url(img/mainbannerc.jpg)">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+
+        <div class="top-section__logo-company">
+            <div class="logo-company">
+                <div class="logo-companyr__slider">
+                    <div class="owl-carousel-2 owl-carousel owl-theme">
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/787263fiat.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/772686ford1.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/426234logo-citroen.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1444213875-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1444215265-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1444230850-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1448879564-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1448880091-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1448880093-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/461358newholland-mini.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/79440track-iveco-logo.jpg" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/787263fiat.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/490091land-rover-logo-png.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/772686ford1.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/426234logo-citroen.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1444213875-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1444215265-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1444230850-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1448879564-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1448880091-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/1448880093-md.png" alt="">
+                        </div>
+
+                        <div class="logo-company__img  item">
+                            <img src="img/logo-company/461358newholland-mini.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<section class="offer-anons">
-    <div class="news-anons__list">
-        <ul class="news-anons-list">
+    <section class="offer-anons">
+        <div class="news-anons__list">
+            <ul class="news-anons-list">
                 <li class="news-anons-list__item">
                     <div class="news-anons-item">
                         <a href="#" class="news-anons-item__img">
@@ -140,10 +140,10 @@
                         </a>
                     </div>
                 </li>
-        </ul>
-    </div>
-</section>
-   @include('layouts.services')
+            </ul>
+        </div>
+    </section>
+    @include('layouts.services')
 
     <section class="video-sect ">
         <div class="video-sect__title">
@@ -153,8 +153,10 @@
                 </h2>
 
                 <div class="title-img__ico">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;"
+                         xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -177,7 +179,7 @@
         <div class="video-sect__video">
             <div class="video">
                 <div class="video__pb">
-                    <iframe src="https://www.youtube.com/embed/An5Yh-AopXo" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/44clk_cqA1U" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -191,8 +193,10 @@
                 </h2>
 
                 <div class="title-img__ico">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;"
+                         xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -217,41 +221,59 @@
                 <li class="advantages-list__item">
                     <div class="advantages-item">
                         <div class="advantages-item__ico">
-                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-								<g>
-                                    <g>
-                                        <path d="M0,49.11v413.78h512V49.11H0z M411.167,447.216H100.833v-22.41h310.335V447.216z M411.167,409.133H100.833v-22.412h41.363
-											v-15.674h-41.363v-22.411h310.335V409.133z M411.167,332.963H100.833v-22.41h310.335V332.963z M411.167,294.88H100.833v-22.411
-											h310.335V294.88z M411.167,218.711H115.029v15.673h296.139v22.41H100.833V196.3h310.335V218.711z M496.327,447.216h-69.486
-											v-266.59H85.159v266.59H15.673V117.029h480.653V447.216z M496.327,101.355H15.673V64.784h480.653V101.355z"/>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;"
+                                 xml:space="preserve">
+									<g>
+                                        <g>
+                                            <g>
+                                                <path d="M107.071,19.048L80.952,55.62v11.048h71.429V19.048h0H107.071z M142.858,57.144L142.858,57.144H91.567l20.41-28.571
+													h30.881V57.144z"/>
+                                                <path d="M157.142,19.048v47.619h71.429V55.62l-26.119-36.571H157.142z M166.667,57.142V28.571h30.881l20.41,28.571H166.667z"/>
+                                                <rect x="138.095" y="71.43" width="14.286" height="9.524"/>
+                                                <path d="M66.667,147.62c7.876,0,14.286-6.41,14.286-14.286s-6.41-14.286-14.286-14.286c-7.876,0-14.286,6.41-14.286,14.286
+													C52.381,141.211,58.791,147.62,66.667,147.62z M66.667,128.571c2.629,0,4.762,2.133,4.762,4.762c0,2.629-2.134,4.762-4.762,4.762
+													c-2.629,0-4.762-2.133-4.762-4.762C61.905,130.704,64.038,128.571,66.667,128.571z"/>
+                                                <path d="M280.953,138.095c11.805,0,14.286-7.771,14.286-14.286V80.953c0-11.805-9.629-22.271-17.895-23.667l-19.033-4.762
+													c-4.79-1.214-7.562-3.086-11.581-7.671l-23.929-33.5C216.657,3.501,209.624,0.001,200,0.001h-90.476
+													c-9.629,0-16.667,3.5-22.919,11.519L63.076,44.495c-4.276,4.924-7.538,7.162-11.471,7.952l-28.762,4.795
+													C9.181,60.087,0,71.529,0,85.714v33.333c0,10.324,8.724,19.048,19.048,19.048h14.667c1.067,7.41,4.557,14.043,9.671,19.048H0
+													v38.095h84.995l46.429,14.286l-47.11,14.495l0.162,9.152l44.824,12.067l-44.219,11.905H0v38.095h295.238v-38.095h-85.081
+													l-44.219-11.905l44.824-12.067l0.162-9.152l-47.11-14.495l46.429-14.286h84.995v-38.095h-43.386
+													c5.119-5.005,8.605-11.638,9.672-19.048H280.953z M42.857,133.334c0-13.129,10.681-23.81,23.81-23.81
+													c13.129,0,23.81,10.681,23.81,23.81c0,13.129-10.681,23.81-23.81,23.81C53.538,157.144,42.857,146.462,42.857,133.334z
+													 M99.619,138.095h96c1.067,7.41,4.557,14.043,9.671,19.048H89.948C95.067,152.139,98.552,145.506,99.619,138.095z
+													 M285.714,266.666v19.048H9.524v-19.048H285.714z M173.519,257.143h-51.8l25.9-6.971L173.519,257.143z M192.343,228.267
+													l-44.724,12.038l-44.724-12.043l44.724-13.757L192.343,228.267z M147.619,204.538l-30.233-9.3h60.467L147.619,204.538z
+													 M285.714,166.667v19.048H9.524v-19.048H285.714z M228.572,157.144c-13.129,0-23.81-10.681-23.81-23.81
+													c0-13.129,10.681-23.81,23.81-23.81c13.129,0,23.81,10.681,23.81,23.81C252.382,146.462,241.701,157.144,228.572,157.144z
+													 M228.571,100.001c-16.758,0-30.629,12.448-32.952,28.571h-96c-2.324-16.123-16.195-28.571-32.952-28.571
+													s-30.629,12.448-32.952,28.571H19.048c-5.072,0-9.524-4.452-9.524-9.523v-23.81h9.524v9.524h9.524v-9.524
+													c0-6.143-3.381-9.524-9.524-9.524H9.524c0-11.781,7.881-17.614,15.067-19.114l28.724-4.79
+													c6.219-1.248,11.281-4.557,17.224-11.424l23.69-33.171c4.381-5.605,8.529-7.69,15.295-7.69H200c6.762,0,10.91,2.086,15.176,7.529
+													l24.09,33.69c4.667,5.371,9.095,9.086,16.729,11.014l19.4,4.838c4.057,0.7,10.319,7.171,10.319,14.357v42.857
+													c0,4.09-0.671,4.762-4.762,4.762h-19.429C259.2,112.449,245.329,100.001,228.571,100.001z"/>
+                                                <path d="M228.571,119.048c-7.876,0-14.286,6.41-14.286,14.286c0,7.876,6.41,14.286,14.286,14.286
+													c7.876,0,14.286-6.41,14.286-14.286S236.448,119.048,228.571,119.048z M228.571,138.095c-2.629,0-4.762-2.133-4.762-4.762
+													c0-2.629,2.133-4.762,4.762-4.762c2.629,0,4.762,2.133,4.762,4.762C233.333,135.962,231.2,138.095,228.571,138.095z"/>
+                                                <rect x="38.095" y="204.762" width="9.524" height="23.81"/>
+                                                <rect x="19.048" y="214.287" width="9.524" height="33.333"/>
+                                                <rect x="261.905" y="204.762" width="9.524" height="19.048"/>
+                                                <rect x="242.857" y="204.762" width="9.524" height="42.857"/>
+                                                <rect x="176.19" y="109.524" width="9.524" height="9.524"/>
+                                                <rect x="157.143" y="109.524" width="9.524" height="9.524"/>
+                                                <rect x="266.667" y="109.524" width="9.524" height="9.524"/>
+                                                <rect x="19.048" y="271.429" width="9.524" height="9.524"/>
+                                                <rect x="38.095" y="271.429" width="9.524" height="9.524"/>
+                                            </g>
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <rect x="160.486" y="371.043" width="15.673" height="15.673"/>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <rect x="194.968" y="371.043" width="201.143" height="15.673"/>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <rect x="259.229" y="75.233" width="15.673" height="15.673"/>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <rect x="293.71" y="75.233" width="188.082" height="15.673"/>
-                                    </g>
-                                </g>
-								</svg>
+									</svg>
                         </div>
 
                         <div class="advantages-item__text">
-                            2000 кв2
+                            14 постов
                         </div>
                     </div>
                 </li>
@@ -259,8 +281,10 @@
                 <li class="advantages-list__item">
                     <div class="advantages-item">
                         <div class="advantages-item__ico">
-                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;"
+                                 xml:space="preserve">
 								<g>
                                     <g>
                                         <g>
@@ -294,7 +318,8 @@
 												C252.381,226.439,250.243,228.572,247.619,228.572z M271.429,244.157c-4.924-3.552-10.4-6.386-16.319-8.238
 												c4.062-2.519,6.795-6.986,6.795-12.11c0-6.2-3.995-11.438-9.524-13.41v-43.733h1.624l12.905,30.077
 												c4.448,13.333,4.519,26.933,4.519,27.071V244.157z"/>
-                                            <polygon points="152.381,138.095 195.238,138.095 195.238,128.571 142.857,128.571 142.857,176.19 152.381,176.19 			"/>
+                                            <polygon
+                                                    points="152.381,138.095 195.238,138.095 195.238,128.571 142.857,128.571 142.857,176.19 152.381,176.19 			"/>
                                             <rect x="85.714" y="61.905" width="9.524" height="9.524"/>
                                             <rect x="104.762" y="57.143" width="9.524" height="9.524"/>
                                         </g>
@@ -312,8 +337,10 @@
                 <li class="advantages-list__item">
                     <div class="advantages-item">
                         <div class="advantages-item__ico">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 181.788 181.788" style="enable-background:new 0 0 181.788 181.788;" xml:space="preserve">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 181.788 181.788" style="enable-background:new 0 0 181.788 181.788;"
+                                 xml:space="preserve">
 								<path d="M146.131,181.788H35.657c-8.499,0-15.413-6.914-15.413-15.412V35.857c0-8.498,6.914-15.412,15.413-15.412h7.819V7.833
 									C43.476,3.514,46.99,0,51.309,0h0.812c4.319,0,7.833,3.514,7.833,7.833v12.612h61.896V7.833c0-4.319,3.514-7.833,7.833-7.833h0.812
 									c4.319,0,7.833,3.514,7.833,7.833v12.612h7.805c8.499,0,15.413,6.914,15.413,15.412v130.519
@@ -343,8 +370,10 @@
                 <li class="advantages-list__item">
                     <div class="advantages-item">
                         <div class="advantages-item__ico">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 405.075 405.075" style="enable-background:new 0 0 405.075 405.075;" xml:space="preserve">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 405.075 405.075" style="enable-background:new 0 0 405.075 405.075;"
+                                 xml:space="preserve">
 								<g>
                                     <g>
                                         <g>
@@ -378,8 +407,10 @@
                 <li class="advantages-list__item">
                     <div class="advantages-item">
                         <div class="advantages-item__ico">
-                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 295.238 295.238" style="enable-background:new 0 0 295.238 295.238;" xml:space="preserve">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 295.238 295.238" style="enable-background:new 0 0 295.238 295.238;"
+                                 xml:space="preserve">
 								<g>
                                     <g>
                                         <g>
@@ -416,14 +447,20 @@
                                             <rect x="42.857" y="178.571" width="9.524" height="9.524"/>
                                             <rect x="233.333" y="178.571" width="9.524" height="9.524"/>
 
-                                            <rect x="242.857" y="140.468" transform="matrix(0.6002 0.7999 -0.7999 0.6002 220.8819 -137.1401)" width="9.524" height="23.811"/>
+                                            <rect x="242.857" y="140.468"
+                                                  transform="matrix(0.6002 0.7999 -0.7999 0.6002 220.8819 -137.1401)"
+                                                  width="9.524" height="23.811"/>
                                             <rect x="52.381" y="135.714" width="9.524" height="19.048"/>
                                             <rect x="285.714" y="283.333" width="9.524" height="9.524"/>
                                             <rect y="283.333" width="276.19" height="9.524"/>
                                             <rect x="142.857" y="2.381" width="9.524" height="38.095"/>
                                             <rect x="142.857" y="50" width="9.524" height="9.524"/>
-                                            <rect x="72.077" y="33.333" transform="matrix(0.7071 0.7071 -0.7071 0.7071 56.9243 -61.2365)" width="60.608" height="9.524"/>
-                                            <rect x="188.096" y="7.791" transform="matrix(0.7071 0.7071 -0.7071 0.7071 83.424 -125.2131)" width="9.524" height="60.608"/>
+                                            <rect x="72.077" y="33.333"
+                                                  transform="matrix(0.7071 0.7071 -0.7071 0.7071 56.9243 -61.2365)"
+                                                  width="60.608" height="9.524"/>
+                                            <rect x="188.096" y="7.791"
+                                                  transform="matrix(0.7071 0.7071 -0.7071 0.7071 83.424 -125.2131)"
+                                                  width="9.524" height="60.608"/>
                                             <path d="M95.238,254.762H200c10.505,0,19.048,8.543,19.048,19.048h9.524c0-15.757-12.814-28.571-28.571-28.571H95.238
 												c-15.757,0-28.571,12.814-28.571,28.571h9.524C76.19,263.305,84.733,254.762,95.238,254.762z"/>
                                             <rect x="80.952" y="216.667" width="9.524" height="9.524"/>
@@ -453,8 +490,10 @@
                 </h2>
 
                 <div class="title-img__ico">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;"
+                         xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -486,7 +525,8 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      viewBox="0 0 612.36 612.36" style="enable-background:new 0 0 612.36 612.36;"
                                      xml:space="preserve">
 									<g>
@@ -544,7 +584,7 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 467">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 467">
                                     <path d="M474.454,186.26c12.614-5.932,17.894-15.318,19.487-23.173a22.073,22.073,0,0,0-4.228-43.732h-6.7a22.063,22.063,0,0,0-5.679,43.378c-0.114.267-.235,0.533-0.371,0.805-1.941,3.838-5.632,6.844-10.988,8.979-2.759-4.142-5-7.2-6.43-9.074-0.578-9.7-3.493-43.916-16.934-78.64C421.39,29.979,384.2,1,335.071,1h-113.5a8.005,8.005,0,0,0,0,16.011h113.5c42.463,0,73.584,24.64,92.5,73.233,10.584,27.193,14.286,54.774,15.531,68.133H68.9c1.245-13.361,4.948-40.942,15.53-68.133,18.912-48.593,50.034-73.232,92.5-73.232H189.6A8.005,8.005,0,0,0,189.6,1h-12.67C127.794,1,90.607,29.978,69.388,84.8c-13.439,34.724-16.355,68.943-16.934,78.64-1.427,1.87-3.671,4.932-6.43,9.074-5.356-2.135-9.046-5.142-10.988-8.979-0.137-.272-0.258-0.54-0.372-0.805a22.063,22.063,0,0,0-5.679-43.378h-6.7a22.074,22.074,0,0,0-4.227,43.733c1.593,7.855,6.872,17.24,19.488,23.173-3.282,5.727-6.789,12.365-10.27,19.828-0.026.051-.048,0.1-0.073,0.156-0.665,1.428-1.33,2.874-1.99,4.362C12.742,238.659-1,283.021,4.195,335.218v91.415a41.309,41.309,0,1,0,82.618,0V392.358H188.539V404.5a8,8,0,0,0,7.994,8.006H315.466a8,8,0,0,0,8-8.006V392.359H425.187v34.275a41.309,41.309,0,1,0,82.618,0V335.219c5.2-52.2-8.547-96.559-21.018-124.613A268.207,268.207,0,0,0,474.454,186.26Zm2.5-44.829a6.066,6.066,0,0,1,6.054-6.064h6.7a6.064,6.064,0,0,1,0,12.127h-6.7A6.065,6.065,0,0,1,476.958,141.431Zm-447.97,6.063h-6.7a6.064,6.064,0,0,1,0-12.127h6.7A6.064,6.064,0,0,1,28.988,147.494Zm35.263,26.9h383.5a225.121,225.121,0,0,1,19.644,32.686,125.813,125.813,0,0,1-14.09,8.337,38.234,38.234,0,0,0-54.632,13.557c-0.713.012-1.424,0.029-2.133,0.029H115.464c-0.709,0-1.421-.017-2.133-0.029A38.234,38.234,0,0,0,58.7,215.416a125.879,125.879,0,0,1-14.128-8.363A225.726,225.726,0,0,1,64.25,174.393Zm390.323,73.06a22.332,22.332,0,1,1-22.332-22.363A22.372,22.372,0,0,1,454.573,247.453Zm-352.482,0A22.332,22.332,0,1,1,79.759,225.09,22.372,22.372,0,0,1,102.091,247.453ZM19.377,300.741a2.289,2.289,0,0,1,.216.482l-0.245.1C19.357,301.129,19.366,300.935,19.377,300.741ZM70.824,426.633a25.32,25.32,0,1,1-50.639,0V371.716c0.062,0.067.128,0.131,0.19,0.2a63.255,63.255,0,0,0,35.2,19.438,85.868,85.868,0,0,0,15.246,1v34.275Zm236.648-30.141H204.528v-24.28H307.471v24.28h0Zm159.023,55.5a25.365,25.365,0,0,1-25.32-25.354V392.358c7.638,0,15.128-.472,22.474-2.747a63.872,63.872,0,0,0,18.219-9.021,61.828,61.828,0,0,0,9.755-8.672c0.063-.068.129-0.132,0.191-0.2v54.916h0A25.366,25.366,0,0,1,466.5,451.987Zm25.361-117.936a46.816,46.816,0,0,1-46.625,42.3H323.461V364.207a8,8,0,0,0-8-8H196.532a8,8,0,0,0-7.994,8v12.14H66.768a46.817,46.817,0,0,1-46.625-42.295q-0.7-6.9-.941-13.6a106.434,106.434,0,0,0,19.71,8.211A26.44,26.44,0,0,0,72.9,336.387c26.693,4.3,60.155,6.479,99.571,6.479H339.531c39.416,0,72.879-2.183,99.569-6.479a26.441,26.441,0,0,0,33.986-7.719,106.516,106.516,0,0,0,19.708-8.21C492.624,324.926,492.322,329.456,491.856,334.051ZM49.8,313.039a10.511,10.511,0,1,1,10.511,10.526A10.53,10.53,0,0,1,49.8,313.039Zm391.374,0a10.512,10.512,0,1,1,10.512,10.526A10.53,10.53,0,0,1,441.174,313.039Zm51.5-11.708-0.266-.109a2.3,2.3,0,0,1,.237-0.517C492.653,300.913,492.661,301.123,492.671,301.331Zm-14.68,8.53a26.5,26.5,0,1,0-51.24,12.157c-24.127,3.207-53.375,4.837-87.22,4.837H172.467c-33.845,0-63.092-1.63-87.22-4.837a26.5,26.5,0,1,0-51.24-12.157c-10.834-4.559-14.1-8.435-14.63-9.148a238.427,238.427,0,0,1,18.432-78.936q4.541,2.981,9.3,5.609a38.333,38.333,0,1,0,70.969,20.067c0-.82-0.035-1.632-0.085-2.439H394.005c-0.051.807-.086,1.619-0.086,2.439a38.321,38.321,0,1,0,70.969-20.066q4.728-2.61,9.249-5.576a236.749,236.749,0,0,1,18.5,78.874C492.167,301.328,488.954,305.246,477.991,309.861ZM366.924,278.7H280.213a25.487,25.487,0,0,0-48.43,0H145.074a8.006,8.006,0,0,0,0,16.011h86.71a25.487,25.487,0,0,0,48.43,0h86.711A8.006,8.006,0,0,0,366.924,278.7ZM256,296.24a9.53,9.53,0,1,1,9.517-9.53A9.534,9.534,0,0,1,256,296.24ZM423.192,132.789a222.133,222.133,0,0,0-10.4-36.411c-7.488-19.351-17.132-34.5-28.663-45.032-13.5-12.326-29.543-18.318-49.057-18.318H315.381a8.005,8.005,0,0,0,0,16.011h19.693c15.345,0,27.868,4.624,38.283,14.136,9.688,8.849,17.942,21.966,24.529,38.99a195.21,195.21,0,0,1,7.506,24.2H184.563a8.005,8.005,0,0,0,0,16.01h230.79A8,8,0,0,0,423.192,132.789ZM283.4,33.027H176.927c-19.3,0-35.193,5.853-48.594,17.9-11.468,10.305-21.1,25.162-28.619,44.155A220.49,220.49,0,0,0,88.8,132.789a8,8,0,0,0,7.838,9.581h55.944a8.005,8.005,0,0,0,0-16.01H106.6a193.977,193.977,0,0,1,7.974-25.376c6.6-16.67,14.822-29.5,24.434-38.14,10.336-9.289,22.738-13.8,37.916-13.8H283.4A8.006,8.006,0,0,0,283.4,33.027Z"/>
                                 </svg>
                             </div>
@@ -560,8 +600,10 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;"
+                                     xml:space="preserve">
 									<g>
                                         <g>
                                             <g>
@@ -618,8 +660,10 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 442.003 442.003" style="enable-background:new 0 0 442.003 442.003;" xml:space="preserve">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 442.003 442.003" style="enable-background:new 0 0 442.003 442.003;"
+                                     xml:space="preserve">
 									<g>
                                         <path d="M337.897,189.476c-0.01-0.082-0.016-0.165-0.028-0.246c-0.058-0.404-0.135-0.807-0.244-1.205
 											c-0.001-0.004-0.003-0.008-0.004-0.013c-0.102-0.372-0.232-0.739-0.379-1.102c-0.042-0.104-0.088-0.204-0.133-0.306
@@ -671,7 +715,8 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 									<g>
                                         <path d="M52.179,42.429l-5.596,8.04l-3.949-3.241c-0.426-0.351-1.057-0.287-1.407,0.138c-0.351,0.427-0.289,1.058,0.139,1.407
@@ -724,53 +769,89 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 295.239 295.239" style="enable-background:new 0 0 295.239 295.239;" xml:space="preserve">
-									<g>
-                                        <g>
-                                            <g>
-                                                <path d="M107.071,19.048L80.952,55.62v11.048h71.429V19.048h0H107.071z M142.858,57.144L142.858,57.144H91.567l20.41-28.571
-													h30.881V57.144z"/>
-                                                <path d="M157.142,19.048v47.619h71.429V55.62l-26.119-36.571H157.142z M166.667,57.142V28.571h30.881l20.41,28.571H166.667z"/>
-                                                <rect x="138.095" y="71.43" width="14.286" height="9.524"/>
-                                                <path d="M66.667,147.62c7.876,0,14.286-6.41,14.286-14.286s-6.41-14.286-14.286-14.286c-7.876,0-14.286,6.41-14.286,14.286
-													C52.381,141.211,58.791,147.62,66.667,147.62z M66.667,128.571c2.629,0,4.762,2.133,4.762,4.762c0,2.629-2.134,4.762-4.762,4.762
-													c-2.629,0-4.762-2.133-4.762-4.762C61.905,130.704,64.038,128.571,66.667,128.571z"/>
-                                                <path d="M280.953,138.095c11.805,0,14.286-7.771,14.286-14.286V80.953c0-11.805-9.629-22.271-17.895-23.667l-19.033-4.762
-													c-4.79-1.214-7.562-3.086-11.581-7.671l-23.929-33.5C216.657,3.501,209.624,0.001,200,0.001h-90.476
-													c-9.629,0-16.667,3.5-22.919,11.519L63.076,44.495c-4.276,4.924-7.538,7.162-11.471,7.952l-28.762,4.795
-													C9.181,60.087,0,71.529,0,85.714v33.333c0,10.324,8.724,19.048,19.048,19.048h14.667c1.067,7.41,4.557,14.043,9.671,19.048H0
-													v38.095h84.995l46.429,14.286l-47.11,14.495l0.162,9.152l44.824,12.067l-44.219,11.905H0v38.095h295.238v-38.095h-85.081
-													l-44.219-11.905l44.824-12.067l0.162-9.152l-47.11-14.495l46.429-14.286h84.995v-38.095h-43.386
-													c5.119-5.005,8.605-11.638,9.672-19.048H280.953z M42.857,133.334c0-13.129,10.681-23.81,23.81-23.81
-													c13.129,0,23.81,10.681,23.81,23.81c0,13.129-10.681,23.81-23.81,23.81C53.538,157.144,42.857,146.462,42.857,133.334z
-													 M99.619,138.095h96c1.067,7.41,4.557,14.043,9.671,19.048H89.948C95.067,152.139,98.552,145.506,99.619,138.095z
-													 M285.714,266.666v19.048H9.524v-19.048H285.714z M173.519,257.143h-51.8l25.9-6.971L173.519,257.143z M192.343,228.267
-													l-44.724,12.038l-44.724-12.043l44.724-13.757L192.343,228.267z M147.619,204.538l-30.233-9.3h60.467L147.619,204.538z
-													 M285.714,166.667v19.048H9.524v-19.048H285.714z M228.572,157.144c-13.129,0-23.81-10.681-23.81-23.81
-													c0-13.129,10.681-23.81,23.81-23.81c13.129,0,23.81,10.681,23.81,23.81C252.382,146.462,241.701,157.144,228.572,157.144z
-													 M228.571,100.001c-16.758,0-30.629,12.448-32.952,28.571h-96c-2.324-16.123-16.195-28.571-32.952-28.571
-													s-30.629,12.448-32.952,28.571H19.048c-5.072,0-9.524-4.452-9.524-9.523v-23.81h9.524v9.524h9.524v-9.524
-													c0-6.143-3.381-9.524-9.524-9.524H9.524c0-11.781,7.881-17.614,15.067-19.114l28.724-4.79
-													c6.219-1.248,11.281-4.557,17.224-11.424l23.69-33.171c4.381-5.605,8.529-7.69,15.295-7.69H200c6.762,0,10.91,2.086,15.176,7.529
-													l24.09,33.69c4.667,5.371,9.095,9.086,16.729,11.014l19.4,4.838c4.057,0.7,10.319,7.171,10.319,14.357v42.857
-													c0,4.09-0.671,4.762-4.762,4.762h-19.429C259.2,112.449,245.329,100.001,228.571,100.001z"/>
-                                                <path d="M228.571,119.048c-7.876,0-14.286,6.41-14.286,14.286c0,7.876,6.41,14.286,14.286,14.286
-													c7.876,0,14.286-6.41,14.286-14.286S236.448,119.048,228.571,119.048z M228.571,138.095c-2.629,0-4.762-2.133-4.762-4.762
-													c0-2.629,2.133-4.762,4.762-4.762c2.629,0,4.762,2.133,4.762,4.762C233.333,135.962,231.2,138.095,228.571,138.095z"/>
-                                                <rect x="38.095" y="204.762" width="9.524" height="23.81"/>
-                                                <rect x="19.048" y="214.287" width="9.524" height="33.333"/>
-                                                <rect x="261.905" y="204.762" width="9.524" height="19.048"/>
-                                                <rect x="242.857" y="204.762" width="9.524" height="42.857"/>
-                                                <rect x="176.19" y="109.524" width="9.524" height="9.524"/>
-                                                <rect x="157.143" y="109.524" width="9.524" height="9.524"/>
-                                                <rect x="266.667" y="109.524" width="9.524" height="9.524"/>
-                                                <rect x="19.048" y="271.429" width="9.524" height="9.524"/>
-                                                <rect x="38.095" y="271.429" width="9.524" height="9.524"/>
-                                            </g>
-                                        </g>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 296.443 296.443" style="enable-background:new 0 0 296.443 296.443;"
+                                     xml:space="preserve">
+<g>
+    <g>
+        <g>
+            <path d="M228.571,56.222l-26.119-36.571h-45.31v47.619h71.429V56.222z M194.195,57.746l-2.933-11.733l6.11-3.057l-4.262-8.519
+				l-12.938,6.467l4.205,16.843h-17.71V29.175h30.881l20.41,28.571H194.195z"/>
+            <path d="M66.667,119.651c-7.876,0-14.286,6.41-14.286,14.286c0,7.876,6.41,14.286,14.286,14.286
+				c7.876,0,14.286-6.41,14.286-14.286C80.953,126.061,74.543,119.651,66.667,119.651z M66.667,138.699
+				c-2.624,0-4.762-2.133-4.762-4.762c0-2.629,2.138-4.762,4.762-4.762c2.624,0,4.762,2.133,4.762,4.762
+				C71.429,136.566,69.29,138.699,66.667,138.699z"/>
+            <path d="M228.571,119.651c-7.876,0-14.286,6.41-14.286,14.286c0,7.876,6.41,14.286,14.286,14.286
+				c7.876,0,14.286-6.41,14.286-14.286C242.857,126.061,236.448,119.651,228.571,119.651z M228.571,138.699
+				c-2.624,0-4.762-2.133-4.762-4.762c0-2.629,2.138-4.762,4.762-4.762c2.624,0,4.762,2.133,4.762,4.762
+				C233.333,136.566,231.195,138.699,228.571,138.699z"/>
+            <path d="M247.62,243.461h48.823l-1.319-5.819c-4.871-21.462-24.852-37.038-47.505-37.038c-17.029,0-32.457,9.048-40.948,23.81
+				H121.9c-4.871-8.467-12.067-14.971-20.5-19.048h25.729l14.286,9.524h44.3v-47.619h104.762v-9.524h-38.624
+				c5.114-5.005,8.6-11.638,9.671-19.048h19.429c11.805,0,14.286-7.771,14.286-14.286V81.556c0-11.805-9.633-22.271-17.89-23.667
+				l-19.033-4.762c-4.795-1.214-7.567-3.086-11.581-7.671l-23.933-33.5C216.662,4.103,209.629,0.603,200,0.603h-90.476
+				c-9.633,0-16.667,3.5-22.924,11.519L63.071,45.099c-4.276,4.924-7.538,7.162-11.476,7.952l-28.757,4.795
+				C9.181,60.689,0,72.131,0,86.318v33.333c0,10.324,8.724,19.048,19.048,19.048h14.667c2.324,16.124,16.195,28.571,32.952,28.571
+				h74.748l-14.286,9.524H0v9.524h130.014l14.286-9.524h31.89v28.571H144.3l-14.286-9.524H0v9.524h59.867
+				c-13.1,6.181-23.167,17.895-26.414,32.281l-1.314,5.814h48.814v9.524h-48.82l1.319,5.819c4.871,21.462,24.852,37.038,47.5,37.038
+				c17.029,0,32.457-9.048,40.948-23.81h84.776c8.49,14.762,23.919,23.81,40.948,23.81c22.676,0,42.657-15.576,47.51-37.043
+				l1.305-5.814H247.62V243.461z M228.571,157.746c-13.129,0-23.81-10.681-23.81-23.81c0-13.129,10.681-23.81,23.81-23.81
+				c13.129,0,23.81,10.681,23.81,23.81C252.381,147.064,241.7,157.746,228.571,157.746z M33.714,129.173H19.048
+				c-5.072,0.001-9.524-4.452-9.524-9.523V95.84h9.524v9.524h9.524V95.84c0-6.143-3.381-9.524-9.524-9.524H9.524
+				c0-11.781,7.881-17.614,15.071-19.114l28.724-4.79c6.214-1.248,11.281-4.557,17.224-11.424l23.686-33.171
+				c4.381-5.605,8.529-7.69,15.295-7.69H200c6.762,0,10.91,2.086,15.171,7.529l24.09,33.69c4.671,5.371,9.095,9.086,16.724,11.014
+				l19.4,4.838c4.067,0.7,10.329,7.171,10.329,14.357v4.762h-9.524v9.524h9.524v28.571c0,4.09-0.667,4.762-4.762,4.762h-19.429
+				c-2.324-16.124-16.195-28.571-32.952-28.571c-16.757,0-30.629,12.448-32.952,28.571h-38.476v-10.857l24.576-8.19h13.519v-9.524
+				h-10.381l-3.995-19.981l-9.338,1.871l3.938,19.69l-22.71,7.571l-3.505-1.752l4.41-8.819l-20.771-15.576l-3.267-16.338h22.762
+				V19.651h-45.31L80.952,56.222v11.048h38.952l3.338,16.69l-17.248,10.352l-11.71-15.614l-7.619,5.714l16.862,22.486l24.748-14.848
+				l13.305,9.981l-5.114,10.229l11.152,5.571v11.343h-48c-2.324-16.124-16.195-28.571-32.952-28.571
+				C49.909,100.603,36.037,113.05,33.714,129.173z M91.567,57.746l20.41-28.571h30.881v28.571H91.567z M66.667,157.746
+				c-13.129,0-23.81-10.682-23.81-23.81c0-13.129,10.681-23.81,23.81-23.81c13.129,0,23.81,10.681,23.81,23.81
+				C90.477,147.066,79.796,157.746,66.667,157.746z M89.948,157.746c5.114-5.005,8.6-11.638,9.671-19.048h48h9.524h38.476
+				c1.067,7.41,4.552,14.043,9.671,19.048H89.948z M283.967,262.508c-5.862,13.914-20.505,23.81-36.348,23.81
+				c-14.381,0-27.343-8.109-33.829-21.167l-1.314-2.643h-96.381l-1.314,2.643c-6.486,13.057-19.448,21.167-33.829,21.167
+				c-15.824,0-30.462-9.895-36.338-23.81h45.862v-28.571H44.61c5.857-13.914,20.505-23.81,36.343-23.81
+				c14.381,0,27.343,8.11,33.829,21.167l1.314,2.643h96.381l1.314-2.643c6.486-13.057,19.448-21.167,33.829-21.167
+				c15.824,0,30.467,9.895,36.343,23.81h-45.867v28.571H283.967z"/>
+            <rect x="119.048" y="243.461" width="9.524" height="9.524"/>
+            <rect x="138.095" y="243.461" width="9.524" height="9.524"/>
+            <rect x="157.143" y="186.318" width="9.524" height="9.524"/>
+            <rect x="23.81" y="157.746" width="9.524" height="9.524"/>
+            <rect x="4.762" y="157.746" width="9.524" height="9.524"/>
+        </g>
+    </g>
+</g>
+                                    <g>
                                     </g>
-									</svg>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+</svg>
                             </div>
                         </div>
                     </li>
@@ -784,8 +865,10 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 512.077 512.077" style="enable-background:new 0 0 512.077 512.077;" xml:space="preserve">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 512.077 512.077" style="enable-background:new 0 0 512.077 512.077;"
+                                     xml:space="preserve">
 									<g transform="translate(1 1)">
                                         <g>
                                             <g>
@@ -844,8 +927,10 @@
                             </div>
 
                             <div class="processes-item__ico">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;"
+                                     xml:space="preserve">
 <g>
     <g>
         <path d="M509.605,171.075l-99.3-99.301c-3.193-3.194-8.37-3.194-11.565,0l-49.65,49.65c-1.533,1.533-2.394,3.613-2.394,5.782
@@ -940,8 +1025,10 @@
                 </h2>
 
                 <div class="title-img__ico">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;"
+                         xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -962,16 +1049,16 @@
         </div>
 
         <div id="recom-slider" class="recomendations owl-carousel">
-            <a href="img/recom1.png" class="recomendations__item  item  fancybox_b"  data-fancybox-group="gallery-a">
-                <img src="img/recom1.png" alt="alt" />
+            <a href="img/recom1.png" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
+                <img src="img/recom1.png" alt="alt"/>
             </a>
 
-            <a href="img/recom2.png" class="recomendations__item  item  fancybox_b"  data-fancybox-group="gallery-a">
-                <img src="img/recom2.png" alt="alt" />
+            <a href="img/recom2.png" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
+                <img src="img/recom2.png" alt="alt"/>
             </a>
 
-            <a href="img/recom3.png" class="recomendations__item  item  fancybox_b"  data-fancybox-group="gallery-a">
-                <img src="img/recom3.png" alt="alt" />
+            <a href="img/recom3.png" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
+                <img src="img/recom3.png" alt="alt"/>
             </a>
         </div>
     </section>
@@ -1000,7 +1087,8 @@
 
                             <div class="image-galery__hover">
                                 <div class="image-galery__hover-list">
-                                    <a href="img/galery/el.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                    <a href="img/galery/el.jpg" class="image-galery__img-link fancybox_b"
+                                       data-fancybox-group="gallery">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
 
@@ -1018,7 +1106,8 @@
 
                             <div class="image-galery__hover">
                                 <div class="image-galery__hover-list">
-                                    <a href="img/galery/hodovaya.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                    <a href="img/galery/hodovaya.jpg" class="image-galery__img-link fancybox_b"
+                                       data-fancybox-group="gallery">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
 
@@ -1036,7 +1125,8 @@
 
                             <div class="image-galery__hover">
                                 <div class="image-galery__hover-list">
-                                    <a href="img/galery/alfa-romeo-engine.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                    <a href="img/galery/alfa-romeo-engine.jpg" class="image-galery__img-link fancybox_b"
+                                       data-fancybox-group="gallery">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
 
@@ -1054,7 +1144,8 @@
 
                             <div class="image-galery__hover">
                                 <div class="image-galery__hover-list">
-                                    <a href="img/galery/48ms.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                    <a href="img/galery/48ms.jpg" class="image-galery__img-link fancybox_b"
+                                       data-fancybox-group="gallery">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
 
@@ -1072,7 +1163,8 @@
 
                             <div class="image-galery__hover">
                                 <div class="image-galery__hover-list">
-                                    <a href="img/galery/86955070.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                    <a href="img/galery/86955070.jpg" class="image-galery__img-link fancybox_b"
+                                       data-fancybox-group="gallery">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
 
@@ -1090,7 +1182,8 @@
 
                             <div class="image-galery__hover">
                                 <div class="image-galery__hover-list">
-                                    <a href="img/galery/paint_bg.jpg" class="image-galery__img-link fancybox_b"  data-fancybox-group="gallery">
+                                    <a href="img/galery/paint_bg.jpg" class="image-galery__img-link fancybox_b"
+                                       data-fancybox-group="gallery">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
 
@@ -1114,8 +1207,10 @@
                 </h2>
 
                 <div class="title-img__ico">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;"
+                         xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -1139,24 +1234,24 @@
             <ul class="news-anons-list">
                 @foreach($news as $news_item)
                     <li class="news-anons-list__item">
-                    <div class="news-anons-item">
-                        <a href="/news/{{$news_item->id}}" class="news-anons-item__img">
-                            <img src="{{$news_item->preview}}" alt="{{$news_item->title}}">
+                        <div class="news-anons-item">
+                            <a href="/news/{{$news_item->id}}" class="news-anons-item__img">
+                                <img src="{{$news_item->preview}}" alt="{{$news_item->title}}">
 
-                            <div class="news-anons-item__hover-text">
-                                <span>Подробнее</span>
+                                <div class="news-anons-item__hover-text">
+                                    <span>Подробнее</span>
+                                </div>
+                            </a>
+
+                            <div class="news-anons-item__time">
+                                {{$news_item->created_at}}
                             </div>
-                        </a>
 
-                        <div class="news-anons-item__time">
-                            {{$news_item->created_at}}
+                            <div class="news-anons-item__desc">
+                                {{$news_item->title}}
+                            </div>
                         </div>
-
-                        <div class="news-anons-item__desc">
-                           {{$news_item->title}}
-                        </div>
-                    </div>
-                </li>
+                    </li>
                 @endforeach
             </ul>
         </div>
@@ -1170,8 +1265,10 @@
                 </h2>
 
                 <div class="title-img__ico">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 449.999 449.999" style="enable-background:new 0 0 449.999 449.999;"
+                         xml:space="preserve">
 						<path style="stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;" d="M449.977,171.981
 							c-0.359-6.783-5.064-11.273-10.509-10.028l-39.785,9.096c-4.115,0.941-7.471,4.892-8.709,9.694
 							c-17.478-25.176-48.266-65.94-70.161-75.101c-3.031-1.246-21.897-7.461-95.814-7.461s-92.782,6.215-95.878,7.488
@@ -1192,7 +1289,8 @@
         </div>
 
         <div class="contacts-map__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28712.181060875715!2d30.815897372484116!3d50.500266041493965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d94d046ca71d%3A0x4fff487208b0251e!2z0LLRg9C70LjRhtGPINCh0LXRgNCz0ZbRjyDQnNC-0YHQutCw0LvQtdC90LrQsCwgMjAsINCR0YDQvtCy0LDRgNC4LCDQmtC40ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2s!4v1489743957073" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28712.181060875715!2d30.815897372484116!3d50.500266041493965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d94d046ca71d%3A0x4fff487208b0251e!2z0LLRg9C70LjRhtGPINCh0LXRgNCz0ZbRjyDQnNC-0YHQutCw0LvQtdC90LrQsCwgMjAsINCR0YDQvtCy0LDRgNC4LCDQmtC40ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2s!4v1489743957073"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
 

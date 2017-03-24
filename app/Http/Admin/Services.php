@@ -63,7 +63,7 @@ class Services extends Section
             AdminFormElement::checkbox('is_public', 'опубликовать на сайт'),
             AdminFormElement::text('title', 'заголовок')->required(),
             AdminFormElement::wysiwyg('text', 'контент'),
-            AdminFormElement::image('photo', 'превью')->required()
+            AdminFormElement::image('photo', 'превью')
                 ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
                     return 'images/service/preview'; // путь сохранения файла относительно public. public -> appServiceProvider
                 })
@@ -74,7 +74,7 @@ class Services extends Section
                         $constraint->aspectRatio();
                     }]
                 ]),
-            AdminFormElement::image('photo1', 'фото 1')->required()
+            AdminFormElement::image('photo1', 'фото 1')
                 ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
                     return 'images/service/photo1';
                 })
@@ -85,7 +85,7 @@ class Services extends Section
                         $constraint->aspectRatio();
                     }]
                 ]),
-            AdminFormElement::image('photo2', 'фото 2')->required()
+            AdminFormElement::image('photo2', 'фото 2')
                 ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
                     return 'images/service/photo2';
                 })
@@ -96,7 +96,7 @@ class Services extends Section
                         $constraint->aspectRatio();
                     }]
                 ]),
-            AdminFormElement::image('photo3', 'фото 3')->required()
+            AdminFormElement::image('photo3', 'фото 3')
                 ->setUploadPath(function(\Illuminate\Http\UploadedFile $file) {
                     return 'images/service/photo3';
                 })

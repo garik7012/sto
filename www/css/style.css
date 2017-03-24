@@ -2243,12 +2243,12 @@ body.fixed .soc-prog__ico {
 }
 
 .services-description__left {
-    width: 70%;
+    width: 100%;
     padding-right: 10px;
 }
 
 .services-description__right {
-    width: 30%;
+    width: 0%;
 }
 
 .services-text p {
@@ -4689,6 +4689,10 @@ body.fixed .main-logo {
     color: #ffd6d4;
     background-color: rgba(8, 8, 8, 0.35);
 }
+.services-float {
+    width: 30%;
+    float: right;
+}
 @media (max-width: 1800px) {
     .news-page {
         padding: 0 0 30px;
@@ -4963,6 +4967,9 @@ body.fixed .main-logo {
 }
 
 @media (max-width: 1200px) {
+    .services-float {
+        width: 40%;
+    }
     .header-page__info-head-ico.header-page__info-head-ico--mobil-none {
         display: none;
     }
@@ -5388,6 +5395,11 @@ body.fixed .main-logo {
 }
 
 @media (max-width: 650px) {
+    .services-float {
+        width: 90%;
+        margin-right: 5%;
+        margin-bottom: 15px;
+    }
     .main-logo {
         display: none;
     }

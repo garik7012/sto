@@ -36,6 +36,49 @@
         </div>
         <div class="services-description">
         <div class="services-description__left">
+            <div class="services-float">
+                <div class="services-form">
+                    <div class="services-form__title">
+						<span class="services-form__title-top">
+							Записаться на
+						</span>
+
+                        <span class="services-form__title-main">
+							мега -сервис
+						</span>
+                    </div>
+
+                    <form action="/online/add" method="post" class="services-form__form">
+                        <input type="text" name="fio" class="services-form__input" placeholder="Имя" required>
+
+                        <input type="tel" name="phone" class="services-form__input" placeholder="Телефон" required>
+
+                        <input type="email" name="email" class="services-form__input" placeholder="Email">
+                        <!--НУЖНО В ВЕЛЪЮ ВСТАВИТЬ ДАТУ-->
+                        <input id="datepicker2" type="text" name="order_date" class="services-form__input" placeholder="Дата">
+
+                        <select name="order_time" class="services-form__select g-order_time">
+                            <option>Время</option>
+                            <option value="09.00">09.00</option>
+                            @for($i = 10; $i<18; $i++)
+                                @for($j = 0; $j<4; $j+= 3)
+                                    <option value="{{$i}}.{{$j}}0">{{$i}}.{{$j}}0</option>
+                                @endfor
+                            @endfor
+                            <option value="18.00">18.00</option>
+                        </select>
+
+                        <select class="services-form__select " name="service_id">
+                            <option value="0">Услуга</option>
+                            @foreach($listServices as $service1)
+                                <option value="{{$service->id}}">{{$service1->title}}</option>
+                            @endforeach
+                        </select>
+                        {{csrf_field()}}
+                        <input name="from_service" class="services-btn services-form__btn" type="submit" value="записаться">
+                    </form>
+                </div>
+            </div>
             <div class="services-description__text clearcss">
                 <div class="services-text">
                     {!! $service->text !!}
@@ -43,47 +86,7 @@
             </div>
         </div>
         <div class="services-description__right">
-            <div class="services-form">
-                <div class="services-form__title">
-						<span class="services-form__title-top">
-							Записаться на
-						</span>
 
-                    <span class="services-form__title-main">
-							мега -сервис
-						</span>
-                </div>
-
-                <form action="/online/add" method="post" class="services-form__form">
-                    <input type="text" name="fio" class="services-form__input" placeholder="Имя" required>
-
-                    <input type="tel" name="phone" class="services-form__input" placeholder="Телефон" required>
-
-                    <input type="email" name="email" class="services-form__input" placeholder="Email">
-                    <!--НУЖНО В ВЕЛЪЮ ВСТАВИТЬ ДАТУ-->
-                    <input id="datepicker2" type="text" name="order_date" class="services-form__input" placeholder="Дата">
-
-                    <select name="order_time" class="services-form__select g-order_time">
-                        <option>Время</option>
-                        <option value="09.00">09.00</option>
-                        @for($i = 10; $i<18; $i++)
-                            @for($j = 0; $j<4; $j+= 3)
-                             <option value="{{$i}}.{{$j}}0">{{$i}}.{{$j}}0</option>
-                            @endfor
-                        @endfor
-                        <option value="18.00">18.00</option>
-                    </select>
-
-                    <select class="services-form__select " name="service_id">
-                        <option value="0">Услуга</option>
-                        @foreach($listServices as $service)
-                            <option value="{{$service->id}}">{{$service->title}}</option>
-                        @endforeach
-                    </select>
-                    {{csrf_field()}}
-                    <input name="from_service" class="services-btn services-form__btn" type="submit" value="записаться">
-                </form>
-            </div>
             <script src="/js/jquery.ui.datepicker-ru.js"></script>
             <script src="/js/jquery-ui_old.js"></script>
             <script>
