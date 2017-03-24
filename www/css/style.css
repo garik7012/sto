@@ -4693,6 +4693,7 @@ body.fixed .main-logo {
 .services-float {
     width: 30%;
     float: right;
+    margin-bottom: 10px;
 }
 @media (max-width: 1800px) {
     .news-page {
@@ -5872,6 +5873,14 @@ body.fixed .main-logo {
 .clearcss p {
     margin: 16px 0;
     line-height: 1.4;
+}
+.clearcss table tr {
+    padding: 0px 0;
+    border-bottom: 1px solid;
+    height: 21px;
+}
+.clearcss table tr:nth-child(2n) {
+    background-color: #aaa;
 }
 
 #ui-id-1, #ui-id-2 {
