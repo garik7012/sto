@@ -36,7 +36,7 @@
         </div>
         <div class="services-description">
         <div class="services-description__left">
-            <div class="services-description__text">
+            <div class="services-description__text clearcss">
                 <div class="services-text">
                     {!! $service->text !!}
                 </div>

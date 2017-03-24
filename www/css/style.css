@@ -4685,6 +4685,10 @@ body.fixed .main-logo {
 .offer-anons{
     display: none;
 }
+.g-contact-form span{
+    color: #ffd6d4;
+    background-color: rgba(8, 8, 8, 0.35);
+}
 @media (max-width: 1800px) {
     .news-page {
         padding: 0 0 30px;
@@ -5781,6 +5785,13 @@ body.fixed .main-logo {
     .offer-anons{
         display: block;
     }
+    .g-contact-form span {
+        margin-top: -7px;
+        margin-bottom: 7px;
+        text-align: left;
+        color: #ffd6d4;
+        background-color: rgba(8, 8, 8, 0.35);
+    }
 }
 
 .clearcss {
@@ -5872,14 +5883,4 @@ body.fixed .main-logo {
     border: 1px solid #bc0f02;
 }
 
-.main-page__input {
-    width: 33%;
-}
-.main-page__input input{
-    width: 90%;
-    margin-bottom: 5px;
-}
-.main-page__input span{
-    color: #ffd6d4;
-    background-color: rgba(8, 8, 8, 0.35);
-}
+
