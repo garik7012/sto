@@ -46,9 +46,14 @@ class Services extends Section
         return AdminDisplay::table()
             ->setHtmlAttribute('class', 'table-primary')
             ->setColumns(
+                AdminColumn::text('position', 'Позиция')->setWidth('50px'),
                 AdminColumn::link('link', 'Ссылка')->setWidth('250px'),
                 AdminColumn::text('title', 'Название услуги')
-            )->paginate(20);
+            )
+            ->setApply(function ($query) {
+                $query->orderBy('position', 'asc');
+            })
+            ->paginate(20);
     }
 
     /**

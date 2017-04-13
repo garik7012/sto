@@ -7,8 +7,8 @@
         <div class="top-section__main-banner">
             <div class="main-banner">
                 <div class="main-banner__slider owl-carousel-1  owl-carousel">
-                    <div class="main-banner__img  item" style="background-image:url({{$banner->image}})">
-                    </div>
+                    <a href="/"><div class="main-banner__img  item" style="background-image:url({{$banner->image}})">
+                    </div></a>
 
                     <div class="main-banner__img  item" style="background-image:url(img/main-banner.png)">
                     </div>
