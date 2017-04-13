@@ -29,6 +29,9 @@ class IndexController extends Controller
         $content = Page::where('link', 'online')->get();
         return view('pages.online', ['content' => $content]);
     }
+    public function showDiploms(){
+        return view('pages.diplomi');
+    }
     public function test(){
         return view('test');
     }

@@ -29,7 +29,7 @@ Route::get('/online', 'IndexController@online');
 Route::post('/online/add', 'OrderController@add');
 Route::post('/online/callback', 'OrderController@callback');
 
-Route::get('/test', 'IndexController@test');
+Route::get('/diplomi', 'IndexController@showDiploms');
 
 
 Auth::routes();

@@ -1004,10 +1004,11 @@
     <section class="recomendation">
         <div class="recomendation__title">
             <div class="title-img">
+                <a href="/diplomi">
                 <h2 class="title-img__text">
-                    Рекомендации клиентов
+                    Дипломы
                 </h2>
-
+                </a>
                 <div class="title-img__ico">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                          x="0px" y="0px"
@@ -1033,16 +1034,16 @@
         </div>
 
         <div id="recom-slider" class="recomendations owl-carousel">
-            <a href="img/recom1.png" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
-                <img src="img/recom1.png" alt="alt"/>
+            <a href="img/recom1.jpg" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
+                <img src="img/recom1.jpg" alt="alt"/>
             </a>
 
-            <a href="img/recom2.png" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
-                <img src="img/recom2.png" alt="alt"/>
+            <a href="img/recom2.jpg" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
+                <img src="img/recom2.jpg" alt="alt"/>
             </a>
 
-            <a href="img/recom3.png" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
-                <img src="img/recom3.png" alt="alt"/>
+            <a href="img/recom3.jpg" class="recomendations__item  item  fancybox_b" data-fancybox-group="gallery-a">
+                <img src="img/recom3.jpg" alt="alt"/>
             </a>
         </div>
     </section>

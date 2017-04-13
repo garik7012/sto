@@ -47,6 +47,7 @@
 
             <div class="banner-aside__desc">
                 <div class="banner-desc">
+                    <a href="/offers">
                     <strong class="banner-desc__title">
                         Акция
                     </strong>
@@ -58,6 +59,7 @@
                     <span class="banner-desc__time">
 						{{$banner->offer_end}}
 					</span>
+                    </a>
                 </div>
             </div>
         </aside>
