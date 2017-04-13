@@ -19,6 +19,7 @@ Route::get('/vacancies', 'IndexController@vacancies');
 Route::get('/avto/o-kompanii', 'IndexController@rservice');
 
 Route::get('/avto/{gotomain}', 'IndexController@rmain');
+Route::get('/avto', 'IndexController@rmain'); //delete 
 
 Route::get('/services', 'ServiceController@index');
 Route::get('/service/search', 'ServiceController@search');

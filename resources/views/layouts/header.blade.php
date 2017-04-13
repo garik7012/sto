@@ -48,6 +48,14 @@
     <script src="/js/lib.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/check.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-22139103-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 <body>
 <header class="header-page">
@@ -76,7 +84,7 @@
                     </li>
 
                     <li class="top-nav__item">
-                        <a href="/vacancies" class="top-nav__link">вакансии</a>
+                        <a href="/service/vacanciess" class="top-nav__link">вакансии</a>
                     </li>
 
                     <li class="top-nav__item">
@@ -112,16 +120,16 @@
                 </div>
                 <div class="soc-wrap__item">
                     <ul class="social-button">
-                        <li class="social-button__item">
-                            <a href="{{$cfs['twiter']}}" class="link-tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
+                        {{--<li class="social-button__item">--}}
+                            {{--<a href="{{$cfs['twiter']}}" class="link-tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>--}}
+                        {{--</li>--}}
+
+                        {{--<li class="social-button__item">--}}
+                            {{--<a href="{{$cfs['vk']}}" class="link-vk"><i class="fa fa-vk" aria-hidden="true"></i></a>--}}
+                        {{--</li>--}}
 
                         <li class="social-button__item">
-                            <a href="{{$cfs['vk']}}" class="link-vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                        </li>
-
-                        <li class="social-button__item">
-                            <a href="{{$cfs['fb']}}" class="link-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="{{$cfs['fb']}}" target="_blank" class="link-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>

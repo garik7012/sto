@@ -53,11 +53,11 @@
 
                         <input type="tel" name="phone" class="services-form__input" placeholder="Телефон" required>
 
-                        <input type="email" name="email" class="services-form__input" placeholder="Email">
+                        <input type="email" name="email" class="services-form__input mobile-none" placeholder="Email">
                         <!--НУЖНО В ВЕЛЪЮ ВСТАВИТЬ ДАТУ-->
-                        <input id="datepicker2" type="text" name="order_date" class="services-form__input" placeholder="Дата">
+                        <input id="datepicker2" type="text" name="order_date" class="services-form__input mobile-none" placeholder="Дата">
 
-                        <select name="order_time" class="services-form__select g-order_time">
+                        <select name="order_time" class="services-form__select g-order_time mobile-none">
                             <option>Время</option>
                             <option value="09.00">09.00</option>
                             @for($i = 10; $i<18; $i++)
@@ -68,7 +68,7 @@
                             <option value="18.00">18.00</option>
                         </select>
 
-                        <select class="services-form__select " name="service_id">
+                        <select class="services-form__select mobile-none" name="service_id">
                             <option value="0">Услуга</option>
                             @foreach($listServices as $service1)
                                 <option value="{{$service->id}}">{{$service1->title}}</option>

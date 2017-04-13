@@ -1,0 +1,39 @@
+[Wed Mar 15 22:41:32.695263 2017] [cgi:error] [pid 31843] [client 46.101.15.92:33458] script not found or unable to stat: /var/www/cgi-bin/php
+[Wed Mar 15 22:41:32.733160 2017] [cgi:error] [pid 31844] [client 46.101.15.92:33492] script not found or unable to stat: /var/www/cgi-bin/php5
+[Sat Mar 18 14:41:21.311994 2017] [cgi:error] [pid 10114] [client 46.101.206.8:36755] script not found or unable to stat: /var/www/cgi-bin/php
+[Sat Mar 18 14:41:22.324142 2017] [cgi:error] [pid 10210] [client 46.101.206.8:38322] script not found or unable to stat: /var/www/cgi-bin/php5
+[Sun Mar 19 03:00:41.454813 2017] [cgi:error] [pid 16077] [client 193.170.220.19:42520] script not found or unable to stat: /var/www/cgi-bin/php
+[Sun Mar 19 03:00:48.494559 2017] [cgi:error] [pid 16356] [client 193.170.220.19:42540] script not found or unable to stat: /var/www/cgi-bin/php5
+[Sun Mar 19 15:55:46.206429 2017] [cgi:error] [pid 28709] [client 23.253.72.177:42381] script not found or unable to stat: /var/www/cgi-bin/php
+[Sun Mar 19 15:55:46.460770 2017] [cgi:error] [pid 28758] [client 23.253.72.177:42445] script not found or unable to stat: /var/www/cgi-bin/php5
+[Mon Mar 20 17:32:43.262500 2017] [:error] [pid 4484] [client 46.211.69.107:2558] PHP Fatal error:  Class 'Intervention\\Image\\ImageServiceProvider' not found in /var/www/test.ms20.com.ua/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 201, referer: http://test.ms20.com.ua/
+[Mon Mar 20 17:32:52.911674 2017] [:error] [pid 4732] [client 46.211.69.107:2557] PHP Fatal error:  Class 'Intervention\\Image\\ImageServiceProvider' not found in /var/www/test.ms20.com.ua/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 201, referer: http://test.ms20.com.ua/
+[Mon Mar 20 17:33:02.885799 2017] [:error] [pid 4975] [client 46.211.69.107:2538] PHP Fatal error:  Class 'Intervention\\Image\\ImageServiceProvider' not found in /var/www/test.ms20.com.ua/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 201, referer: http://test.ms20.com.ua/
+[Mon Mar 20 17:33:18.923193 2017] [:error] [pid 5346] [client 46.211.69.107:2641] PHP Fatal error:  Class 'Intervention\\Image\\ImageServiceProvider' not found in /var/www/test.ms20.com.ua/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 201, referer: http://test.ms20.com.ua/
+[Mon Mar 20 17:33:20.717253 2017] [:error] [pid 5348] [client 46.211.69.107:2551] PHP Fatal error:  Class 'Intervention\\Image\\ImageServiceProvider' not found in /var/www/test.ms20.com.ua/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 201, referer: http://test.ms20.com.ua/
+[Mon Mar 20 17:33:25.723055 2017] [:error] [pid 5593] [client 46.211.69.107:2636] PHP Fatal error:  Class 'Intervention\\Image\\ImageServiceProvider' not found in /var/www/test.ms20.com.ua/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 201, referer: http://test.ms20.com.ua/
+[Thu Mar 23 02:43:08.041292 2017] [cgi:error] [pid 12628] [client 191.96.249.97:47316] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Mar 24 15:40:06.333503 2017] [cgi:error] [pid 10460] [client 191.96.249.97:60566] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Mar 24 22:36:55.962031 2017] [cgi:error] [pid 27848] [client 200.98.141.29:62563] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Mar 24 22:36:57.816086 2017] [cgi:error] [pid 27915] [client 200.98.141.29:62916] script not found or unable to stat: /var/www/cgi-bin/php5
+[Sun Mar 26 04:56:26.814706 2017] [cgi:error] [pid 17725] [client 191.96.249.97:39666] script not found or unable to stat: /var/www/cgi-bin/php
+[Tue Mar 28 21:42:42.798284 2017] [cgi:error] [pid 10900] [client 191.96.249.97:54409] script not found or unable to stat: /var/www/cgi-bin/php
+[Wed Mar 29 20:11:00.274477 2017] [autoindex:error] [pid 24389] [client 180.76.15.29:25472] AH01276: Cannot serve directory /var/www/test.ms20.com.ua/www/js/: No matching DirectoryIndex (index.html,index.php) found, and server-generated directory index forbidden by Options directive
+[Thu Mar 30 03:06:56.742114 2017] [cgi:error] [pid 21195] [client 191.96.249.97:54534] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Mar 31 10:56:14.436647 2017] [cgi:error] [pid 13578] [client 191.96.249.97:53313] script not found or unable to stat: /var/www/cgi-bin/php
+[Sat Apr 01 03:33:05.262426 2017] [cgi:error] [pid 9638] [client 92.222.217.66:51518] script not found or unable to stat: /var/www/cgi-bin/php
+[Sat Apr 01 03:33:05.300055 2017] [cgi:error] [pid 9639] [client 92.222.217.66:51575] script not found or unable to stat: /var/www/cgi-bin/php5
+[Sun Apr 02 22:13:03.808378 2017] [cgi:error] [pid 3233] [client 191.96.249.97:55942] script not found or unable to stat: /var/www/cgi-bin/php
+[Mon Apr 03 21:22:09.653617 2017] [cgi:error] [pid 10729] [client 185.58.193.210:52806] script not found or unable to stat: /var/www/cgi-bin/php
+[Mon Apr 03 21:22:12.592401 2017] [cgi:error] [pid 10837] [client 185.58.193.210:53858] script not found or unable to stat: /var/www/cgi-bin/php5
+[Tue Apr 04 11:58:24.295710 2017] [cgi:error] [pid 8826] [client 51.15.141.187:23228] script not found or unable to stat: /var/www/cgi-bin/user
+[Wed Apr 05 08:55:40.884246 2017] [cgi:error] [pid 10265] [client 191.96.249.97:40072] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Apr 07 03:47:12.564349 2017] [cgi:error] [pid 22493] [client 191.96.249.97:47629] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Apr 07 21:39:38.253489 2017] [cgi:error] [pid 25286] [client 185.58.193.210:49284] script not found or unable to stat: /var/www/cgi-bin/php
+[Fri Apr 07 21:39:38.413635 2017] [cgi:error] [pid 25290] [client 185.58.193.210:49362] script not found or unable to stat: /var/www/cgi-bin/php5
+[Sun Apr 09 00:56:43.381404 2017] [cgi:error] [pid 9117] [client 191.96.249.97:39918] script not found or unable to stat: /var/www/cgi-bin/php
+[Tue Apr 11 02:57:56.011812 2017] [cgi:error] [pid 9310] [client 191.96.249.97:43653] script not found or unable to stat: /var/www/cgi-bin/php
+[Tue Apr 11 05:13:28.339390 2017] [cgi:error] [pid 9617] [client 69.50.209.208:54471] script not found or unable to stat: /var/www/cgi-bin/test-cgi
+[Tue Apr 11 05:13:28.702448 2017] [cgi:error] [pid 9619] [client 69.50.209.208:54517] script not found or unable to stat: /var/www/cgi-bin/test.cgi
+[Tue Apr 11 12:09:55.376634 2017] [autoindex:error] [pid 27659] [client 180.76.15.138:57565] AH01276: Cannot serve directory /var/www/test.ms20.com.ua/www/js/: No matching DirectoryIndex (index.html,index.php) found, and server-generated directory index forbidden by Options directive
+[Wed Apr 12 20:39:23.156302 2017] [:error] [pid 24572] [client 194.28.103.82:50502] PHP Parse error:  syntax error, unexpected '$listServices' (T_VARIABLE), expecting ';' in /var/www/test.ms20.com.ua/storage/framework/views/48a235ebdeb133a2595f1bec9001b99f439df126.php on line 5

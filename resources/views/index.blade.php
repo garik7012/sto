@@ -1,5 +1,6 @@
 @extends('layouts.master')
-@section('title', 'СТО')
+@section('title', 'СТО Бровары Мега-Сервис')
+@section('description', 'Многолетний опыт специалистов СТО Бровары "Мега-Сервис" позволяет нам выполнять работы высокой сложности на профессиональном уровне с гарантией качества.')
 @section('content')
 
     <section class="main-banner">
@@ -125,24 +126,7 @@
             </div>
         </div>
     </section>
-
-
-    <section class="offer-anons">
-        <div class="news-anons__list">
-            <ul class="news-anons-list">
-                <li class="news-anons-list__item">
-                    <div class="news-anons-item">
-                        <a href="#" class="news-anons-item__img">
-                            <img src="{{$banner->mobile_image}}" alt="акция">
-                            <div class="news-anons-item__hover-text">
-                                <span>Подробнее</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+    
     @include('layouts.services')
 
     <section class="video-sect ">
