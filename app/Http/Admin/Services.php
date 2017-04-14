@@ -47,6 +47,7 @@ class Services extends Section
             ->setHtmlAttribute('class', 'table-primary')
             ->setColumns(
                 AdminColumn::text('position', 'Позиция')->setWidth('50px'),
+                AdminColumn::text('is_public', 'опубликовано')->setWidth('50px'),
                 AdminColumn::link('link', 'Ссылка')->setWidth('250px'),
                 AdminColumn::text('title', 'Название услуги')
             )
